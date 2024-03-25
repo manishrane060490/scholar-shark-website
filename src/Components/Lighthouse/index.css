@@ -1,0 +1,76 @@
+.lighthouse {
+    position: relative;
+    
+}
+
+.sky {
+    background-image: url('../../../public/assets/images/Bg.svg');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.water {
+    background-image: url('../../../public/assets/images/Water.svg');
+    height: 25%;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    background-size: contain;
+}
+
+.stones {
+    background-image: url('../../../public/assets/images/Stones.svg');
+    height: 50%;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    background-position: bottom left;
+}
+
+.light-img {
+    position: absolute;
+    bottom: 110px;
+    height: 607px;
+}
+
+.light-container {
+    height: 30px;
+    width: 35vw;
+    bottom: 604px;
+    left: 235px;
+    transform-style: preserve-3d;
+    transform-origin: left bottom;
+    transform: perspective(500px) rotateY(0deg);
+    animation: lightRotate 40s linear infinite;
+    position: absolute;
+}
+
+.light {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: left center;
+    transform: perspective(500px) rotateY(-35deg);
+    background: linear-gradient(90deg, #f7f2b4 40%, rgba(255, 255, 255, 0) 100%);
+}
+
+@keyframes lightRotate {
+    0%, 100% {
+        transform: perspective(500px) rotateY(0deg);
+    }
+    
+    25% {
+        transform: perspective(500px) rotateY(35deg);
+    }
+    75% {
+        transform: perspective(500px) rotateY(-35deg);
+    }
+}
