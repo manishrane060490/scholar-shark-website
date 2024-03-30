@@ -895,7 +895,7 @@ html {
   width: 400px;
   height: 60px;
   left: -30px;
-  top: 90vh;
+  top: calc(100vh - 60px);
   background-image: linear-gradient(to top, #29284c 80%, #717ae1 100%);
   transform: skewX(35deg);
   border-radius: 10px;
@@ -904,7 +904,7 @@ html {
 .lighthouse-holder {
   height: 400px;
   width: 100px;
-  top: 36vh;
+  top: calc(100vh - 460px);
   left: 180px;
 }
 
