@@ -1247,7 +1247,7 @@ html {
   color: #fff;
 }
 
-@media (min-device-height : 650px) and (orientation: landscape) {
+@media (max-height : 700px) and (orientation: landscape){
   .lang-selector {
     display: none;
   }
