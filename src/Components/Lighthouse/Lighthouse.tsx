@@ -184,6 +184,9 @@ function Lighthouse() {
           <button>Hindi</button>
         </div>
       </div>
+      <div className='rotate-screen'>
+        <h1>Please rotate a screen for best experience</h1>
+      </div>
     </>
   )
 }
