@@ -1,10 +1,10 @@
 import './App.css';
-import Lighthouse from './Components/Lighthouse/Lighthouse';
+import Language from './Pages/Language';
 
 function App() {
   return (
     <div className="App">
-      <Lighthouse />
+      <Language />
     </div>
   );
 }
