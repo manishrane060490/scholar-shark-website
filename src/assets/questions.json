@@ -1,0 +1,894 @@
+[
+    {
+        "srNo": 75,
+        "category": "how to save taxes:",
+        "question": "What is the maximum limit for claiming deductions under Section 80C of the Income Tax Act?",
+        "answerOptions": [
+            {"text": "₹50,000", "isCorrect": false},
+            {"text": "₹1,00,00", "isCorrect": false},
+            {"text": "₹1,50,000", "isCorrect": true},
+            {"text": "₹2,00,000", "isCorrect": false}
+        ],
+        "rightAnswer": "₹1,50,000",
+        "explanation": "The maximum limit for claiming deductions under Section 80C of the Income Tax Act is ₹1,50,000.",
+        "url": null
+    },
+    {
+        "srNo": 121,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "How can individuals reduce unnecessary expenses to improve financial health?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "rightAnswer": "Tracking expenses and identifying areas to cut back",
+        "explanation": "By tracking expenses and identifying areas where spending can be reduced, individuals can prioritize essential expenses and allocate more resources towards savings and investments.",
+        "url": null
+    },
+    {
+        "srNo": 58,
+        "category": "how to save taxes:",
+        "question": "How does an individual assess their risk tolerance in investment?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "By investing aggressively in high-risk assets",
+        "optionB": "By evaluating their financial goals and time horizon",
+        "optionC": "By avoiding investments altogether",
+        "optionD": "By relying solely on financial advisors",
+        "rightAnswer": "By evaluating their financial goals and time horizon",
+        "explanation": "Risk tolerance is assessed based on an individual's financial goals, time horizon, and willingness to accept fluctuations in investment value.",
+        "url": null
+    },
+    {
+        "srNo": 4,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the maximum amount allowed for withdrawal from an ATM per transaction in India?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "₹10,000",
+        "optionB": "₹15,000",
+        "optionC": "₹20,000",
+        "optionD": "₹25,000",
+        "rightAnswer": "₹20,000",
+        "explanation": "The maximum amount allowed for ATM withdrawals per transaction in India is typically ₹20,000, although it may vary depending on the bank's policies.",
+        "url": null
+    },
+    {
+        "srNo": 69,
+        "category": "how to save taxes:",
+        "question": "What is the main purpose of home loans?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Funding education expenses",
+        "optionB": "Financing business ventures",
+        "optionC": "Purchasing residential property",
+        "optionD": "Investing in the stock market",
+        "rightAnswer": "Purchasing residential property",
+        "explanation": "Home loans are specifically designed to provide individuals with funds to purchase or construct residential properties.",
+        "url": null
+    },
+    {
+        "srNo": 80,
+        "category": "how to save taxes:",
+        "question": "What is the primary objective of investing in sovereign bonds?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Maximizing short-term gains",
+        "optionB": "Preserving capital",
+        "optionC": "Achieving high-risk-adjusted returns",
+        "optionD": "Funding government expenditure",
+        "rightAnswer": "Funding government expenditure",
+        "explanation": "Sovereign bonds are issued by governments to raise funds for various purposes, including financing government expenditure and infrastructure projects.",
+        "url": null
+    },
+    {
+        "srNo": 142,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "Which of the following is NOT a component of a comprehensive financial plan?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Budgeting",
+        "optionB": "Insurance coverage",
+        "optionC": "Retirement planning",
+        "optionD": "Daily spending habits",
+        "rightAnswer": "Daily spending habits",
+        "explanation": "While daily spending habits are important for financial health, they are typically managed within the framework of budgeting rather than being a standalone component of a financial plan.",
+        "url": null
+    },
+    {
+        "srNo": 92,
+        "category": "how to save taxes:",
+        "question": "Which factor influences the interest rate on a fixed deposit?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Maturity period",
+        "optionB": "Investor's age",
+        "optionC": "Market conditions",
+        "optionD": "Loan amount",
+        "rightAnswer": "Market conditions",
+        "explanation": "Interest rates on fixed deposits are influenced by market conditions, including prevailing interest rates and economic factors.",
+        "url": null
+    },
+    {
+        "srNo": 44,
+        "category": "general",
+        "question": "1. Which of the following is NOT a benefit of having a diversified investment portfolio?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Lower risk",
+        "optionB": "Higher returns",
+        "optionC": "Protection against market volatility",
+        "optionD": "Higher tax liability",
+        "rightAnswer": "Higher tax liability",
+        "explanation": "Diversification helps spread risk across various assets, but it doesn't necessarily impact tax liability.",
+        "url": null
+    },
+    {
+        "srNo": 138,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "What is the purpose of life insurance in personal finance?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Generating retirement income",
+        "optionB": "Protecting against loss of income due to death",
+        "optionC": "Funding short-term expenses",
+        "optionD": "Building emergency savings",
+        "rightAnswer": "Protecting against loss of income due to death",
+        "explanation": "Life insurance provides financial protection to beneficiaries in case of the policyholder's death, ensuring they can maintain their standard of living without the primary breadwinner's income.",
+        "url": null
+    },
+    {
+        "srNo": 119,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "How can individuals reduce discretionary expenses to improve their financial health?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Increasing credit card spending",
+        "optionB": "Cutting down on non-essential purchases",
+        "optionC": "Taking out personal loans",
+        "optionD": "Ignoring budgeting altogether",
+        "rightAnswer": "Cutting down on non-essential purchases",
+        "explanation": "By reducing discretionary expenses, individuals can free up more money for savings and investments, thereby improving their financial health.",
+        "url": null
+    },
+    {
+        "srNo": 140,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "What is the recommended percentage of income to allocate towards savings and investments?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "10-15%",
+        "optionB": "20-25%",
+        "optionC": "30-35%",
+        "optionD": "40-50%",
+        "rightAnswer": "20-25%",
+        "explanation": "Financial experts often recommend allocating 20-25% of income towards savings and investments to ensure long-term financial security.",
+        "url": null
+    },
+    {
+        "srNo": 6,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the maximum amount insured by the Deposit Insurance and Credit Guarantee Corporation (DICGC) in India?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "₹1,00,000",
+        "optionB": "₹2,00,000",
+        "optionC": "₹5,00,000",
+        "optionD": "₹10,00,000",
+        "rightAnswer": "₹5,00,000",
+        "explanation": "DICGC provides insurance cover up to ₹5,00,000 per depositor, per bank, for both principal and interest amount.",
+        "url": null
+    },
+    {
+        "srNo": 40,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "Which organization operates the National Electronic Funds Transfer (NEFT) system in India?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Reserve Bank of India (RBI)",
+        "optionB": "National Payments Corporation of India (NPCI)",
+        "optionC": "Securities and Exchange Board of India (SEBI)",
+        "optionD": "Ministry of Finance",
+        "rightAnswer": "National Payments Corporation of India (NPCI)",
+        "explanation": "The National Electronic Funds Transfer (NEFT) system in India is operated by the National Payments Corporation of India (NPCI), facilitating electronic funds transfer between bank accounts across the country.",
+        "url": null
+    },
+    {
+        "srNo": 57,
+        "category": "how to save taxes:",
+        "question": "How do mutual funds pool money from investors?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Selling shares to investors",
+        "optionB": "Distributing dividends",
+        "optionC": "Investing in government bonds",
+        "optionD": "Issuing fixed deposits",
+        "rightAnswer": "Selling shares to investors",
+        "explanation": "Mutual funds pool money from investors by selling shares or units of the fund, with each investor owning a proportional share of the fund's portfolio.",
+        "url": null
+    },
+    {
+        "srNo": 101,
+        "category": "how to save taxes:",
+        "question": "Which type of insurance provides coverage against damage or loss of property due to natural disasters?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Life insurance",
+        "optionB": "Health insurance",
+        "optionC": "Home insurance",
+        "optionD": "Vehicle insurance",
+        "rightAnswer": "Home insurance",
+        "explanation": "Home insurance policies provide coverage for the structure and contents of a property against risks such as fire, burglary, natural disasters, and other perils.",
+        "url": null
+    },
+    {
+        "srNo": 94,
+        "category": "how to save taxes:",
+        "question": "Which insurance product provides coverage for loss of income due to disability?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Life insurance",
+        "optionB": "Health insurance",
+        "optionC": "Disability insurance",
+        "optionD": "Vehicle insurance",
+        "rightAnswer": "Disability insurance",
+        "explanation": "Disability insurance provides coverage for loss of income resulting from a disability or inability to work due to illness or injury.",
+        "url": null
+    },
+    {
+        "srNo": 37,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "Which of the following is NOT a type of bank account commonly offered in India?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Fixed deposit account",
+        "optionB": "Recurring deposit account",
+        "optionC": "Credit card account",
+        "optionD": "Current account",
+        "rightAnswer": "Credit card account",
+        "explanation": "Credit cards are not bank accounts but rather financial products issued by banks for making purchases on credit.",
+        "url": null
+    },
+    {
+        "srNo": 16,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the primary function of Reserve Bank of India (RBI)?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Regulating stock markets",
+        "optionB": "Issuing currency notes",
+        "optionC": "Conducting monetary policy",
+        "optionD": "Providing insurance services",
+        "rightAnswer": "Conducting monetary policy",
+        "explanation": "The RBI is responsible for formulating and implementing monetary policy in India to maintain price stability and control inflation.",
+        "url": null
+    },
+    {
+        "srNo": 104,
+        "category": "how to save taxes:",
+        "question": "Which type of mutual fund invests in a diversified portfolio of stocks?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Debt funds",
+        "optionB": "Index funds",
+        "optionC": "Equity funds",
+        "optionD": "Liquid funds",
+        "rightAnswer": "Equity funds",
+        "explanation": "Equity funds invest primarily in stocks, aiming for capital appreciation by holding a diversified portfolio of equities.",
+        "url": null
+    },
+    {
+        "srNo": 23,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the purpose of the Small Industries Development Bank of India (SIDBI)?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Providing loans and financial assistance to small-scale industries",
+        "optionB": "Regulating stock market transactions",
+        "optionC": "Providing insurance services",
+        "optionD": "Facilitating international trade",
+        "rightAnswer": "Providing loans and financial assistance to small-scale industries",
+        "explanation": "The Small Industries Development Bank of India (SIDBI) is the principal financial institution for the promotion, financing, and development of micro, small, and medium-sized enterprises (MSMEs) in India.",
+        "url": null
+    },
+    {
+        "srNo": 81,
+        "category": "how to save taxes:",
+        "question": "What is the primary objective of portfolio diversification?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Maximizing investment risk",
+        "optionB": "Achieving high returns in the short term",
+        "optionC": "Spreading risk across different assets",
+        "optionD": "Eliminating the need for financial planning",
+        "rightAnswer": "Spreading risk across different assets",
+        "explanation": "Portfolio diversification involves investing in a variety of assets to reduce risk by spreading exposure across different investments and asset classes.",
+        "url": null
+    },
+    {
+        "srNo": 19,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the primary purpose of the Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY) scheme in India?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Promoting affordable housing",
+        "optionB": "Encouraging digital payments",
+        "optionC": "Providing life insurance coverage",
+        "optionD": "Supporting agricultural development",
+        "rightAnswer": "Providing life insurance coverage",
+        "explanation": "The Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY) scheme offers life insurance coverage to individuals at an affordable premium, providing financial security to their families in case of death due to any reason.",
+        "url": null
+    },
+    {
+        "srNo": 106,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "How can individuals avoid lifestyle inflation and maintain financial discipline?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Increasing spending with every salary raise",
+        "optionB": "Ignoring salary raises and bonuses",
+        "optionC": "Tracking expenses and sticking to a budget",
+        "optionD": "Relying solely on credit cards for purchases",
+        "rightAnswer": "Tracking expenses and sticking to a budget",
+        "explanation": "Tracking expenses and sticking to a budget helps individuals avoid lifestyle inflation, ensuring that spending remains aligned with long-term financial goals.",
+        "url": null
+    },
+    {
+        "srNo": 114,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "How can individuals prioritize financial goals effectively?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Setting unrealistic goals",
+        "optionB": "Ignoring long-term goals",
+        "optionC": "Ranking goals based on importance and urgency",
+        "optionD": "Relying solely on short-term goals",
+        "rightAnswer": "Ranking goals based on importance and urgency",
+        "explanation": "Prioritizing financial goals based on importance and urgency helps individuals focus their efforts and resources on achieving the most critical objectives first.",
+        "url": null
+    },
+    {
+        "srNo": 11,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the maximum number of transactions allowed per month in a basic savings bank deposit account in India?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "5",
+        "optionB": "10",
+        "optionC": "15",
+        "optionD": "Unlimited",
+        "rightAnswer": "Unlimited",
+        "explanation": "Basic savings bank deposit accounts in India typically do not have any restrictions on the number of transactions, allowing customers to perform unlimited transactions without maintaining a minimum balance.",
+        "url": null
+    },
+    {
+        "srNo": 87,
+        "category": "how to save taxes:",
+        "question": "What is the tax rate applicable to long-term capital gains on listed equity shares and equity-oriented mutual funds?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "0%",
+        "optionB": "10%",
+        "optionC": "15%",
+        "optionD": "20%",
+        "rightAnswer": "0%",
+        "explanation": "Long-term capital gains on listed equity shares and equity-oriented mutual funds are exempt from tax if the gains do not exceed ₹1 lakh in a financial year.",
+        "url": null
+    },
+    {
+        "srNo": 136,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "What is the purpose of creating a will as part of personal financial planning?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Identifying financial goals",
+        "optionB": "Protecting assets and distributing wealth",
+        "optionC": "Establishing retirement savings",
+        "optionD": "Applying for loans",
+        "rightAnswer": "Protecting assets and distributing wealth",
+        "explanation": "A will is a legal document that outlines how a person's assets and wealth should be distributed after their death, ensuring that their wishes are carried out and assets are protected.",
+        "url": null
+    },
+    {
+        "srNo": 113,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "How can individuals prioritize financial goals effectively?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Setting unrealistic goals",
+        "optionB": "Ignoring long-term goals",
+        "optionC": "Ranking goals based on importance and urgency",
+        "optionD": "Relying solely on short-term goals",
+        "rightAnswer": "Ranking goals based on importance and urgency",
+        "explanation": "Prioritizing financial goals based on importance and urgency helps individuals focus their efforts and resources on achieving the most critical objectives first.",
+        "url": null
+    },
+    {
+        "srNo": 132,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "What is the first step in creating a personal budget?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Setting financial goals",
+        "optionB": "Tracking expenses",
+        "optionC": "Investing in stocks",
+        "optionD": "Applying for a credit card",
+        "rightAnswer": "Setting financial goals",
+        "explanation": "Setting financial goals helps individuals identify their priorities and align their spending and saving habits accordingly.",
+        "url": null
+    },
+    {
+        "srNo": 118,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "How can individuals reduce debt and improve financial health?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Increasing credit card spending",
+        "optionB": "Ignoring debt repayment deadlines",
+        "optionC": "Creating a debt repayment plan and prioritizing high-interest debt",
+        "optionD": "Applying for multiple loans simultaneously",
+        "rightAnswer": "Creating a debt repayment plan and prioritizing high-interest debt",
+        "explanation": "Creating a debt repayment plan and prioritizing high-interest debt can help individuals reduce debt systematically and improve their financial health.",
+        "url": null
+    },
+    {
+        "srNo": 68,
+        "category": "how to save taxes:",
+        "question": "What is the lock-in period for investments made in ELSS mutual funds to claim tax benefits under Section 80C?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "1 year",
+        "optionB": "3 years",
+        "optionC": "5 years",
+        "optionD": "7 years",
+        "rightAnswer": "3 years",
+        "explanation": "Investments made in ELSS mutual funds have a lock-in period of 3 years to claim tax benefits under Section 80C.",
+        "url": null
+    },
+    {
+        "srNo": 141,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "Which of the following actions can help individuals build an emergency fund?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Using credit cards for everyday expenses",
+        "optionB": "Setting aside a portion of each paycheck",
+        "optionC": "Ignoring financial planning altogether",
+        "optionD": "Relying on family or friends for financial assistance",
+        "rightAnswer": "Setting aside a portion of each paycheck",
+        "explanation": "Regularly setting aside a portion of each paycheck allows individuals to gradually build an emergency fund, providing financial security in times of need.",
+        "url": null
+    },
+    {
+        "srNo": 26,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the tenure of the Kisan Credit Card (KCC) scheme introduced by the Government of India?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "1 year",
+        "optionB": "3 years",
+        "optionC": "5 years",
+        "optionD": "7 years",
+        "rightAnswer": "7 years",
+        "explanation": "The Kisan Credit Card (KCC) scheme offers credit facilities to farmers for a maximum period of 7 years to meet their agricultural and related expenses.",
+        "url": null
+    },
+    {
+        "srNo": 133,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "What is the purpose of a 401(k) or similar retirement account?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Funding short-term expenses",
+        "optionB": "Providing insurance coverage",
+        "optionC": "Accumulating savings for retirement",
+        "optionD": "Paying off credit card debt",
+        "rightAnswer": "Accumulating savings for retirement",
+        "explanation": "401(k) or similar retirement accounts are designed to help individuals save for retirement by allowing them to contribute pre-tax income and potentially receive employer matching contributions.",
+        "url": null
+    },
+    {
+        "srNo": 90,
+        "category": "how to save taxes:",
+        "question": "What is the tenure of a typical home loan in India?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "5 years",
+        "optionB": "10 years",
+        "optionC": "20 years",
+        "optionD": "30 years",
+        "rightAnswer": "20 years",
+        "explanation": "Home loans in India typically have longer tenures, often ranging from 15 to 30 years, allowing borrowers to repay the loan amount over an extended period.",
+        "url": null
+    },
+    {
+        "srNo": 42,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "Which type of account typically does not earn any interest in India?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Savings account",
+        "optionB": "Current account",
+        "optionC": "Fixed deposit account",
+        "optionD": "Recurring deposit account",
+        "rightAnswer": "Current account",
+        "explanation": "Current accounts are primarily used for business transactions and do not typically earn any interest on the deposited amount.",
+        "url": null
+    },
+    {
+        "srNo": 35,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "Which of the following is NOT a benefit of using internet banking in India?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Convenient bill payments",
+        "optionB": "24/7 access to account information",
+        "optionC": "Higher interest rates on savings accounts",
+        "optionD": "Instant fund transfers",
+        "rightAnswer": "Higher interest rates on savings accounts",
+        "explanation": "While internet banking offers many benefits, higher interest rates on savings accounts are not directly related to it.",
+        "url": null
+    },
+    {
+        "srNo": 96,
+        "category": "how to save taxes:",
+        "question": "Which investment option is NOT eligible for deductions under Section 80C?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Public Provident Fund (PPF)",
+        "optionB": "Equity Linked Savings Scheme (ELSS)",
+        "optionC": "National Pension System (NPS)",
+        "optionD": "Savings Bank Account Interest",
+        "rightAnswer": "Savings Bank Account Interest",
+        "explanation": "Interest earned from a savings bank account is not eligible for deductions under Section 80C.",
+        "url": null
+    },
+    {
+        "srNo": 93,
+        "category": "how to save taxes:",
+        "question": "Which form is used by individuals to file their income tax returns in India?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Form 16",
+        "optionB": "Form 26AS",
+        "optionC": "Form 15G",
+        "optionD": "Form ITR-1 (Sahaj)",
+        "rightAnswer": "Form ITR-1 (Sahaj)",
+        "explanation": "Form ITR-1 (Sahaj) is used by individuals to file their income tax returns in India, provided they have income from salary, one house property, and other sources.",
+        "url": null
+    },
+    {
+        "srNo": 29,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "Which Indian bank introduced the first Automated Teller Machine (ATM) in India?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "State Bank of India (SBI)",
+        "optionB": "ICICI Bank",
+        "optionC": "HDFC Bank",
+        "optionD": "Punjab National Bank (PN",
+        "rightAnswer": "State Bank of India (SBI)",
+        "explanation": "State Bank of India (SBI) introduced the first Automated Teller Machine (ATM) in India in 1987, revolutionizing the way banking services are accessed by customers.",
+        "url": null
+    },
+    {
+        "srNo": 100,
+        "category": "how to save taxes:",
+        "question": "Which investment option typically offers higher returns but involves higher risk?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Government bonds",
+        "optionB": "Fixed deposits",
+        "optionC": "Stocks",
+        "optionD": "Savings accounts",
+        "rightAnswer": "Stocks",
+        "explanation": "Stocks generally offer higher returns over the long term but come with higher volatility and risk compared to other investment options.",
+        "url": null
+    },
+    {
+        "srNo": 107,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "How can individuals avoid lifestyle inflation and maintain financial discipline?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Increasing spending with every salary raise",
+        "optionB": "Ignoring salary raises and bonuses",
+        "optionC": "Tracking expenses and sticking to a budget",
+        "optionD": "Relying solely on credit cards for purchases",
+        "rightAnswer": "Tracking expenses and sticking to a budget",
+        "explanation": "Tracking expenses and sticking to a budget helps individuals avoid lifestyle inflation, ensuring that spending remains aligned with long-term financial goals.",
+        "url": null
+    },
+    {
+        "srNo": 116,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "How can individuals protect themselves from financial fraud and scams?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Sharing personal and financial information freely",
+        "optionB": "Ignoring warning signs of potential scams",
+        "optionC": "Conducting thorough research before making financial decisions",
+        "optionD": "Relying solely on financial advisors",
+        "rightAnswer": "Conducting thorough research before making financial decisions",
+        "explanation": "Conducting thorough research before making financial decisions and being cautious about sharing personal and financial information can help individuals protect themselves from financial fraud and scams.",
+        "url": null
+    },
+    {
+        "srNo": 126,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "What is the benefit of diversifying investment portfolios?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Minimizing investment risk",
+        "optionB": "Maximizing investment returns",
+        "optionC": "Guaranteeing fixed returns",
+        "optionD": "Simplifying investment management",
+        "rightAnswer": "Minimizing investment risk",
+        "explanation": "Diversification helps spread investment risk across different asset classes, reducing the impact of market fluctuations on overall portfolio performance.",
+        "url": null
+    },
+    {
+        "srNo": 66,
+        "category": "how to save taxes:",
+        "question": "What distinguishes a fixed deposit from a recurring deposit?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Investment tenure",
+        "optionB": "Interest rate",
+        "optionC": "Mode of deposit",
+        "optionD": "Maturity amount",
+        "rightAnswer": "Mode of deposit",
+        "explanation": "In a fixed deposit, a lump sum amount is deposited for a fixed tenure, while in a recurring deposit, a fixed sum is deposited regularly over a predetermined period.",
+        "url": null
+    },
+    {
+        "srNo": 137,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "What is the purpose of investing in retirement accounts such as a 401(k) or IRA?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Funding short-term expenses",
+        "optionB": "Accumulating savings for retirement",
+        "optionC": "Paying off credit card debt",
+        "optionD": "Generating emergency funds",
+        "rightAnswer": "Accumulating savings for retirement",
+        "explanation": "Retirement accounts such as 401(k) or IRA are designed to help individuals save and invest for retirement, ensuring financial security in later years.",
+        "url": null
+    },
+    {
+        "srNo": 112,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "How can individuals minimize unnecessary bank fees and charges?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Ignoring bank statements",
+        "optionB": "Opting for premium banking services",
+        "optionC": "Maintaining minimum balance requirements",
+        "optionD": "Comparing fee structures and choosing accounts with low or no fees",
+        "rightAnswer": "Comparing fee structures and choosing accounts with low or no fees",
+        "explanation": "By comparing fee structures and selecting accounts with low or no fees, individuals can minimize unnecessary expenses and improve their financial health.",
+        "url": null
+    },
+    {
+        "srNo": 123,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "What is the advantage of automating bill payments and savings contributions?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Ignoring budgeting altogether", "isCorrect": false},
+            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
+            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+        ],
+        "optionA": "Higher interest rates on savings accounts",
+        "optionB": "Lower credit card limits",
+        "optionC": "Reduced risk of missed payments",
+        "optionD": "Increased debt burden",
+        "rightAnswer": "Reduced risk of missed payments",
+        "explanation": "Automating bill payments and savings contributions can help individuals avoid missed payments, late fees, and penalties, contributing to better financial management.",
+        "url": null
+    },
+    {
+        "srNo": 34,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "Which of the following documents is required to open a bank account in India?",
+        "answerOptions": [
+            {"text": "Increasing discretionary spending", "isCorrect": false},
+            {"text": "Aadhaar card", "isCorrect": false},
+            {"text": "Passport", "isCorrect": false},
+            {"text": "All of the above", "isCorrect": true}
+        ],
+        "optionA": "PAN card",
+        "optionB": "Aadhaar card",
+        "optionC": "Passport",
+        "optionD": "All of the above",
+        "rightAnswer": "All of the above",
+        "explanation": "To open a bank account in India, individuals usually need to provide documents such as PAN card, Aadhaar card, and passport for identification and address proof.",
+        "url": null
+    }
+]
