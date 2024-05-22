@@ -1,5 +1,6 @@
 import { useState, useLayoutEffect} from 'react';
 import './index.css';
+import quizImg from './quizleft.svg';
 
 function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -173,9 +174,16 @@ function Quizpage() {
             </div>
             <div className='quizPanel'>
                 <div className='quizPanel-left'>
-                    
+                    {/* <img src={quizImg} alt='quizImg' /> */}
                 </div>
-                <div className='quizPanel-right'></div>
+                <div className='quizPanel-right'>
+                    <h1>Quiz</h1>
+                    <ul>
+                        <li>
+                            
+                        </li>
+                    </ul>
+                </div>
             </div>
         </>
     )

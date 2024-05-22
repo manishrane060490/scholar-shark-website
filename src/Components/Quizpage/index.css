@@ -1268,7 +1268,7 @@ html {
     justify-content: center;
     background: white;
     margin: auto;
-    border-radius: 8px;
+    border-radius: 30px;
     transform: translate(-50%, -50%);
     position: absolute;
     left: 50%;
@@ -1276,4 +1276,23 @@ html {
     background: white;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
     backdrop-filter: blur(1rem);
+}
+
+.quizPanel-left {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background-image: url('./quizleft.svg');
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.quizPanel-right {
+  position: relative;
+  width: 50%;
+  height: 100%;
 }
