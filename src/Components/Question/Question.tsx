@@ -3,9 +3,9 @@ import React from 'react'
 export default function Question({question, onAnswerClick} : any) {
     let answer; 
     console.log(question)
-    const onCheckAnswer = (ans: string) => {
-        console.log(question.answer === ans)
-    }
+    // const onCheckAnswer = (ans: string) => {
+    //     console.log(question.answer === ans)
+    // }
 
   return (
     <div className='question'>

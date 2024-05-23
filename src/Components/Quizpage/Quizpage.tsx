@@ -1,6 +1,5 @@
 import { useState, useLayoutEffect } from 'react';
 import './index.css';
-import quizImg from './quizleft.svg';
 import questions from '../../assets/questions.json';
 import Question from '../Question/Question';
 import Result from '../Result/Result';
