@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
 
+
 // Create a client
 const queryClient = new QueryClient()
 

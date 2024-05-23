@@ -1,5 +1,6 @@
 import React, {useState, useLayoutEffect} from 'react';
 import './index.css';
+import { Outlet, Link } from "react-router-dom";
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
@@ -179,9 +180,9 @@ function Lighthouse() {
         </div>
         
         <div className='button-container'>
-          <button>English</button>
-          <button>Marathi</button>
-          <button>Hindi</button>
+          <Link className='button' to="/quiz">English</Link>
+          <Link className='button' to="/quiz">Marathi</Link>
+          <Link className='button' to="/quiz">Hindi</Link>
         </div>
       </div>
       <div className='rotate-screen'>
