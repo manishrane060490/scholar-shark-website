@@ -1,0 +1,1 @@
+import Quizpage from './Quizpage'
