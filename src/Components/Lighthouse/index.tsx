@@ -1,0 +1,1 @@
+import Lighouse from './Lighthouse'
