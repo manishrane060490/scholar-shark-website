@@ -196,7 +196,7 @@ function Quizpage() {
                     {/* <img src={quizImg} alt='quizImg' /> */}
                 </div>
                 <div className='quizPanel-right'>
-                    <h1>Quiz</h1>
+                  
                     
                     {
                         currentQuestion < questions.length &&
