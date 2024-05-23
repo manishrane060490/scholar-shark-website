@@ -1,7 +1,5 @@
 import './App.css';
-import Lighthouse from './Components/Lighthouse/Lighthouse';
 import Quizpage from './Components/Quizpage/Quizpage';
-import Videopage from './Components/Videopage/Videopage';
 import Language from './Pages/Language';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
