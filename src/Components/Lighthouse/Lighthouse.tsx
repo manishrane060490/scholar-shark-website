@@ -1,6 +1,6 @@
 import React, {useState, useLayoutEffect} from 'react';
 import './index.css';
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
