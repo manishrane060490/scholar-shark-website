@@ -17,12 +17,12 @@ html {
   box-sizing: inherit;
 }
 
-* {
+.scene * {
   position: absolute;
 }
 
-*::before,
-*::after {
+.scene *::before,
+.scene *::after {
   content: "";
   position: absolute;
 }
@@ -36,7 +36,7 @@ html {
 
 .background {
   background: #29284c;
-  background-image: linear-gradient(#29284c 0%, #4c4b82 10%, #717ae1 60%, #75e2fa 90%);
+  background-image: linear-gradient(#09082E 0%, #05040F 10%, #040411 60%, #060613 90%);
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -45,7 +45,7 @@ html {
 
 .sea {
   background: #29284c;
-  background-image: linear-gradient(to top, #29284c 0%, #4c4b82 30%, #717ae1 60%, #75e2fa 90%);
+  background-image: linear-gradient(to top, #29284c 0%, #4c4b82 30%, #0A0930 60%, #030922 90%);
   width: 100%;
   height: 170px;
   bottom: 0;
@@ -563,6 +563,7 @@ html {
   height: 250px;
   bottom: 65px;
   z-index: 1;
+  display: none;
 }
 
 .mountains .mountain {
