@@ -1,9 +1,8 @@
 import './App.css';
-import Lighthouse from './Components/Lighthouse/Lighthouse';
 import Quizpage from './Components/Quizpage/Quizpage';
-import Videopage from './Components/Videopage/Videopage';
-import Language from './Pages/Language';
+import Language from './Pages/LanguagePage';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PlansPage from './Pages/PlansPage';
 
 
 function App() {
@@ -13,6 +12,7 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<Language />}> */}
           <Route index element={<Language />} />
+          <Route path="plans" element={<PlansPage />} />
           <Route path="quiz" element={<Quizpage />} />
           {/* <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} /> */}

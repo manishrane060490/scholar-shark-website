@@ -1,6 +1,5 @@
 import React, {useState, useLayoutEffect} from 'react';
 import './index.css';
-import { Outlet, Link } from "react-router-dom";
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
@@ -16,6 +15,8 @@ function useWindowSize() {
 }
 
 function Lighthouse() {
+
+  let light = false
 
   const [width, height] = useWindowSize();
 
@@ -142,51 +143,40 @@ function Lighthouse() {
             </div>
           </div>
         </div>
-        <div className="lighthouse-group">
-          <div className="land"></div>
-          <div className="lighthouse-holder">
-            <div className="shadow"></div>
-            <div className="lighthouse"></div>
-            <div className="top"></div>
-            <div className="windows">
-              <div className="window"></div>
-              <div className="window"></div>
-              <div className="window"></div>
-              <div className="window"></div>
-            </div>
-            <div className="door">
-              <div className="stairs"></div>
-            </div>
-            <div className="top">
-              <div className="light-container">
-                <div className="light"></div>
+        { 
+          light && 
+          
+          <div className="lighthouse-group">
+            <div className="land"></div>
+            <div className="lighthouse-holder">
+              <div className="shadow"></div>
+              <div className="lighthouse"></div>
+              <div className="top"></div>
+              <div className="windows">
+                <div className="window"></div>
+                <div className="window"></div>
+                <div className="window"></div>
+                <div className="window"></div>
               </div>
-              <div className="rail"></div>
-              <div className="middle"></div>
-              <div className="roof">
-                <div className="roof-light"></div>
+              <div className="door">
+                <div className="stairs"></div>
               </div>
-              <div className="glow"></div>
+              <div className="top">
+                <div className="light-container">
+                  <div className="light"></div>
+                </div>
+                <div className="rail"></div>
+                <div className="middle"></div>
+                <div className="roof">
+                  <div className="roof-light"></div>
+                </div>
+                <div className="glow"></div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className='lang-selector'>
-        <div>
-          <h1>
-            Welcome to Scholarsharks
-          </h1>
-          <h4>Please select your Language</h4>
-        </div>
         
-        <div className='button-container'>
-          <Link className='button' to="/quiz">English</Link>
-          <Link className='button' to="/quiz">Marathi</Link>
-          <Link className='button' to="/quiz">Hindi</Link>
-        </div>
-      </div>
-      <div className='rotate-screen'>
-        <h1>Please rotate a screen for best experience</h1>
+        }
+        
       </div>
       
     </>
