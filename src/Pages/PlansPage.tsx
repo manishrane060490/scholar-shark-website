@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Lighthouse from "../Components/Lighthouse/Lighthouse";
 
 function PlansPage() {
@@ -82,9 +83,9 @@ function PlansPage() {
 
                     </div>
 
-                    <button className="plan-btn">
+                    <Link to='/register' className="plan-btn">
                         Proceed to pay
-                    </button>
+                    </Link>
                 </div>
                 <div className='panel-right'>
                 </div>
