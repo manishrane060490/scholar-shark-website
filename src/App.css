@@ -5,7 +5,7 @@ body {
 
 /* Quiz page */
 
-.plan-page p {
+.plan-page p, .register-page p {
     color: #c9c7c3;
 }
 .panel {
@@ -176,4 +176,50 @@ body {
     height: 50px;
     font-size: 16px;
     color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Register Page */
+.selected-plan {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #818183, #232230);
+    border: 1px solid #4C4B5D;
+    transition: max-height 3s ease-in-out;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.register-btn{
+    background: #0d99ff;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.register-form p {
+    margin-bottom: 5px;
 }

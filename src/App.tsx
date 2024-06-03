@@ -1,8 +1,9 @@
 import './App.css';
 import Quizpage from './Components/Quizpage/Quizpage';
-import Language from './Pages/LanguagePage';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PlansPage from './Pages/PlansPage';
+import RegisterPage from './Pages/RegisterPage';
+import LoginPage from './Pages/LoginPage';
 
 
 function App() {
@@ -11,11 +12,12 @@ function App() {
       <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Language />}> */}
-          <Route index element={<Language />} />
+          <Route index element={<PlansPage />} />
           <Route path="plans" element={<PlansPage />} />
           <Route path="quiz" element={<Quizpage />} />
-          {/* <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} /> */}
+          <Route path="register" element={<RegisterPage />} />
+          <Route path="login" element={<LoginPage />} />
+          {/* <Route path="*" element={<NoPage />} />  */}
         {/* </Route> */}
       </Routes>
     </BrowserRouter>
