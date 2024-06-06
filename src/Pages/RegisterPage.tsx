@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function RegisterPage() {
     return (
         <>
-            <Lighthouse/>
+            <Lighthouse light={false}/>
             <div className='panel register-page'>
                 <div className='panel-left'>
                     <h2>Welcome Shark &#128075;</h2>

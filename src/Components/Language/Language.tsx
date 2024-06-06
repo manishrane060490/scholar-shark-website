@@ -31,7 +31,7 @@ function Language() {
 
   return (
     <>
-      <Lighthouse />
+      <Lighthouse light/>
       <div className='lang-selector'>
         <div>
           <h1>

@@ -4,7 +4,7 @@ import Lighthouse from "../Components/Lighthouse/Lighthouse";
 function LoginPage() {
     return (
         <>
-            <Lighthouse/>
+            <Lighthouse light={false}/>
             <div className='panel register-page'>
                 <div className='panel-left'>
                     <h2>Welcome Shark &#128075;</h2>

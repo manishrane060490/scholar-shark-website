@@ -50,7 +50,7 @@ function Quizpage() {
 
     return (
         <>
-            <Lighthouse />
+            <Lighthouse light/>
             <div className='quizPanel'>
                 <div className='quizPanel-left'>
                     {/* <img src={quizImg} alt='quizImg' /> */}
