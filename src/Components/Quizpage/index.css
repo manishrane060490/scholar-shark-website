@@ -21,7 +21,7 @@
 }
 
 .quizPanel-left {
-  width: 0%;
+  width: 50%;
   height: 100%;
   position: relative;
   background-image: url('../../assets/quizleft.svg');
@@ -35,7 +35,7 @@
 
 .quizPanel-right {
   position: relative;
-  width: 100%;
+  width: 50%;
   height: 100%;
   padding: 50px;
   overflow-y: scroll;
@@ -56,7 +56,7 @@
 .quizPanel-right .question h2 {
     margin-bottom: 10px;
     color: #eddfdf;
-    font-size: 40px;
+    font-size: 24px;
 }
 
 .options {
@@ -107,3 +107,12 @@ button {
     font-size: 24px;
 }
 
+@media (max-width : 768px) {
+  .quizPanel-left {
+    display: none;
+  }
+
+  .quizPanel-right {
+    width: 100%;
+  }
+}

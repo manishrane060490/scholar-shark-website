@@ -4,7 +4,7 @@ import Lighthouse from "../Components/Lighthouse/Lighthouse";
 function PlansPage() {
     return (
         <>
-            <Lighthouse/>
+            <Lighthouse light={false}/>
             <div className='panel plan-page'>
                 <div className='panel-left'>
                     <h2>Welcome Shark &#128075;</h2>

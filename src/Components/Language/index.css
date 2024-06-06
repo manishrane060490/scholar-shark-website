@@ -8,6 +8,7 @@
 }
 
 .lang-selector {
+  position: absolute;
   top: 20%;
   left: 70%;
   border-radius: 15px;
@@ -51,7 +52,7 @@
     width: 70%;
     transform: translate(-50%, -50%);
     display: block;
-    position: relative;
+    position: absolute;
   }
 }
 

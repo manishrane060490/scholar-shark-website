@@ -186,6 +186,22 @@ body {
     text-decoration: none;
 }
 
+.button {
+    background: #0d99ff;
+    width: auto;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
 /* Register Page */
 .selected-plan {
     font-size: 24px;
@@ -222,4 +238,14 @@ input {
 
 .register-form p {
     margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .panel-right {
+        display: none;
+    }
+
+    .panel-left {
+        width:100%
+    }
 }

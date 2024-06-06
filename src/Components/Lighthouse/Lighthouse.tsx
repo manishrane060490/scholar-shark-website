@@ -14,9 +14,9 @@ function useWindowSize() {
   return size;
 }
 
-function Lighthouse() {
+function Lighthouse({light}: {light: boolean}) {
 
-  let light = false
+  let lightShow = light
 
   const [width, height] = useWindowSize();
 
@@ -144,7 +144,7 @@ function Lighthouse() {
           </div>
         </div>
         { 
-          light && 
+          lightShow && 
           
           <div className="lighthouse-group">
             <div className="land"></div>
