@@ -62,9 +62,9 @@
 .options {
     list-style: none;
     padding: 0;
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto auto;
-    gap: 10px;
+    gap: 10px; */
 }
 
 .options > li > button {
@@ -115,4 +115,16 @@ button {
   .quizPanel-right {
     width: 100%;
   }
+}
+
+.correct {
+  background-color: #2fb12f;
+  color: #fff;
+  transition: all 1s ease-in;
+}
+
+.wrong {
+  background-color: #df4e4e;
+  color: #fff;
+  transition: all 1s ease-in;
 }
