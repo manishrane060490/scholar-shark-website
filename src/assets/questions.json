@@ -5,7 +5,7 @@
         "question": "What is the maximum limit for claiming deductions under Section 80C of the Income Tax Act?",
         "answerOptions": [
             {"text": "₹50,000", "isCorrect": false},
-            {"text": "₹1,00,00", "isCorrect": false},
+            {"text": "₹1,00,000", "isCorrect": false},
             {"text": "₹1,50,000", "isCorrect": true},
             {"text": "₹2,00,000", "isCorrect": false}
         ],

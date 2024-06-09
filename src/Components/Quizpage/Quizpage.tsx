@@ -23,13 +23,29 @@ function Quizpage() {
     const [width, height] = useWindowSize();
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [userAnswers, setUserAnswers] = useState<any>([]);
+    const [explanation, setExplanation] = useState(false);
+
+    const onAnswerCheck = (e: any,question: any, text : any) => {
+        // document.getElementById('options')?.classList.add('true')
+        
+        if(text === question.rightAnswer) {
+            console.log(e.target.classList);
+            e.target.classList.add('correct')
+        } else if (text !== question.rightAnswer) {
+            e.target.classList.add('wrong');
+        }
+
+        setExplanation(true);
+        
+    }
 
 
     // Keep all of the logic in App.tsx 
 
     const handleNextQuestion = (isCorrect: boolean) => {
         setCurrentQuestion(currentQuestion + 1);
-        setUserAnswers([...userAnswers, isCorrect])
+        setUserAnswers([...userAnswers, isCorrect]);
+        setExplanation(false);
     }
 
     const resetQuiz = () => {
@@ -60,18 +76,18 @@ function Quizpage() {
                     
                     {
                         currentQuestion < questions.length &&
-                        <Question question={questions[currentQuestion]} onAnswerClick={handleNextQuestion} />
+                        <Question question={questions[currentQuestion]} explanation={explanation} onAnswerCheck={onAnswerCheck} onAnswerClick={handleNextQuestion} />
                     }
 
                     {/* {Result component} */}
-                    {
+                    {/* {
                         currentQuestion === questions.length &&
                         <Result
                             userAnswers={userAnswers}
                             questions={questions}
                             resetQuiz={resetQuiz}
                         />
-                    }
+                    } */}
                 </div>
             </div>
         </>
