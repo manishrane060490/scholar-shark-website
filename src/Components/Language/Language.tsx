@@ -3,7 +3,8 @@ import './index.css';
 import { Link } from "react-router-dom";
 import Lighthouse from '../Lighthouse/Lighthouse';
 import logo from '../../assets/logo.png';
-import shark from '../../assets/shark.png'
+import shark from '../../assets/shark.png';
+import { ReactTyped } from "react-typed";
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
@@ -31,41 +32,37 @@ function Language() {
   // Then we set the value in the --vh custom property to the root of the document
   document.documentElement.style.setProperty('--vhwidth', `${vhWidth}px`);
 
-  // Animate function
-// function stepAnimateText(element, animation, delay){
+  const showLang = () => {
+    let shark = document.getElementById('shark-talk');
+    let lang = document.getElementById('lang-selector');
 
-//   var text = document.getElementsByClassName(element)?.text();
-//   var curr = '';
-
-//   for (var i=0; i < text.length; i++){
-//     var character = text.charAt(i);
-//     $(element).html(curr+'<span class="'+animation+'" style="-webkit-animation-delay: '+i*delay+'s; animation-delay: '+i*delay+'s">'+character +"</span>");
-//     curr = $(element).html();
-//   }
-// }
-
-// // Init on load
-// stepAnimateText('.fade','bounceInDown', 0.1);
-// $('.fade-container').click(function(){
-//   var delay = $('select').val();
-//   stepAnimateText('.fade','bounceInDown',delay);
-//   return false;
-// });
-
+    shark?.classList.add("shark-animation");
+    lang?.classList.add("lang-animation");
+  }
 
   return (
     <>
       <img className='logo' src={logo}/>
-      <div className='shark-talk'>
+      <div className='shark-talk' id='shark-talk'>
         <section className='fade-container'>
-          <blockquote className="speech bubble fade">Hello Friends, I am Mr. Fin <br/> Welcome to Scholar shark</blockquote>
+          <blockquote className="speech bubble fade">
+            <ReactTyped
+              strings={[
+                "Hello friends!",
+                "It's time to unleash your knowledge to conquer the seas of wisdom with scholar sharks.",
+                "Use your skills and knowledge to bag outstanding prizes and make a difference with our outstanding quizzes."
+              ]} 
+              typeSpeed={100} 
+              onComplete={() => showLang()}
+            />
+          </blockquote>
           {/* <blockquote className="speech bubble"></blockquote> */}
         </section>
         <img src={shark} className='shark' />
       </div>
       
       <Lighthouse light/>
-      <div className='lang-selector'>
+      <div className='lang-selector' id="lang-selector">
         <div>
           <h1>
             Welcome to Scholarsharks
