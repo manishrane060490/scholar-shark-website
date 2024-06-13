@@ -4,6 +4,7 @@ import questions from '../../assets/questions.json';
 import Question from '../Question/Question';
 import Result from '../Result/Result';
 import Lighthouse from '../Lighthouse/Lighthouse';
+import { useNavigate } from 'react-router-dom';
 
 function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -24,6 +25,9 @@ function Quizpage() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [userAnswers, setUserAnswers] = useState<any>([]);
     const [explanation, setExplanation] = useState(false);
+    const [nextDisabled, setNextDisabled] = useState(true);
+
+    const navigate = useNavigate();
 
     const onAnswerCheck = (e: any,question: any, text : any) => {
         // document.getElementById('options')?.classList.add('true')
@@ -36,7 +40,7 @@ function Quizpage() {
         }
 
         setExplanation(true);
-        
+        setNextDisabled(false);
     }
 
 
@@ -46,6 +50,16 @@ function Quizpage() {
         setCurrentQuestion(currentQuestion + 1);
         setUserAnswers([...userAnswers, isCorrect]);
         setExplanation(false);
+        setNextDisabled(true);
+
+        console.log(questions.length);
+        console.log(currentQuestion);
+
+        if((questions.length - 1) === currentQuestion) {
+            navigate('/leaderboard');
+
+
+        }
     }
 
     const resetQuiz = () => {
@@ -76,7 +90,10 @@ function Quizpage() {
                     
                     {
                         currentQuestion < questions.length &&
-                        <Question question={questions[currentQuestion]} explanation={explanation} onAnswerCheck={onAnswerCheck} onAnswerClick={handleNextQuestion} />
+                        <Question nextDisabled={nextDisabled} question={questions[currentQuestion]} explanation={explanation} onAnswerCheck={onAnswerCheck} onAnswerClick={handleNextQuestion} />
+                    }
+                    {
+                        currentQuestion === questions.length &&  <h1>Welcome</h1>
                     }
 
                     {/* {Result component} */}
@@ -88,6 +105,8 @@ function Quizpage() {
                             resetQuiz={resetQuiz}
                         />
                     } */}
+
+                    {/* <button onClick={() => navigate('/plans')}>Manish</button> */}
                 </div>
             </div>
         </>

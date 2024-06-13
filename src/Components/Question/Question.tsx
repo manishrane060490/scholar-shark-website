@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function Question({question, onAnswerClick, onAnswerCheck, explanation} : any) {
+export default function Question({question, onAnswerClick, onAnswerCheck, explanation, nextDisabled} : any) {
     let answer; 
     console.log(question);
     
@@ -17,7 +17,7 @@ export default function Question({question, onAnswerClick, onAnswerCheck, explan
                 )
             })}
         </ul>
-        <button onClick={() => onAnswerClick()}>Next</button>
+        <button disabled={nextDisabled} onClick={() => onAnswerClick()}>Next</button>
         {
             explanation && 
             <p>{question.explanation}</p>

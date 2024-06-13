@@ -52,7 +52,7 @@ function Language() {
                 "It's time to unleash your knowledge to conquer the seas of wisdom with scholar sharks.",
                 "Use your skills and knowledge to bag outstanding prizes and make a difference with our outstanding quizzes."
               ]} 
-              typeSpeed={100} 
+              typeSpeed={50} 
               onComplete={() => showLang()}
             />
           </blockquote>
