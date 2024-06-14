@@ -5,7 +5,7 @@ import PlansPage from './Pages/PlansPage';
 import RegisterPage from './Pages/RegisterPage';
 import LoginPage from './Pages/LoginPage';
 import LanguagePage from './Pages/LanguagePage';
-import LeaderboardPage from './Pages/LeaderboardPage'
+import LeaderboardPage from './Pages/LeaderboardPage';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Language />}> */}
-          <Route index element={<LeaderboardPage />} />
+          <Route index element={<LanguagePage />} />
           <Route path="plans" element={<PlansPage />} />
           <Route path="quiz" element={<Quizpage />} />
           <Route path="register" element={<RegisterPage />} />
