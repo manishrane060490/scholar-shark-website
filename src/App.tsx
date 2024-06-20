@@ -18,7 +18,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             {/* <Route path="/" element={<Language />}> */}
-              <Route index element={<LanguagePage />} />
+              <Route index element={<Quizpage />} />
               <Route path="plans" element={<PlansPage />} />
               <Route path="quiz" element={<Quizpage />} />
               <Route path="register" element={<RegisterPage />} />

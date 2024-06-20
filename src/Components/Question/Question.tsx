@@ -12,7 +12,7 @@ export default function Question({question, onAnswerClick, onAnswerCheck, explan
             {question.answerOptions.map((option: { text: string; isCorrect: boolean }) => {
                 return (
                     <li key={option.text}>
-                        <button onClick={(e) => onAnswerCheck(e, question, option.text)}>{option.text}</button>
+                        <button className='answers' data-answer={question.rightAnswer} onClick={(e) => onAnswerCheck(e, question, option.text)}>{option.text}</button>
                     </li>
                 )
             })}
