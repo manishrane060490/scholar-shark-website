@@ -36,7 +36,7 @@ function LeaderboardPage() {
 
                     <div className="row">
                             <div className="rank">#</div>
-                            <div className="name">Anonymous</div>
+                            <div className="name">Shark (You)</div>
                             <div className="score">
                                 {
                                     answer.map((ans:boolean) => <span className={ans ? 'right' : 'wrong'}></span>)
