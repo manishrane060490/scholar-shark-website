@@ -6,15 +6,7 @@ import { Link } from "react-router-dom";
 import { PlansContext } from "../Context";
 
 function LeaderboardPage() {
-    const { answer } = useContext(PlansContext);
-    var trueCount = 0;
-    console.log(typeof answer[0]);
-
-    // useEffect(() => {
-    //     trueCount = 
-    // })
-
-    console.log(answer)
+    const { answer, ansCount } = useContext(PlansContext);
 
     return (
         <>
@@ -26,7 +18,7 @@ function LeaderboardPage() {
                     </div>
                     <div className="leader-text">
                         <h1>Welcome to LeaderBoard</h1>
-                        <p>You answered {answer} out of 10 question. now select a Plan</p>
+                        <p>You answered {ansCount} out of 10 question. now select a Plan</p>
                         
                     </div>
                     <div>
@@ -41,6 +33,17 @@ function LeaderboardPage() {
                         <div className="score">Score</div>
                         <div className="result">Result</div>
                     </div>
+
+                    <div className="row">
+                            <div className="rank">#</div>
+                            <div className="name">Anonymous</div>
+                            <div className="score">
+                                {
+                                    answer.map((ans:boolean) => <span className={ans ? 'right' : 'wrong'}></span>)
+                                }
+                            </div>
+                            <div className="result">{ansCount * 10}%</div>
+                        </div>
 
                     <div className="leader-result">
                         <div className="row">
@@ -197,7 +200,7 @@ function LeaderboardPage() {
                             <div className="result">76%</div>
                         </div>
                         <div className="row">
-                            <div className="rank">9</div>
+                            <div className="rank">10</div>
                             <div className="name">Manish Rane</div>
                             <div className="score">
                             <span className="wrong"></span>
