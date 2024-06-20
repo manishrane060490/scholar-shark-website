@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import Lighthouse from "../Components/Lighthouse/Lighthouse";
 import shark from '../assets/shark.png';
 import logo from '../assets/logo.png';
 import { Link } from "react-router-dom";
+import { PlansContext } from "../Context";
 
 function LeaderboardPage() {
+    const { answer } = useContext(PlansContext);
+    var trueCount = 0;
+    console.log(typeof answer[0]);
+
+    // useEffect(() => {
+    //     trueCount = 
+    // })
+
+    console.log(answer)
+
     return (
         <>
             <Lighthouse light={false}/>
@@ -15,7 +26,7 @@ function LeaderboardPage() {
                     </div>
                     <div className="leader-text">
                         <h1>Welcome to LeaderBoard</h1>
-                        <p>You scored 80% now select a Plan</p>
+                        <p>You answered {answer} out of 10 question. now select a Plan</p>
                         
                     </div>
                     <div>
