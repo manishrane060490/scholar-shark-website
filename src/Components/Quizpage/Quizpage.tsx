@@ -22,7 +22,7 @@ function useWindowSize() {
 
 
 function Quizpage() {
-    const { setAnswer } = useContext(PlansContext);
+    const { setAnsCount, setAnswer } = useContext(PlansContext);
     const [width, height] = useWindowSize();
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [userAnswers, setUserAnswers] = useState<any>([]);
@@ -73,7 +73,8 @@ function Quizpage() {
                 return currentValue === true ? count + 1 : count;
               }, 0);
 
-              setAnswer(count);
+              setAnswer(userAnswers);
+              setAnsCount(count);
         }
     }
 
