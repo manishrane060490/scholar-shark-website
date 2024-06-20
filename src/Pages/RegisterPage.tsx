@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import Lighthouse from "../Components/Lighthouse/Lighthouse";
 import { Link } from "react-router-dom";
+import { PlansContext } from "../Context";
 
 function RegisterPage() {
+    const { plans, setPlans } = useContext(PlansContext);
     return (
         <>
             <Lighthouse light={false}/>
@@ -12,7 +14,7 @@ function RegisterPage() {
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
                     <div className="selected-plan">
-                        You have selected Gold Plan (₹799.00)
+                        You have selected {plans.plan} Plan ({plans.amt})
                     </div>
 
                     <div className="register-form">

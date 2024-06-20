@@ -1,7 +1,15 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import Lighthouse from "../Components/Lighthouse/Lighthouse";
+import { PlansContext } from "../Context";
 
 function PlansPage() {
+    const { plans, setPlans } = useContext(PlansContext);
+
+    const planSelected = (plan: string, amt: string) => {
+        setPlans({plan, amt});
+    }
+
     return (
         <>
             <Lighthouse light={false}/>
@@ -19,7 +27,7 @@ function PlansPage() {
                                 </div>
                                 <div className="plan-amt">
                                     <h5>1 Quiz to play</h5>
-                                    <button>₹499.00</button>
+                                    <button onClick={() => planSelected('silver', '₹499.00')}>₹499.00</button>
                                 </div>
                             </div>
                             <div className="plan-footer">
@@ -46,7 +54,7 @@ function PlansPage() {
                                 </div>
                                 <div className="plan-amt">
                                     <h5>2 Quiz to play</h5>
-                                    <button>₹799.00</button>
+                                    <button onClick={() => planSelected('gold', '₹799.00')}>₹799.00</button>
                                 </div>
                             </div>
                             <div className="plan-footer">
@@ -67,7 +75,7 @@ function PlansPage() {
                                 </div>
                                 <div className="plan-amt">
                                     <h5>3 Quiz to play</h5>
-                                    <button>₹1499.00</button>
+                                    <button onClick={() => planSelected('platinum', '₹1499.00')}>₹1499.00</button>
                                 </div>
                             </div>
                             <div className="plan-footer">
