@@ -31,12 +31,18 @@ function Quizpage() {
 
     const onAnswerCheck = (e: any,question: any, text : any) => {
         // document.getElementById('options')?.classList.add('true')
-        
+        console.log(question.rightAnswer);
         if(text === question.rightAnswer) {
-            console.log(e.target.classList);
             e.target.classList.add('correct')
         } else if (text !== question.rightAnswer) {
             e.target.classList.add('wrong');
+            var elements = document.getElementsByClassName('answers');
+
+            for (var i = 0; i < elements.length; i++) {
+                if(elements[i].innerHTML === question.rightAnswer) {
+                    elements[i].classList.add('correct')
+                }
+            }
         }
 
         setExplanation(true);
@@ -52,13 +58,10 @@ function Quizpage() {
         setExplanation(false);
         setNextDisabled(true);
 
-        console.log(questions.length);
-        console.log(currentQuestion);
+
 
         if((questions.length - 1) === currentQuestion) {
             navigate('/leaderboard');
-
-
         }
     }
 
