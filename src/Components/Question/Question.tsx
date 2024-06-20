@@ -8,11 +8,11 @@ export default function Question({question, onAnswerClick, onAnswerCheck, explan
   return (
     <div className='question'>
         <h2>{question.question}</h2>
-        <ul className='options' id='options' data-correct={answer}>
+        <ul className='options' id='options'>
             {question.answerOptions.map((option: { text: string; isCorrect: boolean }) => {
                 return (
                     <li key={option.text}>
-                        <button className='answers' data-answer={question.rightAnswer} onClick={(e) => onAnswerCheck(e, question, option.text)}>{option.text}</button>
+                        <button className='answers' onClick={(e) => onAnswerCheck(e, question, option.text)}>{option.text}</button>
                     </li>
                 )
             })}

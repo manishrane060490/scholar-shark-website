@@ -1,10 +1,11 @@
-import { useState, useLayoutEffect } from 'react';
+import { useState, useLayoutEffect, useContext } from 'react';
 import './index.css';
 import questions from '../../assets/questions.json';
 import Question from '../Question/Question';
 import Result from '../Result/Result';
 import Lighthouse from '../Lighthouse/Lighthouse';
 import { useNavigate } from 'react-router-dom';
+import { PlansContext } from '../../Context';
 
 function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -21,6 +22,7 @@ function useWindowSize() {
 
 
 function Quizpage() {
+    const { setAnswer } = useContext(PlansContext);
     const [width, height] = useWindowSize();
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [userAnswers, setUserAnswers] = useState<any>([]);
@@ -30,12 +32,14 @@ function Quizpage() {
     const navigate = useNavigate();
 
     const onAnswerCheck = (e: any,question: any, text : any) => {
-        // document.getElementById('options')?.classList.add('true')
-        console.log(question.rightAnswer);
+        // console.log(question.rightAnswer);
         if(text === question.rightAnswer) {
-            e.target.classList.add('correct')
+            e.target.classList.add('correct');
+            // const newAnswer = { isCorrect: true };
+            setUserAnswers([...userAnswers, true]);
         } else if (text !== question.rightAnswer) {
             e.target.classList.add('wrong');
+            setUserAnswers([...userAnswers, false]);
             var elements = document.getElementsByClassName('answers');
 
             for (var i = 0; i < elements.length; i++) {
@@ -47,21 +51,29 @@ function Quizpage() {
 
         setExplanation(true);
         setNextDisabled(false);
+        
     }
 
 
     // Keep all of the logic in App.tsx 
 
-    const handleNextQuestion = (isCorrect: boolean) => {
+    const handleNextQuestion = () => {
         setCurrentQuestion(currentQuestion + 1);
-        setUserAnswers([...userAnswers, isCorrect]);
+        
         setExplanation(false);
         setNextDisabled(true);
 
 
 
+        
         if((questions.length - 1) === currentQuestion) {
             navigate('/leaderboard');
+            
+            const count = userAnswers.reduce((count: number, currentValue: boolean) => {
+                return currentValue === true ? count + 1 : count;
+              }, 0);
+
+              setAnswer(count);
         }
     }
 
