@@ -3,8 +3,8 @@ import './index.css';
 import { Link } from "react-router-dom";
 import Lighthouse from '../Lighthouse/Lighthouse';
 import logo from '../../assets/logo.png';
-import shark from '../../assets/shark.png';
-import { ReactTyped } from "react-typed";
+import shark from '../../assets/IdleShark.gif';
+import { ReactTyped, Typed } from "react-typed";
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
@@ -22,6 +22,7 @@ function useWindowSize() {
 function Language() {
 
   const [width, height] = useWindowSize();
+  const [typed, setTyped] = useState<Typed| undefined>()
 
   // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
   let vh = height * 0.01;
@@ -40,6 +41,11 @@ function Language() {
     lang?.classList.add("lang-animation");
   }
 
+  const skipLang = () => {
+    typed?.destroy();
+    showLang();
+  }
+
   return (
     <>
       <img className='logo' src={logo}/>
@@ -52,13 +58,20 @@ function Language() {
                 "It's time to unleash your knowledge to conquer the seas of wisdom with scholar sharks.",
                 "Use your skills and knowledge to bag outstanding prizes and make a difference with our outstanding quizzes."
               ]} 
-              typeSpeed={50} 
-              onComplete={() => showLang()}
+              typeSpeed={100} 
+              // onComplete={() => showLang()}
+              // onDestroy={() => showLang()}
+              typedRef={setTyped}
             />
           </blockquote>
           {/* <blockquote className="speech bubble"></blockquote> */}
         </section>
         <img src={shark} className='shark' />
+        <button className='btn skip-btn' onClick={() => skipLang()}>Skip Intro</button>
+        {/* <video width="100%" height="100%" controls autoPlay muted>
+          <source src='../../assets/IdleAlphaWEBM.webm' type="video/xwebm" />
+          Your browser does not support the video tag.
+        </video> */}
       </div>
       
       <Lighthouse light/>
