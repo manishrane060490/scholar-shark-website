@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 
-export default function Question({number, question, onAnswerClick, onAnswerCheck, explanation, nextDisabled} : any) {
+export default function Question({disabled, number, question, onAnswerClick, onAnswerCheck, explanation, nextDisabled} : any) {
     let answer; 
     console.log(question);
-    
 
   return (
     <div className='question'>
@@ -12,7 +11,7 @@ export default function Question({number, question, onAnswerClick, onAnswerCheck
             {question.answerOptions.map((option: { text: string; isCorrect: boolean }) => {
                 return (
                     <li key={option.text}>
-                        <button className='answers' onClick={(e) => onAnswerCheck(e, question, option.text)}>{option.text}</button>
+                        <button disabled={disabled} className='answers' onClick={(e) => onAnswerCheck(e, question, option.text)}>{option.text}</button>
                     </li>
                 )
             })}
