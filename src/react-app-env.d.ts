@@ -3,4 +3,4 @@
 declare module "*.mp4";
 declare module "*.webm";
 declare module "*.mov";
-declare module "*.jpg";
+declare module "*.ogg";

@@ -32,12 +32,13 @@ function Quizpage() {
     const [explanation, setExplanation] = useState(false);
     const [nextDisabled, setNextDisabled] = useState(true);
     const [showShark, setShowShark] = useState('static');
+    const [disabled, setDisabled] = useState(false);
 
     const navigate = useNavigate();
 
-    const onAnswerCheck = (e: any,question: any, text : any) => {
+    const onAnswerCheck = (e: any, question: any, text: any) => {
         // console.log(question.rightAnswer);
-        if(text === question.rightAnswer) {
+        if (text === question.rightAnswer) {
             e.target.classList.add('correct');
             // const newAnswer = { isCorrect: true };
             setUserAnswers([...userAnswers, true]);
@@ -49,7 +50,7 @@ function Quizpage() {
             var elements = document.getElementsByClassName('answers');
 
             for (var i = 0; i < elements.length; i++) {
-                if(elements[i].innerHTML === question.rightAnswer) {
+                if (elements[i].innerHTML === question.rightAnswer) {
                     elements[i].classList.add('correct')
                 }
             }
@@ -57,7 +58,7 @@ function Quizpage() {
 
         setExplanation(true);
         setNextDisabled(false);
-        
+        setDisabled(true);
     }
 
 
@@ -65,22 +66,25 @@ function Quizpage() {
 
     const handleNextQuestion = () => {
         setCurrentQuestion(currentQuestion + 1);
-        
+
         setExplanation(false);
         setNextDisabled(true);
         setShowShark('static');
+        setDisabled(false);
 
+        // if((questions.length - 2) === currentQuestion) {
+        //     alert('demo'); 
+        // }
 
-        
-        if((questions.length - 1) === currentQuestion) {
+        if ((questions.length - 1) === currentQuestion) {
             navigate('/leaderboard');
-            
+
             const count = userAnswers.reduce((count: number, currentValue: boolean) => {
                 return currentValue === true ? count + 1 : count;
-              }, 0);
+            }, 0);
 
-              setAnswer(userAnswers);
-              setAnsCount(count);
+            setAnswer(userAnswers);
+            setAnsCount(count);
         }
     }
 
@@ -102,51 +106,57 @@ function Quizpage() {
 
     return (
         <>
-            <Lighthouse light/>
+            <Lighthouse light />
             <div className='quizPanel'>
                 <div className='quizPanel-left'>
                     {/* <img src={quizImg} alt='quizImg' /> */}
-                    
-                        {/* <source src={sharkVideo} type="video/mp4" /> */}
-                        {/* <source src="/video/video.ogv" type="video/ogg" /> */}
-                        { showShark === 'static' &&
+
+                    {/* <source src={sharkVideo} type="video/mp4" /> */}
+                    {/* <source src="/video/video.ogv" type="video/ogg" /> */}
+                    {showShark === 'static' &&
+                        <video className='video' width="100%" height="100%" loop autoPlay muted>
+                            <source src={sharkVideo} type="video/webm" />
+                        </video>
+                    }
+                    {showShark === 'thumpsup' &&
+                        <video className='video' width="100%" height="100%" loop autoPlay muted>
+                            <source src={sharkThumpsUpVideo} type="video/webm" />
+                        </video>
+                    }
+                    {showShark === 'thumpsdown' &&
+                        <video className='video' width="100%" height="100%" loop autoPlay muted>
+                            <source src={sharkThumpsDownVideo} type="video/webm" />
+                        </video>
+                    }
+                </div>
+                <div className='quizPanel-right'>
+
+
+                    {
+                        currentQuestion < questions.length &&
+                        <Question disabled={disabled} number={currentQuestion} nextDisabled={nextDisabled} question={questions[currentQuestion]} explanation={explanation} onAnswerCheck={onAnswerCheck} onAnswerClick={handleNextQuestion} />
+                    }
+                    {
+                        currentQuestion === questions.length && <h1>Welcome</h1>
+                    }
+
+                    {/* <div className='mobile-display'>
+                        {showShark === 'static' &&
                             <video className='video' width="100%" height="100%" loop autoPlay muted>
                                 <source src={sharkVideo} type="video/webm" />
                             </video>
                         }
-                        { showShark === 'thumpsup' &&
+                        {showShark === 'thumpsup' &&
                             <video className='video' width="100%" height="100%" loop autoPlay muted>
                                 <source src={sharkThumpsUpVideo} type="video/webm" />
                             </video>
                         }
-                        { showShark === 'thumpsdown' &&
+                        {showShark === 'thumpsdown' &&
                             <video className='video' width="100%" height="100%" loop autoPlay muted>
                                 <source src={sharkThumpsDownVideo} type="video/webm" />
                             </video>
                         }
-                </div>
-                <div className='quizPanel-right'>
-                  
-                    
-                    {
-                        currentQuestion < questions.length &&
-                        <Question number={currentQuestion} nextDisabled={nextDisabled} question={questions[currentQuestion]} explanation={explanation} onAnswerCheck={onAnswerCheck} onAnswerClick={handleNextQuestion} />
-                    }
-                    {
-                        currentQuestion === questions.length &&  <h1>Welcome</h1>
-                    }
-
-                    {/* {Result component} */}
-                    {/* {
-                        currentQuestion === questions.length &&
-                        <Result
-                            userAnswers={userAnswers}
-                            questions={questions}
-                            resetQuiz={resetQuiz}
-                        />
-                    } */}
-
-                    {/* <button onClick={() => navigate('/plans')}>Manish</button> */}
+                    </div> */}
                 </div>
             </div>
         </>

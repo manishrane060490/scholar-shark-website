@@ -3,9 +3,9 @@ import './index.css';
 import { Link } from "react-router-dom";
 import Lighthouse from '../Lighthouse/Lighthouse';
 import logo from '../../assets/logo.png';
-import shark from '../../assets/IdleShark.gif';
+import shark from '../../assets/shark.gif';
 import sharkVideo from '../../assets/IdleAlphaWEBM1.webm';
-import sharkVideoMov from '../../assets/IdleAlphaWEBM.mov';
+import sharkVideoMov from '../../assets/IdleAlphaWEBM.ogg';
 import { ReactTyped, Typed } from "react-typed";
 
 function useWindowSize() {
@@ -108,7 +108,7 @@ function Language() {
           </blockquote>
           {/* <blockquote className="speech bubble"></blockquote> */}
         </section>
-        {/* <img src={shark} className='shark' /> */}
+        <img src={shark} className='shark' />
         {/* <button className='btn skip-btn' onClick={() => skipLang()}>Skip Intro</button>
         <button className='btn start-btn' onClick={() => skipLang()}>Start Test</button> */}
         {/* <video width="100%" height="100%" controls autoPlay muted>
@@ -117,11 +117,10 @@ function Language() {
         </video> */}
         {/* <div id="video-container">
         </div> */}
-        <video id="video" className='video' width="100%" height="100%" loop autoPlay muted>
-          {/* <source src={sharkVideo} type="video/mp4" /> */}
-          {/* <source src={sharkVideoMov} type="video/mov" /> */}
+        {/* <video id="video" playsInline className='video' width="100%" height="100%" loop autoPlay muted>
+          <source src={sharkVideoMov} type="video/mov" />
           <source src={sharkVideo} type="video/webm" />
-        </video>
+        </video> */}
       </div>
 
       <Lighthouse light />
