@@ -6,6 +6,9 @@ import Result from '../Result/Result';
 import Lighthouse from '../Lighthouse/Lighthouse';
 import { useNavigate } from 'react-router-dom';
 import { PlansContext } from '../../Context';
+import sharkVideo from '../../assets/IdleAlphaWEBM.webm';
+import sharkThumpsUpVideo from '../../assets/ThumbsUpAlphaWEBM.webm';
+import sharkThumpsDownVideo from '../../assets/ThumbsDownAlphaWEBM.webm';
 
 function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -28,6 +31,7 @@ function Quizpage() {
     const [userAnswers, setUserAnswers] = useState<any>([]);
     const [explanation, setExplanation] = useState(false);
     const [nextDisabled, setNextDisabled] = useState(true);
+    const [showShark, setShowShark] = useState('static');
 
     const navigate = useNavigate();
 
@@ -37,8 +41,10 @@ function Quizpage() {
             e.target.classList.add('correct');
             // const newAnswer = { isCorrect: true };
             setUserAnswers([...userAnswers, true]);
+            setShowShark('thumpsup');
         } else if (text !== question.rightAnswer) {
             e.target.classList.add('wrong');
+            setShowShark('thumpsdown');
             setUserAnswers([...userAnswers, false]);
             var elements = document.getElementsByClassName('answers');
 
@@ -62,7 +68,7 @@ function Quizpage() {
         
         setExplanation(false);
         setNextDisabled(true);
-
+        setShowShark('static');
 
 
         
@@ -100,6 +106,24 @@ function Quizpage() {
             <div className='quizPanel'>
                 <div className='quizPanel-left'>
                     {/* <img src={quizImg} alt='quizImg' /> */}
+                    
+                        {/* <source src={sharkVideo} type="video/mp4" /> */}
+                        {/* <source src="/video/video.ogv" type="video/ogg" /> */}
+                        { showShark === 'static' &&
+                            <video className='video' width="100%" height="100%" loop autoPlay muted>
+                                <source src={sharkVideo} type="video/webm" />
+                            </video>
+                        }
+                        { showShark === 'thumpsup' &&
+                            <video className='video' width="100%" height="100%" loop autoPlay muted>
+                                <source src={sharkThumpsUpVideo} type="video/webm" />
+                            </video>
+                        }
+                        { showShark === 'thumpsdown' &&
+                            <video className='video' width="100%" height="100%" loop autoPlay muted>
+                                <source src={sharkThumpsDownVideo} type="video/webm" />
+                            </video>
+                        }
                 </div>
                 <div className='quizPanel-right'>
                   

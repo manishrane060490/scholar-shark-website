@@ -31,6 +31,12 @@
   background-position: center;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+  display: flex;
+  align-items: end;
+}
+
+.quizPanel-left .video {
+  position: static;
 }
 
 .quizPanel-right {
