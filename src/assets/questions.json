@@ -114,7 +114,7 @@
     {
         "srNo": 44,
         "category": "general",
-        "question": "1. Which of the following is NOT a benefit of having a diversified investment portfolio?",
+        "question": "Which of the following is NOT a benefit of having a diversified investment portfolio?",
         "answerOptions": [
             {"text": "Lower risk", "isCorrect": false},
             {"text": "Higher returns", "isCorrect": false},

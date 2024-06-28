@@ -130,7 +130,7 @@ function Quizpage() {
                     
                     {
                         currentQuestion < questions.length &&
-                        <Question nextDisabled={nextDisabled} question={questions[currentQuestion]} explanation={explanation} onAnswerCheck={onAnswerCheck} onAnswerClick={handleNextQuestion} />
+                        <Question number={currentQuestion} nextDisabled={nextDisabled} question={questions[currentQuestion]} explanation={explanation} onAnswerCheck={onAnswerCheck} onAnswerClick={handleNextQuestion} />
                     }
                     {
                         currentQuestion === questions.length &&  <h1>Welcome</h1>

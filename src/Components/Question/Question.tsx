@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 
-export default function Question({question, onAnswerClick, onAnswerCheck, explanation, nextDisabled} : any) {
+export default function Question({number, question, onAnswerClick, onAnswerCheck, explanation, nextDisabled} : any) {
     let answer; 
     console.log(question);
     
 
   return (
     <div className='question'>
-        <h2>{question.question}</h2>
+        <h2>{number + 1}. {question.question}</h2>
         <ul className='options' id='options'>
             {question.answerOptions.map((option: { text: string; isCorrect: boolean }) => {
                 return (
