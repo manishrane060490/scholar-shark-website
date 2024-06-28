@@ -1,10 +1,11 @@
-import React, {useState, useLayoutEffect} from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import './index.css';
 import { Link } from "react-router-dom";
 import Lighthouse from '../Lighthouse/Lighthouse';
 import logo from '../../assets/logo.png';
 import shark from '../../assets/IdleShark.gif';
-import sharkVideo from '../../assets/IdleAlphaWEBM.webm';
+import sharkVideo from '../../assets/IdleAlphaWEBM1.webm';
+import sharkVideoMov from '../../assets/IdleAlphaWEBM.mov';
 import { ReactTyped, Typed } from "react-typed";
 
 function useWindowSize() {
@@ -23,7 +24,7 @@ function useWindowSize() {
 function Language() {
 
   const [width, height] = useWindowSize();
-  const [typed, setTyped] = useState<Typed| undefined>()
+  const [typed, setTyped] = useState<Typed | undefined>()
 
   // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
   let vh = height * 0.01;
@@ -42,6 +43,42 @@ function Language() {
     lang?.classList.add("lang-animation");
   }
 
+  function isColorInRange(expectedColor: any, givenColor: any) {
+    const THRESHOLD = 40;
+    for (var i = 0; i < 3; i++) {
+      if (((expectedColor[i] - THRESHOLD) > givenColor[i])
+        || ((expectedColor[i] + THRESHOLD) < givenColor[i])) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function setVideoBgColor(vid: any, nativeColor:any) {
+    if (vid) {
+      var vidBg = vid.parentElement;
+      if (vidBg) {
+        // draw first pixel of video to a canvas
+        // then get pixel color from that canvas
+        var canvas = document.createElement("canvas");
+        canvas.width = 1;
+        canvas.height = 1;
+        var ctx = canvas.getContext("2d");
+        ctx?.drawImage(vid, 0, 0, 1, 1);
+
+        var p = ctx?.getImageData(0, 0, 1, 1).data;
+        //console.log("rgb(" + p[0] + "," + p[1] + "," + p[2] + ")");
+        // if (isColorInRange(nativeColor, p)) {
+        //   vidBg.style.backgroundColor = ("rgb(" + p?[0] + "," + p?[1] + "," + p?[2] + ")");
+        // }
+      }
+    }
+  }
+
+  function setVideoBgColorDelayed(vid:any, nativeColor:any) {
+    setTimeout(setVideoBgColor, 100, vid, nativeColor);
+  }
+
   const skipLang = () => {
     typed?.destroy();
     showLang();
@@ -49,7 +86,7 @@ function Language() {
 
   return (
     <>
-      <img className='logo' src={logo}/>
+      <img className='logo' src={logo} />
       <div className='shark-talk' id='shark-talk'>
         <section className='fade-container'>
           <blockquote className="speech bubble fade">
@@ -58,29 +95,36 @@ function Language() {
                 "Hello friends!",
                 "It's time to unleash your knowledge to conquer the seas of wisdom with scholar sharks.",
                 "Use your skills and knowledge to bag outstanding prizes and make a difference with our outstanding quizzes."
-              ]} 
-              typeSpeed={100} 
+              ]}
+              typeSpeed={100}
               // onComplete={() => showLang()}
               // onDestroy={() => showLang()}
               typedRef={setTyped}
             />
+            <div className='bubble-buttons'>
+              <button className='btn skip-btn' onClick={() => skipLang()}>Skip Intro</button>
+              <Link className='btn start-btn' to="/quiz">Start Test</Link>
+            </div>
           </blockquote>
           {/* <blockquote className="speech bubble"></blockquote> */}
         </section>
         {/* <img src={shark} className='shark' /> */}
-        <button className='btn skip-btn' onClick={() => skipLang()}>Skip Intro</button>
+        {/* <button className='btn skip-btn' onClick={() => skipLang()}>Skip Intro</button>
+        <button className='btn start-btn' onClick={() => skipLang()}>Start Test</button> */}
         {/* <video width="100%" height="100%" controls autoPlay muted>
           <source src='../../assets/IdleAlphaWEBM.webm' type="video/xwebm" />
           Your browser does not support the video tag.
         </video> */}
-        <video className='video' width="100%" height="100vh" loop autoPlay muted>
-            {/* <source src={sharkVideo} type="video/mp4" /> */}
-            {/* <source src="/video/video.ogv" type="video/ogg" /> */}
-            <source src={sharkVideo} type="video/webm" />
+        {/* <div id="video-container">
+        </div> */}
+        <video id="video" className='video' width="100%" height="100%" loop autoPlay muted>
+          {/* <source src={sharkVideo} type="video/mp4" /> */}
+          {/* <source src={sharkVideoMov} type="video/mov" /> */}
+          <source src={sharkVideo} type="video/webm" />
         </video>
       </div>
-      
-      <Lighthouse light/>
+
+      <Lighthouse light />
       <div className='lang-selector' id="lang-selector">
         <div>
           <h1>
@@ -88,7 +132,7 @@ function Language() {
           </h1>
           <h4>Please select your Language</h4>
         </div>
-        
+
         <div className='button-container'>
           <Link className='button' to="/quiz">English</Link>
           <Link className='button' to="/quiz">Marathi</Link>
@@ -98,7 +142,7 @@ function Language() {
       <div className='rotate-screen'>
         <h1>Please rotate a screen for best experience</h1>
       </div>
-      
+
     </>
   )
 }
