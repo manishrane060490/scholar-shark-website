@@ -97,7 +97,7 @@ function Language() {
                 "Use your skills and knowledge to bag outstanding prizes and make a difference with our outstanding quizzes."
               ]}
               typeSpeed={100}
-              // onComplete={() => showLang()}
+              onComplete={() => showLang()}
               // onDestroy={() => showLang()}
               typedRef={setTyped}
             />
