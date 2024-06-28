@@ -99,9 +99,9 @@ img.logo {
   height: 100%;
   
   animation-delay: 3s;
-  background: #000;
-  /* background: white;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); */
+  /* background: #000; */
+  background: white;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
   backdrop-filter: blur(1rem);
 }
 
@@ -272,4 +272,15 @@ blockquote.speech {
   background: #0d99ff;
   color: #fff;
   font-size: 20px;
+}
+
+.video {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  /* mix-blend-mode: screen;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  opacity: 0.8; */
+  height: 70%;
+  right: 26%;
 }

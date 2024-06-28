@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Lighthouse from '../Lighthouse/Lighthouse';
 import logo from '../../assets/logo.png';
 import shark from '../../assets/IdleShark.gif';
+import sharkVideo from '../../assets/IdleAlphaWEBM.webm';
 import { ReactTyped, Typed } from "react-typed";
 
 function useWindowSize() {
@@ -66,12 +67,17 @@ function Language() {
           </blockquote>
           {/* <blockquote className="speech bubble"></blockquote> */}
         </section>
-        <img src={shark} className='shark' />
+        {/* <img src={shark} className='shark' /> */}
         <button className='btn skip-btn' onClick={() => skipLang()}>Skip Intro</button>
         {/* <video width="100%" height="100%" controls autoPlay muted>
           <source src='../../assets/IdleAlphaWEBM.webm' type="video/xwebm" />
           Your browser does not support the video tag.
         </video> */}
+        <video className='video' width="100%" height="100vh" loop autoPlay muted>
+            {/* <source src={sharkVideo} type="video/mp4" /> */}
+            {/* <source src="/video/video.ogv" type="video/ogg" /> */}
+            <source src={sharkVideo} type="video/webm" />
+        </video>
       </div>
       
       <Lighthouse light/>
