@@ -4,6 +4,7 @@ import shark from '../assets/shark.png';
 import logo from '../assets/logo.png';
 import { Link } from "react-router-dom";
 import { PlansContext } from "../Context";
+import leaders from '../assets/leader.json';
 
 function LeaderboardPage() {
     const { answer, ansCount } = useContext(PlansContext);
@@ -34,188 +35,111 @@ function LeaderboardPage() {
                         <div className="result">Result</div>
                     </div>
 
-                    <div className="row">
-                            <div className="rank">#</div>
-                            <div className="name">Shark (You)</div>
-                            <div className="score">
-                                {
-                                    answer.map((ans:boolean) => <span className={ans ? 'right' : 'wrong'}></span>)
-                                }
+                    <div className="mobile-view">
+                        <div className="row">
+                            <div>
+                                <div className="rank">#</div>
+                                <div className="name">Shark (You)</div>
+                                <div className="result">{ansCount * 10}%</div>
                             </div>
-                            <div className="result">{ansCount * 10}%</div>
+                            <div className="score">
+                                <h4>Score</h4>
+                                <div>
+                                    {
+                                        answer.map((ans:boolean) => <span className={ans ? 'right' : 'wrong'}></span>)
+                                    }
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    
 
-                    <div className="leader-result">
-                        <div className="row">
-                            <div className="rank">1</div>
-                            <div className="name">Manish Rane</div>
-                            <div className="score">
-                                <span className="right"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                            </div>
-                            <div className="result">90%</div>
+                    <div className="row desktop-view">
+                        <div className="rank">#</div>
+                        <div className="name">Shark (You)</div>
+                        <div className="score">
+                            {
+                                answer.map((ans:boolean) => <span className={ans ? 'right' : 'wrong'}></span>)
+                            }
                         </div>
-                        <div className="row">
-                            <div className="rank">2</div>
-                            <div className="name">Manish Rane</div>
-                            <div className="score">
-                                <span className="right"></span>
-                                <span className="wrong"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                            </div>
-                            <div className="result">80%</div>
-                        </div>
-                        <div className="row">
-                            <div className="rank">3</div>
-                            <div className="name">Manish Rane</div>
-                            <div className="score">
-                                <span className="wrong"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                            </div>
-                            <div className="result">70%</div>
-                        </div>
-                        <div className="row">
-                            <div className="rank">4</div>
-                            <div className="name">Manish Rane</div>
-                            <div className="score">
-                            <span className="wrong"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                            </div>
-                            <div className="result">70%</div>
-                        </div>
-                        <div className="row">
-                            <div className="rank">5</div>
-                            <div className="name">Manish Rane</div>
-                            <div className="score">
-                            <span className="wrong"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                            </div>
-                            <div className="result">70%</div>
-                        </div>
-                        <div className="row">
-                            <div className="rank">6</div>
-                            <div className="name">Manish Rane</div>
-                            <div className="score">
-                            <span className="wrong"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                            </div>
-                            <div className="result">76%</div>
-                        </div>
-                        <div className="row">
-                            <div className="rank">7</div>
-                            <div className="name">Manish Rane</div>
-                            <div className="score">
-                            <span className="wrong"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                            </div>
-                            <div className="result">76%</div>
-                        </div>
-                        <div className="row">
-                            <div className="rank">8</div>
-                            <div className="name">Manish Rane</div>
-                            <div className="score">
-                            <span className="wrong"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                            </div>
-                            <div className="result">76%</div>
-                        </div>
-                        <div className="row">
-                            <div className="rank">9</div>
-                            <div className="name">Manish Rane</div>
-                            <div className="score">
-                            <span className="wrong"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                            </div>
-                            <div className="result">76%</div>
-                        </div>
-                        <div className="row">
-                            <div className="rank">10</div>
-                            <div className="name">Manish Rane</div>
-                            <div className="score">
-                            <span className="wrong"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="wrong"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                                <span className="right"></span>
-                            </div>
-                            <div className="result">76%</div>
-                        </div>
+                        <div className="result">{ansCount * 10}%</div>
+                    </div>
+
+                        
+                        <div className="leader-result mobile-view">
+                        {
+                            leaders.map((lead):any => (
+                                <div className="row">
+                                    <div>
+                                        <div className="rank">{lead.rank}</div>
+                                        <div className="name">{lead.name}</div>
+                                        <div className="result">{lead.result}%</div>
+                                    </div>
+                                    <div className="score">
+                                        <h4>Score</h4>
+                                        <div>
+                                            {
+                                                lead.score.map(s => (
+                                                    <span className={`${s ? 'right' : 'wrong'}`}></span>
+                                                ))
+                                            }
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            ))
+                        }
+                        
+                        
+                    </div>
+
+                    <div className="leader-result desktop-view">
+                        {
+                            leaders.map((lead):any => (
+                                <div className="row">
+                                    <div className="rank">{lead.rank}</div>
+                                    <div className="name">{lead.name}</div>
+                                    
+                                    <div className="score">
+                                        {
+                                            lead.score.map(s => (
+                                                <span className={`${s ? 'right' : 'wrong'}`}></span>
+                                            ))
+                                        }
+                                    </div>
+                                    <div className="result">{lead.result}%</div>
+                                </div>
+                            ))
+                        }
+                        
+                        
+                    </div>
+
+                    <div className="leader-result mobile-view">
+                        {
+                            leaders.map((lead):any => (
+                                <div className="row">
+                                    <div>
+                                        <div className="rank">{lead.rank}</div>
+                                        <div className="name">{lead.name}</div>
+                                        <div className="result">{lead.result}%</div>
+                                    </div>
+                                    <div className="score">
+                                        <h4>Score</h4>
+                                        <div>
+                                            {
+                                                lead.score.map(s => (
+                                                    <span className={`${s ? 'right' : 'wrong'}`}></span>
+                                                ))
+                                            }
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            ))
+                        }
+                        
+                        
                     </div>
                 </div>
                 <div className="panel-footer">

@@ -33,6 +33,14 @@ function Quizpage() {
     const [nextDisabled, setNextDisabled] = useState(true);
     const [showShark, setShowShark] = useState('static');
     const [disabled, setDisabled] = useState(false);
+    const [randomObject, setRandomObject] = useState(null);
+
+    // useEffect(() => {
+    //     if (questions.length > 0) {
+    //         const randomIndex = Math.floor(Math.random() * questions.length);
+    //         setRandomObject(questions[randomIndex]);
+    //     }
+    // }, [questions]);
 
     const navigate = useNavigate();
 
