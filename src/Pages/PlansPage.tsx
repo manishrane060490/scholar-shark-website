@@ -1,14 +1,21 @@
-import { useContext } from "react";
+import { useEffect } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Lighthouse from "../Components/Lighthouse/Lighthouse";
 import { PlansContext } from "../Context";
 
 function PlansPage() {
     const { plans, setPlans } = useContext(PlansContext);
+    const [plan, setPlan] = useState(false)
 
     const planSelected = (plan: string, amt: string) => {
         setPlans({plan, amt});
+        setPlan(true);
     }
+
+    useEffect(() => {
+        setPlan(false);
+    }, [])
 
     return (
         <>
@@ -91,9 +98,12 @@ function PlansPage() {
 
                     </div>
 
-                    <Link to='/register' className="plan-btn">
-                        Proceed to pay
-                    </Link>
+                    {
+                        plan && 
+                        <Link to='/register' className="plan-btn">
+                            Proceed to pay
+                        </Link>
+                    }  
                 </div>
                 <div className='panel-right'>
                 </div>
