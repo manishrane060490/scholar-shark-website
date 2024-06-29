@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect, useContext } from 'react';
+import { useState, useLayoutEffect, useContext,useEffect } from 'react';
 import './index.css';
 import questions from '../../assets/questions.json';
 import Question from '../Question/Question';
@@ -34,13 +34,12 @@ function Quizpage() {
     const [showShark, setShowShark] = useState('static');
     const [disabled, setDisabled] = useState(false);
     const [randomObject, setRandomObject] = useState(null);
+    const [windowWidth, setWindowWidth] = useState<number>(0);
 
-    // useEffect(() => {
-    //     if (questions.length > 0) {
-    //         const randomIndex = Math.floor(Math.random() * questions.length);
-    //         setRandomObject(questions[randomIndex]);
-    //     }
-    // }, [questions]);
+    useEffect(() => {
+        // windowHeight = document.getElementsByTagName('body')[0].clientWidth;
+        setWindowWidth(window.innerWidth)
+    }, []);
 
     const navigate = useNavigate();
 
@@ -108,6 +107,8 @@ function Quizpage() {
     let vhWidth = width * 0.01;
     // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty('--vhwidth', `${vhWidth}px`);
+    // console.log(windowHeight)
+    // console.log(windowHeight < 768)
 
     return (
         <>
@@ -118,21 +119,21 @@ function Quizpage() {
 
                     {/* <source src={sharkVideo} type="video/mp4" /> */}
                     {/* <source src="/video/video.ogv" type="video/ogg" /> */}
-                    {/* {showShark === 'static' &&
+                    {showShark === 'static' && windowWidth > 768 &&
                         <video className='video' width="100%" height="100%" loop autoPlay muted>
                             <source src={sharkVideo} type="video/webm" />
                         </video>
                     }
-                    {showShark === 'thumpsup' &&
+                    {showShark === 'thumpsup' && windowWidth > 768 &&
                         <video className='video' width="100%" height="100%" loop autoPlay muted>
                             <source src={sharkThumpsUpVideo} type="video/webm" />
                         </video>
                     }
-                    {showShark === 'thumpsdown' &&
+                    {showShark === 'thumpsdown' && windowWidth > 768 &&
                         <video className='video' width="100%" height="100%" loop autoPlay muted>
                             <source src={sharkThumpsDownVideo} type="video/webm" />
                         </video>
-                    } */}
+                    }
                 </div>
                 <div className='quizPanel-right'>
 
