@@ -1,6 +1,7 @@
 import logo from '../assets/logo.png';
 import sharkVideo from '../assets/IdleAlphaWEBM.webm';
 import { ReactTyped } from "react-typed";
+import Card from '../Components/Card/Card';
 
 function DashboardPage() {
     return (
@@ -28,7 +29,24 @@ function DashboardPage() {
             <div className="plans">
                 <h3>Your Plans</h3>
             </div>
-            <div className="quizs"></div>
+            <div className="quizs">
+                <h3>Quizes</h3>
+                <h4>Silver Quiz</h4>
+                <div className='card-grp'>
+                    <Card title={'cricket'} count={200}/>
+                    <Card title={'history'} count={200}/>
+                    <Card title={'food'} count={200}/>
+                </div>
+                <h4>Gold Quiz</h4>
+                <div className='card-grp'>
+                    <Card title={'travel'} count={200}/>
+                    <Card title={'indian-mythology'} count={200}/>
+                </div>
+                <h4>Diamon Quiz</h4>
+                <div className='card-grp'>
+                    <Card title={'finance'} count={200}/>
+                </div>
+            </div>
             <div className="leaderboard"></div>
         </div>
     )

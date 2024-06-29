@@ -1,0 +1,62 @@
+.card {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #0C1D5A;
+    border-radius: 10px;
+    background: #111430;
+}
+
+.card-bg {
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.cricket {
+    background-image: url('../../assets/cricket.jpg');
+}
+.history {
+    background-image: url('../../assets/history.jpg');
+}
+
+.food {
+    background-image: url('../../assets/food.jpg');
+}
+
+.travel {
+    background-image: url('../../assets/travel.jpg');
+}
+
+.indian-mythology {
+    background-image: url('../../assets/mythology.jpg');
+}
+
+.finance {
+    background-image: url('../../assets/finance.jpg');
+}
+
+.card h3 {
+    margin-bottom: 0;
+}
+
+.card p {
+    font-size: 12px;
+}
+
+.full-width {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+.card-count {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.card-count h4 {
+    margin: 0 10px;
+}
