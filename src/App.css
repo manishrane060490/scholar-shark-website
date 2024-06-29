@@ -433,6 +433,7 @@ span.wrong {
 .homePage {
     background-image: linear-gradient(#09082E 0%, #05040F 50%, #060613 90%);
     height: 100%;
+    overflow: auto;
 }
 
 .home-logo {
@@ -506,8 +507,16 @@ span.wrong {
     z-index: 1;
 }
 
-.homePage .plans {
+.homePage .plans, .homePage .quizs {
     margin: 20px;
+}
+
+.card-grp {
+    display: flex;
+}
+
+.card-grp > div {
+    margin-right: 20px;
 }
 
 @media (max-width: 768px) {
