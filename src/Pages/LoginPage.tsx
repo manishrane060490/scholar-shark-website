@@ -1,5 +1,6 @@
 import React from "react";
 import Lighthouse from "../Components/Lighthouse/Lighthouse";
+import { Link } from "react-router-dom";
 
 function LoginPage() {
     return (
@@ -21,9 +22,12 @@ function LoginPage() {
                         </div>
                     </div>
 
-                    <button className="register-btn">
+                    {/* <button className="register-btn">
                         Login
-                    </button>
+                    </button> */}
+                    <Link to='/dashboard' className="register-btn">
+                        Register
+                    </Link>
                 </div>
                 <div className='panel-right'>
                 </div>

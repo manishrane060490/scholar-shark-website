@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 export default function Question({disabled, number, question, onAnswerClick, onAnswerCheck, explanation, nextDisabled} : any) {
     let answer; 
-    console.log(question);
 
   return (
     <div className='question'>

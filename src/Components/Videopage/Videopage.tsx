@@ -7,13 +7,10 @@ function Videopage() {
 
   useEffect(() => {
     const video : HTMLVideoElement | null = document.querySelector('video');
-    console.log(video);
     let menuDisplay : any = document.querySelector<HTMLElement>('.rotate-screen')?.style.display;
     video?.addEventListener('ended', (event) => {
-      console.log('manish');
       let man : any = document.getElementById('screen');
       man.style.display='block';
-      console.log(man);
         //you can also do things with 'event' obj 
     });
   }, []) 
