@@ -56,7 +56,7 @@ body {
     border: 1px solid #000;
     border-radius: 16px;
     background: grey;
-    max-height: 100px;
+    max-height: 150px;
     overflow: hidden;
     
     margin-bottom: 20px;
@@ -69,6 +69,20 @@ body {
     max-height: 100%;
     background: linear-gradient(90deg, #5d5858, #353443);
     transition: max-height 3s ease-in-out;
+}
+
+.recom:hover {
+    background: linear-gradient(45deg, #e3a12b, #232230);
+}
+
+.plan.selected {
+    border: 2px solid;
+    box-shadow: 0px 0px 10px 2px #5d5858;
+}
+
+.recom.selected {
+    border: 2px solid;
+    box-shadow: 0px 0px 10px 2px #e3a12b;
 }
 
 .plan-list {
@@ -412,6 +426,90 @@ span.wrong {
     display: none;
 }
 
+.header {
+    padding: 20px;
+}
+
+.homePage {
+    background-image: linear-gradient(#09082E 0%, #05040F 50%, #060613 90%);
+    height: 100%;
+}
+
+.home-logo {
+    width: 100px;
+}
+
+.banner {
+    height: 400px;
+    margin: 20px;
+    background: #2B1963;
+    border-radius: 10px;
+    /* BACKGROUND: #6992BD; */
+    /* background: #2D106B; */
+    background-image: linear-gradient(#2B1963 0%, #2D106B 90%);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.banner:after {
+    content: '';
+    width: 300px;
+    height: 100%;
+    background: rgb(0, 212, 255);
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.4) 0%, transparent 50%);
+    position: absolute;
+    right: 0;
+    mix-blend-mode: screen;
+    border-radius: 50%;
+    top: 50%;
+    backdrop-filter: blur(1rem);
+    transform: translate(0px, -50%);
+}
+
+.banner:before {
+    content: '';
+    width: 300px;
+    height: 100%;
+    background: rgb(138,67,171);
+    background: radial-gradient(circle, rgba(138,67,171, 0.6) 0%, transparent 50%);
+    position: absolute;
+    left: 10%;
+    mix-blend-mode: screen;
+    border-radius: 50%;
+    top: 50%;
+    backdrop-filter: blur(1rem);
+    transform: translate(-10%, -50%);
+}
+
+.banner video {
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+    height: 100%;
+    right: 0;
+    width: 40%;
+    text-align: right;
+    display: flex;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.banner-text {
+    font-size: 36px;
+    width: 40%;
+    /* position: absolute; */
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.homePage .plans {
+    margin: 20px;
+}
+
 @media (max-width: 768px) {
     .panel-right {
         display: none;
@@ -452,5 +550,10 @@ span.wrong {
     span.right, span.wrong {
         width: 15px;
         height: 15px;
+    }
+
+    .panel-left {
+        padding: 0 10px;
+        overflow: auto;
     }
 }

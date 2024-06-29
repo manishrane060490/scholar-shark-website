@@ -2,8 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Result({ userAnswers, questions, resetQuiz }: any) {
-    const correctAnswers = userAnswers.filter((ans: any) => ans).length
-    console.log(userAnswers, questions)
+    const correctAnswers = userAnswers.filter((ans: any) => ans).length;
     return (
         <div className='results'>
             <h2>Result</h2>

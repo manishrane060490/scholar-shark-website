@@ -45,7 +45,6 @@ function Quizpage() {
     const navigate = useNavigate();
 
     const onAnswerCheck = (e: any, question: any, text: any) => {
-        // console.log(question.rightAnswer);
         if (text === question.rightAnswer) {
             e.target.classList.add('correct');
             // const newAnswer = { isCorrect: true };
@@ -110,8 +109,6 @@ function Quizpage() {
     // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty('--vhwidth', `${vhWidth}px`);
 
-    console.log(questions)
-
     return (
         <>
             <Lighthouse light />
@@ -121,7 +118,7 @@ function Quizpage() {
 
                     {/* <source src={sharkVideo} type="video/mp4" /> */}
                     {/* <source src="/video/video.ogv" type="video/ogg" /> */}
-                    {showShark === 'static' &&
+                    {/* {showShark === 'static' &&
                         <video className='video' width="100%" height="100%" loop autoPlay muted>
                             <source src={sharkVideo} type="video/webm" />
                         </video>
@@ -135,7 +132,7 @@ function Quizpage() {
                         <video className='video' width="100%" height="100%" loop autoPlay muted>
                             <source src={sharkThumpsDownVideo} type="video/webm" />
                         </video>
-                    }
+                    } */}
                 </div>
                 <div className='quizPanel-right'>
 
