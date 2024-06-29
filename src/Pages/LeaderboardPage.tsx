@@ -30,7 +30,7 @@ function LeaderboardPage() {
         var sceneHeight = document.getElementsByClassName('scene')[0].clientHeight;
         var panelHeaderHeight = document.getElementById('panel-header')?.clientHeight || 0;
         var panelStaticHeight = document.getElementById('static-height')?.clientHeight || 100;
-        var PanelBodyHeight = sceneHeight - panelHeaderHeight - panelStaticHeight - 150;
+        var PanelBodyHeight = sceneHeight - panelHeaderHeight - panelStaticHeight - 200;
         setPanelHeight(PanelBodyHeight);
     }, [])
 
