@@ -1,0 +1,713 @@
+[
+    {
+        "srNo": 75,
+        "category": "how to save taxes:",
+        "question": "What is the maximum limit for claiming deductions under Section 80C of the Income Tax Act?",
+        "answerOptions": [
+            {
+                "text": "₹50,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹1,00,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹1,50,000",
+                "isCorrect": true
+            },
+            {
+                "text": "₹2,00,000",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "₹1,50,000",
+        "explanation": "The maximum limit for claiming deductions under Section 80C of the Income Tax Act is ₹1,50,000.",
+        "url": null
+    },
+    {
+        "srNo": 121,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "How can individuals reduce unnecessary expenses to improve financial health?",
+        "answerOptions": [
+            {
+                "text": "Increasing discretionary spending",
+                "isCorrect": false
+            },
+            {
+                "text": "Ignoring budgeting altogether",
+                "isCorrect": false
+            },
+            {
+                "text": "Tracking expenses and identifying areas to cut back",
+                "isCorrect": true
+            },
+            {
+                "text": "Relying solely on credit cards for purchases",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Tracking expenses and identifying areas to cut back",
+        "explanation": "By tracking expenses and identifying areas where spending can be reduced, individuals can prioritize essential expenses and allocate more resources towards savings and investments.",
+        "url": null
+    },
+    {
+        "srNo": 58,
+        "category": "how to save taxes:",
+        "question": "How does an individual assess their risk tolerance in investment?",
+        "answerOptions": [
+            {
+                "text": "By investing aggressively in high-risk assets",
+                "isCorrect": false
+            },
+            {
+                "text": "By evaluating their financial goals and time horizon",
+                "isCorrect": true
+            },
+            {
+                "text": "By avoiding investments altogether",
+                "isCorrect": false
+            },
+            {
+                "text": "By relying solely on financial advisors",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "By evaluating their financial goals and time horizon",
+        "explanation": "Risk tolerance is assessed based on an individual's financial goals, time horizon, and willingness to accept fluctuations in investment value.",
+        "url": null
+    },
+    {
+        "srNo": 4,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the maximum amount allowed for withdrawal from an ATM per transaction in India?",
+        "answerOptions": [
+            {
+                "text": "₹10,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹15,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹20,000",
+                "isCorrect": true
+            },
+            {
+                "text": "₹25,000",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "₹20,000",
+        "explanation": "The maximum amount allowed for ATM withdrawals per transaction in India is typically ₹20,000, although it may vary depending on the bank's policies.",
+        "url": null
+    },
+    {
+        "srNo": 69,
+        "category": "how to save taxes:",
+        "question": "What is the main purpose of home loans?",
+        "answerOptions": [
+            {
+                "text": "Funding education expenses",
+                "isCorrect": false
+            },
+            {
+                "text": "Financing business ventures",
+                "isCorrect": false
+            },
+            {
+                "text": "Purchasing residential property",
+                "isCorrect": true
+            },
+            {
+                "text": "Investing in the stock market",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Purchasing residential property",
+        "explanation": "Home loans are specifically designed to provide individuals with funds to purchase or construct residential properties.",
+        "url": null
+    },
+    {
+        "srNo": 80,
+        "category": "how to save taxes:",
+        "question": "What is the primary objective of investing in sovereign bonds?",
+        "answerOptions": [
+            {
+                "text": "Maximizing short-term gains",
+                "isCorrect": false
+            },
+            {
+                "text": "Preserving capital",
+                "isCorrect": false
+            },
+            {
+                "text": "Achieving high-risk-adjusted returns",
+                "isCorrect": false
+            },
+            {
+                "text": "Funding government expenditure",
+                "isCorrect": true
+            }
+        ],
+        "rightAnswer": "Funding government expenditure",
+        "explanation": "Sovereign bonds are issued by governments to raise funds for various purposes, including financing government expenditure and infrastructure projects.",
+        "url": null
+    },
+    {
+        "srNo": 142,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "Which of the following is NOT a component of a comprehensive financial plan?",
+        "answerOptions": [
+            {
+                "text": "Budgeting",
+                "isCorrect": false
+            },
+            {
+                "text": "Insurance coverage",
+                "isCorrect": false
+            },
+            {
+                "text": "Retirement planning",
+                "isCorrect": false
+            },
+            {
+                "text": "Daily spending habits",
+                "isCorrect": true
+            }
+        ],
+        "rightAnswer": "Daily spending habits",
+        "explanation": "While daily spending habits are important for financial health, they are typically managed within the framework of budgeting rather than being a standalone component of a financial plan.",
+        "url": null
+    },
+    {
+        "srNo": 92,
+        "category": "how to save taxes:",
+        "question": "Which factor influences the interest rate on a fixed deposit?",
+        "answerOptions": [
+            {
+                "text": "Maturity period",
+                "isCorrect": false
+            },
+            {
+                "text": "Investor's age",
+                "isCorrect": false
+            },
+            {
+                "text": "Market conditions",
+                "isCorrect": true
+            },
+            {
+                "text": "Loan amount",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Market conditions",
+        "explanation": "Interest rates on fixed deposits are influenced by market conditions, including prevailing interest rates and economic factors.",
+        "url": null
+    },
+    {
+        "srNo": 44,
+        "category": "general",
+        "question": "Which of the following is NOT a benefit of having a diversified investment portfolio?",
+        "answerOptions": [
+            {
+                "text": "Lower risk",
+                "isCorrect": false
+            },
+            {
+                "text": "Higher returns",
+                "isCorrect": false
+            },
+            {
+                "text": "Protection against market volatility",
+                "isCorrect": false
+            },
+            {
+                "text": "Higher tax liability",
+                "isCorrect": true
+            }
+        ],
+        "rightAnswer": "Higher tax liability",
+        "explanation": "Diversification helps spread risk across various assets, but it doesn't necessarily impact tax liability.",
+        "url": null
+    },
+    {
+        "srNo": 138,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "What is the purpose of life insurance in personal finance?",
+        "answerOptions": [
+            {
+                "text": "Generating retirement income",
+                "isCorrect": false
+            },
+            {
+                "text": "Protecting against loss of income due to death",
+                "isCorrect": true
+            },
+            {
+                "text": "Funding short-term expenses",
+                "isCorrect": false
+            },
+            {
+                "text": "Building emergency savings",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Protecting against loss of income due to death",
+        "explanation": "Life insurance provides financial protection to beneficiaries in case of the policyholder's death, ensuring they can maintain their standard of living without the primary breadwinner's income.",
+        "url": null
+    },
+    {
+        "srNo": 1,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the advantage of having a high credit score when dealing with banks?",
+        "answerOptions": [
+            {
+                "text": "Higher interest rates on loans",
+                "isCorrect": false
+            },
+            {
+                "text": "Lower interest rates on loans",
+                "isCorrect": true
+            },
+            {
+                "text": "No need for collateral",
+                "isCorrect": false
+            },
+            {
+                "text": "Higher ATM withdrawal limits",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Lower interest rates on loans",
+        "explanation": "A high credit score indicates creditworthiness, leading to lower interest rates on loans as banks perceive the borrower as less risky."
+    },
+    {
+        "srNo": 2,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the benefit of linking Aadhaar card with bank accounts in India?",
+        "answerOptions": [
+            {
+                "text": "Higher interest rates on savings accounts",
+                "isCorrect": false
+            },
+            {
+                "text": "Lower tax rates on interest income",
+                "isCorrect": false
+            },
+            {
+                "text": "Seamless direct benefit transfers",
+                "isCorrect": true
+            },
+            {
+                "text": "Access to priority banking services",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Seamless direct benefit transfers",
+        "explanation": "Info"
+    },
+    {
+        "srNo": 3,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the interest rate offered on most savings accounts in India?",
+        "answerOptions": [
+            {
+                "text": "2-3%",
+                "isCorrect": false
+            },
+            {
+                "text": "4-5%",
+                "isCorrect": true
+            },
+            {
+                "text": "6-7%",
+                "isCorrect": false
+            },
+            {
+                "text": "8-9%",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "4-5%",
+        "explanation": "Savings accounts in India typically offer interest rates ranging from 4% to 5%, although this can vary among banks."
+    },
+    {
+        "srNo": 5,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the maximum amount covered by the Pradhan Mantri Suraksha Bima Yojana (PMSBY) insurance scheme?",
+        "answerOptions": [
+            {
+                "text": "₹1,00,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹2,00,000",
+                "isCorrect": true
+            },
+            {
+                "text": "₹5,00,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹10,00,000",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "₹2,00,000",
+        "explanation": "Pradhan Mantri Suraksha Bima Yojana (PMSBY) provides a maximum coverage of ₹2,00,000 in case of accidental death or disability."
+    },
+    {
+        "srNo": 6,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the maximum amount insured by the Deposit Insurance and Credit Guarantee Corporation (DICGC) in India?",
+        "answerOptions": [
+            {
+                "text": "₹1,00,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹2,00,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹5,00,000",
+                "isCorrect": true
+            },
+            {
+                "text": "₹10,00,000",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "₹5,00,000",
+        "explanation": "DICGC provides insurance cover up to ₹5,00,000 per depositor, per bank, for both principal and interest amount."
+    },
+      {
+        "srNo": 8,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the maximum amount of insurance cover provided by the Atal Pension Yojana (APY) scheme in India?",
+        "answerOptions": [
+            {
+                "text": "₹1,00,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹2,00,000",
+                "isCorrect": true
+            },
+            {
+                "text": "₹5,00,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹10,00,000",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "₹2,00,000",
+        "explanation": "The Atal Pension Yojana (APY) scheme provides a maximum insurance cover of ₹2,00,000 to subscribers in case of death or disability due to any cause."
+      },
+      {
+        "srNo": 9,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the maximum amount of insurance cover provided by the Deposit Insurance and Credit Guarantee Corporation (DICGC) for bank deposits in India?",
+        "answerOptions": [
+            {
+                "text": "₹1,00,000 per depositor, per bank",
+                "isCorrect": false
+            },
+            {
+                "text": "₹2,00,000 per depositor, per bank",
+                "isCorrect": false
+            },
+            {
+                "text": "₹5,00,000 per depositor, per bank",
+                "isCorrect": true
+            },
+            {
+                "text": "₹10,00,000 per depositor, per bank",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "₹5,00,000 per depositor, per bank",
+        "explanation": "DICGC provides insurance cover of up to ₹5,00,000 per depositor, per bank, for both principal and interest amount."
+      },
+      {
+        "srNo": 10,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the maximum amount of money that can be transferred using Immediate Payment Service (IMPS) in India?",
+        "answerOptions": [
+            {
+                "text": "10,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹1,00,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹2,00,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹5,00,000",
+                "isCorrect": true
+            }
+        ],
+        "rightAnswer": "₹5,00,000",
+        "explanation": "Immediate Payment Service (IMPS) allows customers to transfer funds up to ₹5,00,000 per transaction, providing instant credit to the beneficiary's account."
+      },
+
+    {
+        "srNo": 11,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the maximum number of transactions allowed per month in a basic savings bank deposit account in India?",
+        "answerOptions": [
+            {
+                "text": "5",
+                "isCorrect": false
+            },
+            {
+                "text": "10",
+                "isCorrect": false
+            },
+            {
+                "text": "15",
+                "isCorrect": false
+            },
+            {
+                "text": "Unlimited",
+                "isCorrect": true
+            }
+        ],
+        "rightAnswer": "Unlimited",
+        "explanation": "Basic savings bank deposit accounts in India typically do not have any restrictions on the number of transactions, allowing customers to perform unlimited transactions without maintaining a minimum balance."
+      },
+      {
+        "srNo": 12,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the maximum number of years for which a term deposit can be opened in India?",
+        "answerOptions": [
+            {
+                "text": "5 years",
+                "isCorrect": true
+            },
+            {
+                "text": "7 years",
+                "isCorrect": false
+            },
+            {
+                "text": "10 years",
+                "isCorrect": false
+            },
+            {
+                "text": "15 years",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "5 years",
+        "explanation": "Term deposits in India can typically be opened for a maximum period of 5 years, although this may vary depending on the bank's policies."
+      },
+      {
+        "srNo": 13,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the maximum tenure for a home loan offered by most banks in India?",
+        "answerOptions": [
+            {
+                "text": "10 years",
+                "isCorrect": false
+            },
+            {
+                "text": "15 years",
+                "isCorrect": false
+            },
+            {
+                "text": "20 years",
+                "isCorrect": false
+            },
+            {
+                "text": "30 years",
+                "isCorrect": true
+            }
+        ],
+        "rightAnswer": "30 years",
+        "explanation": "Banks typically offer home loans with a maximum tenure of up to 30 years, allowing borrowers to repay over a longer period."
+      },
+      {
+        "srNo": 14,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the minimum age requirement for opening a savings account in India?",
+        "answerOptions": [
+            {
+                "text": "16 years",
+                "isCorrect": false
+            },
+            {
+                "text": "18 years",
+                "isCorrect": true
+            },
+            {
+                "text": "21 years",
+                "isCorrect": false
+            },
+            {
+                "text": "25 years",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "18 years",
+        "explanation": "Individuals aged 18 years or above are eligible to open a savings account in India, although some banks may offer special accounts for minors with parental consent."
+      },
+      {
+        "srNo": 15,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the penalty for not maintaining the minimum balance in a savings account with most Indian banks?",
+        "answerOptions": [
+            {
+                "text": "₹50 per month",
+                "isCorrect": false
+            },
+            {
+                "text": "₹100 per month",
+                "isCorrect": false
+            },
+            {
+                "text": "₹500 per month",
+                "isCorrect": false
+            },
+            {
+                "text": "Varies from bank to bank",
+                "isCorrect": true
+            }
+        ],
+        "rightAnswer": "Varies from bank to bank",
+        "explanation": "Most banks have different penalties for not maintaining the minimum balance, and the amount varies based on factors like location and type of account."
+      },
+      {
+        "srNo": 16,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the primary function of Reserve Bank of India (RBI)?",
+        "answerOptions": [
+            {
+                "text": "Regulating stock markets",
+                "isCorrect": false
+            },
+            {
+                "text": "Issuing currency notes",
+                "isCorrect": false
+            },
+            {
+                "text": "Conducting monetary policy",
+                "isCorrect": true
+            },
+            {
+                "text": "Providing insurance services",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Conducting monetary policy",
+        "explanation": "The RBI is responsible for formulating and implementing monetary policy in India to maintain price stability and control inflation."
+      },
+      {
+        "srNo": 17,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the primary purpose of a current account in India?",
+        "answerOptions": [
+            {
+                "text": "Saving money for the future",
+                "isCorrect": false
+            },
+            {
+                "text": "Accumulating interest on deposits",
+                "isCorrect": false
+            },
+            {
+                "text": "Facilitating regular transactions for businesses",
+                "isCorrect": true
+            },
+            {
+                "text": "Investing in mutual funds",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Facilitating regular transactions for businesses",
+        "explanation": "Current accounts are designed for businesses and are primarily used to facilitate regular transactions such as payments, withdrawals, and deposits without the restrictions on the number of transactions."
+      },
+      {
+        "srNo": 18,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the primary purpose of a recurring deposit account in India?",
+        "answerOptions": [
+            {
+                "text": "Long-term investment",
+                "isCorrect": false
+            },
+            {
+                "text": "Emergency fund",
+                "isCorrect": false
+            },
+            {
+                "text": "Regular savings for a specific goal",
+                "isCorrect": true
+            },
+            {
+                "text": "Short-term cash management",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Regular savings for a specific goal",
+        "explanation": "Recurring deposit accounts are designed for regular savings where a fixed amount is deposited at regular intervals for a specified period to achieve a specific financial goal."
+      },
+      {
+        "srNo": 19,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the primary purpose of the Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY) scheme in India?",
+        "answerOptions": [
+            {
+                "text": "Promoting affordable housing",
+                "isCorrect": false
+            },
+            {
+                "text": "Encouraging digital payments",
+                "isCorrect": false
+            },
+            {
+                "text": "Providing life insurance coverage",
+                "isCorrect": true
+            },
+            {
+                "text": "Supporting agricultural development",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Providing life insurance coverage",
+        "explanation": "The Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY) scheme offers life insurance coverage to individuals at an affordable premium, providing financial security to their families in case of death due to any reason."
+      },
+      {
+        "srNo": 20,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "What is the purpose of the Bharat Bill Payment System (BBPS) in India?",
+        "answerOptions": [
+            {
+                "text": "To facilitate online shopping",
+                "isCorrect": false
+            },
+            {
+                "text": "To enable digital payments for utility bills",
+                "isCorrect": true
+            },
+            {
+                "text": "To regulate stock market transactions",
+                "isCorrect": false
+            },
+            {
+                "text": "To provide insurance services",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "To enable digital payments for utility bills",
+        "explanation": "The Bharat Bill Payment System (BBPS) is an integrated bill payment system that enables secure and convenient online payment of utility bills such as electricity, water, gas, and more."
+      }
+]

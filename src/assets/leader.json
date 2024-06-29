@@ -1,0 +1,62 @@
+[
+    {
+        "rank": "1",
+        "name": "Manish Rane",
+        "score": [false, true, true, true, true, true, true, true, true, true],
+        "result": 90
+    },
+    {
+        "rank": "2",
+        "name": "Anand Iyer",
+        "score": [true, true, false, true, true, true, true, true, true, true],
+        "result": 90
+    },
+    {
+        "rank": "3",
+        "name": "Akshay More",
+        "score": [false, true, true, true, true, true, true, true, false, true],
+        "result": 80
+    },
+    {
+        "rank": "4",
+        "name": "Nilesh Sawant",
+        "score": [false, true, true, true, true, true, true, true, true, false],
+        "result": 80
+    },
+    {
+        "rank": "5",
+        "name": "Soham Naik",
+        "score": [false, true, true, true, true, true, true, false, true, false],
+        "result": 70
+    },
+    {
+        "rank": "6",
+        "name": "Nilesh Rahate",
+        "score": [false, true, true, true, false, true, true, true, false, true],
+        "result": 70
+    },
+    {
+        "rank": "7",
+        "name": "Akshay Sangle",
+        "score": [true, true, false, true, false, false, true, true, true, true],
+        "result": 70
+    },
+    {
+        "rank": "8",
+        "name": "Shrikant Pandey",
+        "score": [false, true, true, true, true, false, true, true, true, false],
+        "result": 70
+    },
+    {
+        "rank": "9",
+        "name": "Aparna Iyer",
+        "score": [true, true, false, true, false, true, true, false, true, true],
+        "result": 70
+    },
+    {
+        "rank": "10",
+        "name": "Swanand Kumar",
+        "score": [true, true, false, true, false, true, true, true, false, true],
+        "result": 70
+    }
+]

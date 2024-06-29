@@ -4,10 +4,22 @@
         "category": "how to save taxes:",
         "question": "What is the maximum limit for claiming deductions under Section 80C of the Income Tax Act?",
         "answerOptions": [
-            {"text": "₹50,000", "isCorrect": false},
-            {"text": "₹1,00,000", "isCorrect": false},
-            {"text": "₹1,50,000", "isCorrect": true},
-            {"text": "₹2,00,000", "isCorrect": false}
+            {
+                "text": "₹50,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹1,00,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹1,50,000",
+                "isCorrect": true
+            },
+            {
+                "text": "₹2,00,000",
+                "isCorrect": false
+            }
         ],
         "rightAnswer": "₹1,50,000",
         "explanation": "The maximum limit for claiming deductions under Section 80C of the Income Tax Act is ₹1,50,000.",
@@ -18,10 +30,22 @@
         "category": "Managing Personal Finance and Improving Financial Health:",
         "question": "How can individuals reduce unnecessary expenses to improve financial health?",
         "answerOptions": [
-            {"text": "Increasing discretionary spending", "isCorrect": false},
-            {"text": "Ignoring budgeting altogether", "isCorrect": false},
-            {"text": "Tracking expenses and identifying areas to cut back", "isCorrect": true},
-            {"text": "Relying solely on credit cards for purchases", "isCorrect": false}
+            {
+                "text": "Increasing discretionary spending",
+                "isCorrect": false
+            },
+            {
+                "text": "Ignoring budgeting altogether",
+                "isCorrect": false
+            },
+            {
+                "text": "Tracking expenses and identifying areas to cut back",
+                "isCorrect": true
+            },
+            {
+                "text": "Relying solely on credit cards for purchases",
+                "isCorrect": false
+            }
         ],
         "rightAnswer": "Tracking expenses and identifying areas to cut back",
         "explanation": "By tracking expenses and identifying areas where spending can be reduced, individuals can prioritize essential expenses and allocate more resources towards savings and investments.",
@@ -32,10 +56,22 @@
         "category": "how to save taxes:",
         "question": "How does an individual assess their risk tolerance in investment?",
         "answerOptions": [
-            {"text": "By investing aggressively in high-risk assets", "isCorrect": false},
-            {"text": "By evaluating their financial goals and time horizon", "isCorrect": true},
-            {"text": "By avoiding investments altogether", "isCorrect": false},
-            {"text": "By relying solely on financial advisors", "isCorrect": false}
+            {
+                "text": "By investing aggressively in high-risk assets",
+                "isCorrect": false
+            },
+            {
+                "text": "By evaluating their financial goals and time horizon",
+                "isCorrect": true
+            },
+            {
+                "text": "By avoiding investments altogether",
+                "isCorrect": false
+            },
+            {
+                "text": "By relying solely on financial advisors",
+                "isCorrect": false
+            }
         ],
         "rightAnswer": "By evaluating their financial goals and time horizon",
         "explanation": "Risk tolerance is assessed based on an individual's financial goals, time horizon, and willingness to accept fluctuations in investment value.",
@@ -46,10 +82,22 @@
         "category": "Banking in India and Maximizing Benefits:",
         "question": "What is the maximum amount allowed for withdrawal from an ATM per transaction in India?",
         "answerOptions": [
-            {"text": "₹10,000", "isCorrect": false},
-            {"text": "₹15,000", "isCorrect": false},
-            {"text": "₹20,000", "isCorrect": true},
-            {"text": "₹25,000", "isCorrect": false}
+            {
+                "text": "₹10,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹15,000",
+                "isCorrect": false
+            },
+            {
+                "text": "₹20,000",
+                "isCorrect": true
+            },
+            {
+                "text": "₹25,000",
+                "isCorrect": false
+            }
         ],
         "rightAnswer": "₹20,000",
         "explanation": "The maximum amount allowed for ATM withdrawals per transaction in India is typically ₹20,000, although it may vary depending on the bank's policies.",
@@ -60,10 +108,22 @@
         "category": "how to save taxes:",
         "question": "What is the main purpose of home loans?",
         "answerOptions": [
-            {"text": "Funding education expenses", "isCorrect": false},
-            {"text": "Financing business ventures", "isCorrect": false},
-            {"text": "Purchasing residential property", "isCorrect": true},
-            {"text": "Investing in the stock market", "isCorrect": false}
+            {
+                "text": "Funding education expenses",
+                "isCorrect": false
+            },
+            {
+                "text": "Financing business ventures",
+                "isCorrect": false
+            },
+            {
+                "text": "Purchasing residential property",
+                "isCorrect": true
+            },
+            {
+                "text": "Investing in the stock market",
+                "isCorrect": false
+            }
         ],
         "rightAnswer": "Purchasing residential property",
         "explanation": "Home loans are specifically designed to provide individuals with funds to purchase or construct residential properties.",
@@ -74,10 +134,22 @@
         "category": "how to save taxes:",
         "question": "What is the primary objective of investing in sovereign bonds?",
         "answerOptions": [
-            {"text": "Maximizing short-term gains", "isCorrect": false},
-            {"text": "Preserving capital", "isCorrect": false},
-            {"text": "Achieving high-risk-adjusted returns", "isCorrect": false},
-            {"text": "Funding government expenditure", "isCorrect": true}
+            {
+                "text": "Maximizing short-term gains",
+                "isCorrect": false
+            },
+            {
+                "text": "Preserving capital",
+                "isCorrect": false
+            },
+            {
+                "text": "Achieving high-risk-adjusted returns",
+                "isCorrect": false
+            },
+            {
+                "text": "Funding government expenditure",
+                "isCorrect": true
+            }
         ],
         "rightAnswer": "Funding government expenditure",
         "explanation": "Sovereign bonds are issued by governments to raise funds for various purposes, including financing government expenditure and infrastructure projects.",
@@ -88,10 +160,22 @@
         "category": "Managing Personal Finance and Improving Financial Health:",
         "question": "Which of the following is NOT a component of a comprehensive financial plan?",
         "answerOptions": [
-            {"text": "Budgeting", "isCorrect": false},
-            {"text": "Insurance coverage", "isCorrect": false},
-            {"text": "Retirement planning", "isCorrect": false},
-            {"text": "Daily spending habits", "isCorrect": true}
+            {
+                "text": "Budgeting",
+                "isCorrect": false
+            },
+            {
+                "text": "Insurance coverage",
+                "isCorrect": false
+            },
+            {
+                "text": "Retirement planning",
+                "isCorrect": false
+            },
+            {
+                "text": "Daily spending habits",
+                "isCorrect": true
+            }
         ],
         "rightAnswer": "Daily spending habits",
         "explanation": "While daily spending habits are important for financial health, they are typically managed within the framework of budgeting rather than being a standalone component of a financial plan.",
@@ -102,10 +186,22 @@
         "category": "how to save taxes:",
         "question": "Which factor influences the interest rate on a fixed deposit?",
         "answerOptions": [
-            {"text": "Maturity period", "isCorrect": false},
-            {"text": "Investor's age", "isCorrect": false},
-            {"text": "Market conditions", "isCorrect": true},
-            {"text": "Loan amount", "isCorrect": false}
+            {
+                "text": "Maturity period",
+                "isCorrect": false
+            },
+            {
+                "text": "Investor's age",
+                "isCorrect": false
+            },
+            {
+                "text": "Market conditions",
+                "isCorrect": true
+            },
+            {
+                "text": "Loan amount",
+                "isCorrect": false
+            }
         ],
         "rightAnswer": "Market conditions",
         "explanation": "Interest rates on fixed deposits are influenced by market conditions, including prevailing interest rates and economic factors.",
@@ -116,10 +212,22 @@
         "category": "general",
         "question": "Which of the following is NOT a benefit of having a diversified investment portfolio?",
         "answerOptions": [
-            {"text": "Lower risk", "isCorrect": false},
-            {"text": "Higher returns", "isCorrect": false},
-            {"text": "Protection against market volatility", "isCorrect": false},
-            {"text": "Higher tax liability", "isCorrect": true}
+            {
+                "text": "Lower risk",
+                "isCorrect": false
+            },
+            {
+                "text": "Higher returns",
+                "isCorrect": false
+            },
+            {
+                "text": "Protection against market volatility",
+                "isCorrect": false
+            },
+            {
+                "text": "Higher tax liability",
+                "isCorrect": true
+            }
         ],
         "rightAnswer": "Higher tax liability",
         "explanation": "Diversification helps spread risk across various assets, but it doesn't necessarily impact tax liability.",
@@ -130,10 +238,22 @@
         "category": "Managing Personal Finance and Improving Financial Health:",
         "question": "What is the purpose of life insurance in personal finance?",
         "answerOptions": [
-            {"text": "Generating retirement income", "isCorrect": false},
-            {"text": "Protecting against loss of income due to death", "isCorrect": true},
-            {"text": "Funding short-term expenses", "isCorrect": false},
-            {"text": "Building emergency savings", "isCorrect": false}
+            {
+                "text": "Generating retirement income",
+                "isCorrect": false
+            },
+            {
+                "text": "Protecting against loss of income due to death",
+                "isCorrect": true
+            },
+            {
+                "text": "Funding short-term expenses",
+                "isCorrect": false
+            },
+            {
+                "text": "Building emergency savings",
+                "isCorrect": false
+            }
         ],
         "rightAnswer": "Protecting against loss of income due to death",
         "explanation": "Life insurance provides financial protection to beneficiaries in case of the policyholder's death, ensuring they can maintain their standard of living without the primary breadwinner's income.",
