@@ -58,7 +58,7 @@ function RegisterPage() {
                         </div>
                     </div>
 
-                    <Link to='/login' className="register-btn">
+                    <Link to='/summary' className="register-btn">
                         Register
                     </Link>
                 </div>

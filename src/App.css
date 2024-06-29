@@ -377,3 +377,19 @@ span.wrong {
     margin-left: auto;
     margin-right: 10px;
 }
+
+.change-btn {
+    height: auto;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.plan-details {
+    display: flex;
+    ALIGN-ITEMS: center;
+    justify-content: space-between;
+}
+
+.plan-info .plan {
+    max-height: none;
+}
