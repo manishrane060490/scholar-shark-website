@@ -328,16 +328,20 @@ video {
   section {
     width: 100%;
     position: relative;
-    left: 0%;
+    left: -1%;
     height: 300px;
     /* bottom: 0%; */
-    top: 13%;
+    bottom: 45px;
+  }
+
+  img.shark {
+    height: 400px;
   }
 
   blockquote.speech {
-    height: 130%;
+    height: 110%;
     font-size: 18px;
-    padding-top: 20%;
+    padding-top: 12%;
     padding-bottom: 15%;
     padding-left: 10%;
     padding-right: 10%;
