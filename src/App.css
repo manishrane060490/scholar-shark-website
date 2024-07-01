@@ -572,7 +572,7 @@ img.dropdown-img {
     border: 2px solid #2c1864;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .panel-right {
         display: none;
     }
