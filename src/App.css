@@ -62,13 +62,13 @@ body {
     margin-bottom: 20px;
     background: linear-gradient(90deg, #818183, #232230);
     border: 1px solid #4C4B5D;
-    transition: max-height 3s ease-in-out;
+    transition: max-height 2s ease;
 }
 
 .plan:hover {
-    max-height: 100%;
+    max-height: 500px;
     background: linear-gradient(90deg, #5d5858, #353443);
-    transition: max-height 3s ease-in-out;
+    /* transition: max-height 3s ease-in-out; */
 }
 
 .recom:hover {
