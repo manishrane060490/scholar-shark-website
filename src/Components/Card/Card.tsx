@@ -12,7 +12,7 @@ function Card({title, count, disabled}: any) {
                 <div className={`card-bg ${title}`}></div>
                 <h3>{title}</h3>
                 <p>Questions: 10</p>
-                <Link to='/quiz' className="full-width button disabled">
+                <Link to='/silverQuiz' className="full-width button disabled">
                     Take Quiz
                 </Link>
                 {/* <button disabled={true} className='full-width button disabled'>Take Quiz</button> */}

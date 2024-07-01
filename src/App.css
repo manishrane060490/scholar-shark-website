@@ -513,10 +513,11 @@ span.wrong {
 
 .banner-prize {
     display: flex;
+    align-items: center;
 }
 
 img.prize-ticket {
-    height: 300px;
+    height: 200px;
 }
 
 .gold-banner {
@@ -577,6 +578,22 @@ img.dropdown-img {
     border-radius: 50%;
     border: 2px solid #2c1864;
 }
+
+.banner .sharkGif {
+    width: auto !important;
+    z-index: 1;
+    margin-left: auto;
+}
+
+.carousel{
+    display: none;
+}
+
+.carousel.carousel-slider {
+    display: block;
+}
+
+
 
 @media (max-width: 991px) {
     .panel-right {
@@ -650,6 +667,8 @@ img.dropdown-img {
         width: 100% !important;
     }
 
+    
+
     .banner video {
         display: none;
     }
@@ -662,5 +681,10 @@ img.dropdown-img {
 
     img.prize-ticket {
         height: 120px;
+    }
+
+    .banner .sharkGif {
+       
+        display: none;
     }
 }
