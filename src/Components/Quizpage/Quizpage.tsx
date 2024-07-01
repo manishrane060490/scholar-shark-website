@@ -9,6 +9,7 @@ import { PlansContext } from '../../Context';
 import sharkVideo from '../../assets/IdleAlphaWEBM.webm';
 import sharkThumpsUpVideo from '../../assets/ThumbsUpAlphaWEBM.webm';
 import sharkThumpsDownVideo from '../../assets/ThumbsDownAlphaWEBM.webm';
+import logo from '../../assets/logo.png';
 
 function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -115,10 +116,16 @@ function Quizpage() {
             <Lighthouse light />
             <div className='quizPanel'>
                 <div className='quizPanel-left'>
-                    <div className='quizPanel-text'>
-                        <h1>Unlesh your knowledge</h1>
-                        <h4>Where learning takes a dive</h4>
+                    <div className='quizPanel-section'>
+                        <div className='quizPanel-logo'>
+                            <img src={logo} alt="logo" />
+                        </div>
+                        <div className='quizPanel-text'>
+                            <h1>Unlesh your knowledge</h1>
+                            <h4>Where learning takes a dive</h4>
+                        </div>
                     </div>
+                    
                     {/* <img src={quizImg} alt='quizImg' /> */}
 
                     {/* <source src={sharkVideo} type="video/mp4" /> */}
