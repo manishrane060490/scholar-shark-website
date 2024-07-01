@@ -6,6 +6,8 @@ import { PlansContext } from "../Context";
 function RegisterPage() {
     const { plans, setPlans } = useContext(PlansContext);
     const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
+    const [mobileNumber, setMobileNumber] = useState('');
     const [validEmail, setValidEmail] = useState(false);
 
     const handleEmailChange = (e:any) => {
@@ -23,6 +25,8 @@ function RegisterPage() {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
     };
+
+    console.log((email.length > 0 && mobileNumber.length > 0 && name.length > 0))
     return (
         <>
             <Lighthouse light={false}/>
@@ -38,7 +42,7 @@ function RegisterPage() {
                     <div className="register-form">
                         <div>
                             <p>Name</p>
-                            <input type="text" />
+                            <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
                         </div>
                         <div>
                             <p>Email</p>
@@ -54,13 +58,16 @@ function RegisterPage() {
                         </div>
                         <div>
                             <p>Mobile No.</p>
-                            <input type="text" />
+                            <input type="text" value={mobileNumber} onChange={(e) => setMobileNumber(e.target.value)}/>
                         </div>
                     </div>
-
-                    <Link to='/summary' className="register-btn">
-                        Register
-                    </Link>
+                    {
+                        
+                        <Link to='/summary' className={`register-btn ${(email.length > 0 && mobileNumber.length > 0 && name.length > 0) === true ? '' : 'disabled'}`}>
+                            Summary
+                        </Link>
+                    }
+                    
                 </div>
                 <div className='panel-right'>
                 </div>
