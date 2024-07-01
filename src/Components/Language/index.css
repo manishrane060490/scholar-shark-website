@@ -331,7 +331,7 @@ video {
     left: -1%;
     height: 300px;
     /* bottom: 0%; */
-    bottom: 45px;
+    top: 250px;
   }
 
   img.shark {
