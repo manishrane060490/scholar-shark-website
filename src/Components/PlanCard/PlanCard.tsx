@@ -32,7 +32,7 @@ function Plancard({ title, count, type, disabled }: any) {
           <div className={`plancard-bg ${type}`}></div>
           {disabled && 
             <div className='subDiv'>
-              <h5>Please buy this plan to unlock the prizes </h5>
+              <h5>BE BETTER. Challenge this tier to unlock the prizes </h5>
             </div>
           }
         </div>
