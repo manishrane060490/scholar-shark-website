@@ -18,6 +18,7 @@
     background: white;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
     backdrop-filter: blur(1rem);
+    box-shadow: 0 0 0 8px #28284b;
 }
 
 .quizPanel-left {
@@ -32,7 +33,9 @@
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   display: flex;
-  align-items: end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .quizPanel-left .video {
@@ -76,6 +79,9 @@
 .options > li > button {
     margin-bottom: 10px;
     width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 2px solid #45429f;
 }
 
 button {
@@ -113,10 +119,26 @@ button {
     font-size: 24px;
 }
 
+
+.quizPanel-text {
+  margin: auto;
+  color: rgba(192, 192, 192, 0.9);
+}
+
+.quizPanel-text h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.quizPanel-text h4 {
+  font-size: 28px;
+  margin: 10px 0 0;
+}
+
 @media (max-width : 768px) {
   .quizPanel{
     flex-direction: column;
-    border-radius: 0;
+    border-radius: 10px;
   }
 
   .quizPanel-left {
@@ -124,7 +146,8 @@ button {
     align-items: center;
     width: 100%;
     height: 200px;
-    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 
   .quizPanel-right {
@@ -143,4 +166,8 @@ button {
   background-color: #df4e4e;
   color: #fff;
   transition: all 1s ease-in;
+}
+
+.question .button {
+  border-radius: 5px;
 }

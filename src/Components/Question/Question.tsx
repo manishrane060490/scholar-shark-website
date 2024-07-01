@@ -15,7 +15,7 @@ export default function Question({disabled, number, question, onAnswerClick, onA
                 )
             })}
         </ul>
-        <button disabled={nextDisabled} onClick={() => onAnswerClick()}>Next</button>
+        <button className='button full-width' disabled={nextDisabled} onClick={() => onAnswerClick()}>Submit</button>
         {
             explanation && 
             <p>{question.explanation}</p>
