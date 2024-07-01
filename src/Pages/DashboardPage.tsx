@@ -3,6 +3,7 @@ import sharkVideo from '../assets/IdleAlphaWEBM.webm';
 import { ReactTyped } from "react-typed";
 import Card from '../Components/Card/Card';
 import Plancard from '../Components/PlanCard/PlanCard';
+import person1 from '../assets/person1.jpg';
 
 function DashboardPage() {
     return (
@@ -12,7 +13,9 @@ function DashboardPage() {
                     <img src={logo} className="home-logo" alt="Scholar Shark"/>
                 </div>
                 <div className='right-side'>
-                    
+                    <div>
+                        <img src={person1} alt='person' className='dropdown-img' />
+                    </div>
                 </div>
             </div>
             <div className="banner">
