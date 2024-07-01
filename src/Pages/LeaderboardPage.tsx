@@ -60,7 +60,7 @@ function LeaderboardPage() {
                         <div className="result">Result</div>
                     </div>
 
-                    <div className="mobile-view" id="static-height">
+                    {/* <div className="mobile-view" id="static-height">
                         <div className="row">
                             <div>
                                 <div className="rank">#</div>
@@ -76,7 +76,7 @@ function LeaderboardPage() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     
 
                     <div className="row desktop-view"  id="static-height">
@@ -93,7 +93,7 @@ function LeaderboardPage() {
                         
         
 
-                    <div className="leader-result desktop-view">
+                    <div className="leader-result">
                         {
                             leaders.map((lead):any => (
                                 <div className="row">
@@ -115,7 +115,7 @@ function LeaderboardPage() {
                         
                     </div>
 
-                    <div className="leader-result mobile-view" style={{maxHeight: panelHeight}}>
+                    {/* <div className="leader-result mobile-view" style={{maxHeight: panelHeight}}>
                         {
                             leaders.map((lead):any => (
                                 <div className="row">
@@ -140,7 +140,7 @@ function LeaderboardPage() {
                         }
                         
                         
-                    </div>
+                    </div> */}
                 </div>
                 <div className="panel-footer">
                     <Link className='button' to='/plans'>Select Plan</Link>
