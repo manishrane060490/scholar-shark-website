@@ -192,6 +192,7 @@ button {
     display: flex;
     flex-direction: row-reverse;
     padding: 10px 10px 0 10px;
+    width: 100%;
   }
 
   .quizPanel-text h1 {
@@ -205,9 +206,9 @@ button {
   }
 
   .sharkGif {
-    width: 50%;
+    width: 150px;
     position: relative;
-    margin-bottom: -12px;
+    margin-bottom: -4px;
   }
 }
 

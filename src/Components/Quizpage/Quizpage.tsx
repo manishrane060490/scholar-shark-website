@@ -144,13 +144,13 @@ function Quizpage() {
 
                     {/* <source src={sharkVideo} type="video/mp4" /> */}
                     {/* <source src="/video/video.ogv" type="video/ogg" /> */}
-                    {showShark === 'staticshark' && windowWidth > 768 &&
+                    {showShark === 'staticshark' && windowWidth > 990 &&
                         <img src={staticshark} alt="shark" className='sharkGif'/>
                     }
-                    {showShark === 'thumpsup' && windowWidth > 768 &&
+                    {showShark === 'thumpsup' && windowWidth > 990 &&
                         <img src={thumpsup} alt="shark" className='sharkGif'/>
                     }
-                    {showShark === 'thumpsdown' && windowWidth > 768 &&
+                    {showShark === 'thumpsdown' && windowWidth > 990 &&
                         <img src={thumpsdown} alt="shark" className='sharkGif'/>
                     }
                     {/* {showShark === 'static' && windowWidth > 768 &&
