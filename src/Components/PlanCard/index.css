@@ -29,27 +29,27 @@
     border-radius: 10px;
 }
 
-.cricket {
-    background-image: url('../../assets/cricket.jpg');
+.gold {
+    background-image: url('../../assets/gold.png');
 }
-.history {
-    background-image: url('../../assets/history.jpg');
-}
-
-.food {
-    background-image: url('../../assets/food.jpg');
+.silver {
+    background-image: url('../../assets/silver.png');
 }
 
-.travel {
-    background-image: url('../../assets/travel.jpg');
+.diamond {
+    background-image: url('../../assets/diamond.png');
 }
 
-.indian-mythology {
-    background-image: url('../../assets/mythology.jpg');
+.plancard:first-child {
+    background: linear-gradient(0, rgba(192, 192, 192, 0.5) 0%, rgba(31, 65, 95, 0.1) 40%);
 }
 
-.finance {
-    background-image: url('../../assets/finance.jpg');
+.plancard:nth-child(2) {
+    background: linear-gradient(0, rgba(255, 215, 0, 0.5) 0%, rgba(31, 65, 95, 0.1) 40%);
+}
+
+.plancard:nth-child(3) {
+    background: linear-gradient(0, rgba(205, 127, 50, 0.5) 0%, rgba(31, 65, 95, 0.1) 40%);
 }
 
 .plancard h3 {
@@ -119,6 +119,11 @@ span.progress-line:after {
 
 .plancard-text h4 {
     margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+.plancard-text span {
+    font-size: 12px;
 }
 
 .count-text {

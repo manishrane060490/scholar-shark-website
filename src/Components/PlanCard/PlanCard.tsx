@@ -3,7 +3,7 @@ import person1 from '../../assets/person1.jpg';
 import person2 from '../../assets/person2.jpg';
 import person3 from '../../assets/person3.jpg';
 
-function Plancard({ title, count }: any) {
+function Plancard({ title, count, type }: any) {
 
   return (
     <div className='plancard'>
@@ -12,7 +12,7 @@ function Plancard({ title, count }: any) {
           <div className='plancard-info'>
             <div className='plancard-text'>
               <div>
-                <h3>Silver Plan</h3>
+                <h3>{title} Plan</h3>
                 <span>3 Quizes</span>
               </div>
               <div>
@@ -29,7 +29,7 @@ function Plancard({ title, count }: any) {
 
         </div>
         <div className='plancard-right'>
-          <div className={`plancard-bg ${title}`}></div>
+          <div className={`plancard-bg ${type}`}></div>
 
         </div>
       </div>
@@ -39,7 +39,7 @@ function Plancard({ title, count }: any) {
           <img src={person2} alt='persons' className='person' />
           <img src={person3} alt='persons' className='person' />
         </div>
-        <h3 className='count-text'>Over 300+ People are taking quiz right now</h3>
+        <h3 className='count-text'>Over {count}+ People are taking quiz right now</h3>
       </div>
     </div>
   )
