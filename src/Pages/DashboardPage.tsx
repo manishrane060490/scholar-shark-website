@@ -4,11 +4,14 @@ import { ReactTyped } from "react-typed";
 import Card from '../Components/Card/Card';
 import Plancard from '../Components/PlanCard/PlanCard';
 import person1 from '../assets/person1.jpg';
+import merce from '../assets/mercedes.png';
+import iphone from '../assets/iphone.png';
 import ticket from '../assets/ticket.png';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useContext } from 'react';
 import { PlansContext } from '../Context';
+import staticshark from '../assets/IdleAlphaGIF.gif';
 
 function DashboardPage() {
     const { plans, info } = useContext(PlansContext);
@@ -27,21 +30,23 @@ function DashboardPage() {
             </div>
             <div className="bannersection">
                 <Carousel autoPlay>
-                    {/* <div className='banner'>
+                    <div className='banner'>
                         <div className="banner-text">
-                            <ReactTyped
+                            {/* <ReactTyped
                                 strings={[
                                     "Hello friends!",
                                     "It's time to unleash your knowledge to conquer the seas of wisdom with scholar sharks.",
                                     "Use your skills and knowledge to bag outstanding prizes and make a difference with our outstanding quizzes."
                                 ]}
                                 typeSpeed={100}
-                            />
+                            /> */}
+                            <h4>At scholar shark, we believe knowledge of any form should be heavily rewarded. So swim with us, take our quiz and win exciting prizes</h4>
                         </div>
-                        <video className='video' width="100%" height="100%" loop autoPlay muted>
+                        {/* <video className='video' width="100%" height="100%" loop autoPlay muted>
                             <source src={sharkVideo} type="video/webm" />
-                        </video>
-                    </div> */}
+                        </video> */}
+                        <img src={staticshark} alt="shark" className='sharkGif'/>
+                    </div>
                     <div className='banner silver-banner'>
                         <div className="banner-text">
                             <h1>Silver Plan</h1>
@@ -50,9 +55,10 @@ function DashboardPage() {
                                 <h6>In this you can win upto 40k per quiz</h6>
                             </div>
                         </div>
-                        <video className='video' width="100%" height="100%" loop autoPlay muted>
+                        {/* <video className='video' width="100%" height="100%" loop autoPlay muted>
                             <source src={sharkVideo} type="video/webm" />
-                        </video>
+                        </video> */}
+                        <img src={staticshark} alt="shark" className='sharkGif'/>
                     </div>
                     <div className='banner gold-banner'>
                         <div className="banner-text">
@@ -62,24 +68,28 @@ function DashboardPage() {
                                 <h6>In this you can win upto 80k per quiz</h6>
                             </div>
                         </div>
-                        <video className='video' width="100%" height="100%" loop autoPlay muted>
-                            <source src={sharkVideo} type="video/webm" />
-                        </video>
+                        <img src={staticshark} alt="shark" className='sharkGif'/>
                     </div>
                     <div className='banner diamond-banner'>
                         <div className="banner-text">
                             <h1>Diamond Plan</h1>
                             <div className='banner-prize'>
-                                <img src={ticket} alt='prizes' className='prize-ticket'/>
+                                {/* <img src={ticket} alt='prizes' className='prize-ticket'/> */}
+                                <div className='imgGrp'>
+                                    <img src={merce} className='img1' />
+                                    <img src={iphone} className='img1' />
+
+                                </div>
                                 <h6>In this you can win mercedes</h6>
                             </div>
                         </div>
-                        <video className='video' width="100%" height="100%" loop autoPlay muted>
-                            <source src={sharkVideo} type="video/webm" />
-                        </video>
+                        <img src={staticshark} alt="shark" className='sharkGif'/>
                     </div>
                 </Carousel>
             </div>
+            {/* <div>
+                <h4>At scholar shark, we believe knowledge of any form should be heavily rewarded. So swim with us, take our quiz and win exciting prizes</h4>
+            </div> */}
             <div className="plans">
                 <h3>Your Plans</h3>
                 <div className='plancard-grp'>

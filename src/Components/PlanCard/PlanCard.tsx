@@ -31,9 +31,25 @@ function Plancard({ title, count, type, disabled }: any) {
         <div className='plancard-right'>
           <div className={`plancard-bg ${type}`}></div>
           {disabled && 
-            <div className='subDiv'>
-              <h5>Please buy this plan to unlock the prizes </h5>
-            </div>
+            <>
+            { 
+              type === 'gold' && 
+              <div className='subDiv'>
+                <h5>BE BETTER. </h5>
+                <h5>Challenge this tier to unlock the prizes</h5>
+              </div>
+
+            }
+            {
+              type === 'diamond' && 
+              <div className='subDiv'>
+                <h5>You are a diamond in rough.</h5>
+                <h5>Challenge this tier to win prizes upto 15 cr. *</h5>
+                
+              </div>
+            }
+              
+            </>
           }
         </div>
       </div>

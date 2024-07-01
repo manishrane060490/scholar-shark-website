@@ -9,6 +9,7 @@ import LeaderboardPage from './Pages/LeaderboardPage';
 import DashboardPage from './Pages/DashboardPage';
 import { PlansProvider } from './Context';
 import SummaryPage from './Pages/SummaryPage';
+import SilverQuizPage from './Components/SilverQuizPage/SilverQuizPage';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
               <Route path="leaderboard" element={<LeaderboardPage />} />
               <Route path="dashboard" element={<DashboardPage />} />
               <Route path="summary" element={<SummaryPage />} />
+              <Route path="silverQuiz" element={<SilverQuizPage />} />
               {/* <Route path="*" element={<NoPage />} />  */}
             {/* </Route> */}
           </Routes>

@@ -80,8 +80,15 @@
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+    font-family: 'arial';
+    flex-direction: column;
+
 }
 
+
+.subDiv h5 {
+    margin: 0;
+}
 .plancard-count {
     display: flex;
     align-items: center;
