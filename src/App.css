@@ -442,9 +442,13 @@ span.wrong {
     width: 100px;
 }
 
+.bannersection {
+    margin: 20px;
+}
+
 .banner {
     height: 400px;
-    margin: 20px;
+    /* margin: 20px; */
     background: #2B1963;
     border-radius: 10px;
     /* BACKGROUND: #6992BD; */
@@ -470,7 +474,7 @@ span.wrong {
     transform: translate(0px, -50%);
 }
 
-.banner:before {
+/* .banner:before {
     content: '';
     width: 300px;
     height: 100%;
@@ -483,6 +487,39 @@ span.wrong {
     top: 50%;
     backdrop-filter: blur(1rem);
     transform: translate(-10%, -50%);
+} */
+
+.silver-banner {
+    background: linear-gradient(90deg, rgba(192, 192, 192, 0.5) 0%, rgba(31, 65, 95, 0.1) 80%);
+}
+
+.silver-banner .banner-text, .gold-banner .banner-text, .diamond-banner .banner-text {
+    flex-direction: column;
+}
+
+.silver-banner .banner-text h1, .gold-banner .banner-text h1, .diamond-banner .banner-text h1 {
+    font-size: 36px;
+}
+
+.silver-banner .banner-text h6, .gold-banner .banner-text h6, .diamond-banner .banner-text h6{
+    margin: 0;
+    font-size: 24px;
+}
+
+.banner-prize {
+    display: flex;
+}
+
+img.prize-ticket {
+    height: 300px;
+}
+
+.gold-banner {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.5) 0%, rgba(31, 65, 95, 0.1) 80%);
+}
+
+.diamond-banner {
+    background: linear-gradient(90deg, rgba(205, 127, 50, 0.5) 0%, rgba(31, 65, 95, 0.1) 80%);
 }
 
 .banner video {
@@ -603,5 +640,9 @@ img.dropdown-img {
         font-size: 24px;
         width: 100%;
         margin-right: 10%;
+    }
+
+    img.prize-ticket {
+        height: 120px;
     }
 }
