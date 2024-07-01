@@ -581,13 +581,13 @@ img.dropdown-img {
         width:100%
     }
 
-    .desktop-view {
+    /* .desktop-view {
         display: none;
     }
 
     .mobile-view {
         display: block;
-    }
+    } */
 
     .row-header {
         display: none;
@@ -609,9 +609,21 @@ img.dropdown-img {
         margin: 10px 0;
     }
 
+    .rank {
+        flex: 0 1 50px;
+        padding-left: 0;
+    }
+
+    .score {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
     span.right, span.wrong {
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
+        margin: 0 2px;
     }
 
     .panel-left {
