@@ -2,13 +2,24 @@ import React, {useContext, useState} from "react";
 import Lighthouse from "../Components/Lighthouse/Lighthouse";
 import { Link } from "react-router-dom";
 import { PlansContext } from "../Context";
+import { useNavigate } from 'react-router-dom';
 
 function RegisterPage() {
-    const { plans, setPlans } = useContext(PlansContext);
+    const { plans, setInfo } = useContext(PlansContext);
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [mobileNumber, setMobileNumber] = useState('');
     const [validEmail, setValidEmail] = useState(false);
+    const navigate = useNavigate();
+
+    const handleSummary = () => {
+        setInfo({
+            name,
+            email,
+            mobileNumber
+        })
+        navigate('/summary');
+    }
 
     const handleEmailChange = (e:any) => {
         const inputEmail = e.target.value;
@@ -62,10 +73,13 @@ function RegisterPage() {
                         </div>
                     </div>
                     {
-                        
-                        <Link to='/summary' className={`register-btn ${(email.length > 0 && mobileNumber.length > 0 && name.length > 0) === true ? '' : 'disabled'}`}>
+                        <button onClick={handleSummary} className={`register-btn ${(email.length > 0 && mobileNumber.length > 0 && name.length > 0) === true ? '' : 'disabled'}`}>
                             Summary
-                        </Link>
+                        </button>
+                        
+                        // <Link to='/summary' className={`register-btn ${(email.length > 0 && mobileNumber.length > 0 && name.length > 0) === true ? '' : 'disabled'}`}>
+                            
+                        // </Link>
                     }
                     
                 </div>

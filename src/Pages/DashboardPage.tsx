@@ -11,7 +11,7 @@ import { useContext } from 'react';
 import { PlansContext } from '../Context';
 
 function DashboardPage() {
-    const { plans, setPlans } = useContext(PlansContext);
+    const { plans, info } = useContext(PlansContext);
     console.log(plans);
     return (
         <div className="homePage">
@@ -84,8 +84,8 @@ function DashboardPage() {
                 <h3>Your Plans</h3>
                 <div className='plancard-grp'>
                     <Plancard title={'Silver'} count={100} type={'silver'}/>
-                    <Plancard title={'Gold'} count={150} type={'gold'} disabled={true}/>
-                    <Plancard title={'Diamond'} count={300} type={'diamond'} disabled={true}/>
+                    <Plancard title={'Gold'} count={150} type={'gold'} disabled={plans.plan !== 'gold'}/>
+                    <Plancard title={'Diamond'} count={300} type={'diamond'} disabled={plans.plan !== 'diamond'}/>
                 </div>
             </div>
             <div className="quizs">
