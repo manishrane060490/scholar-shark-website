@@ -442,9 +442,13 @@ span.wrong {
     width: 100px;
 }
 
+.bannersection {
+    margin: 20px;
+}
+
 .banner {
     height: 400px;
-    margin: 20px;
+    /* margin: 20px; */
     background: #2B1963;
     border-radius: 10px;
     /* BACKGROUND: #6992BD; */

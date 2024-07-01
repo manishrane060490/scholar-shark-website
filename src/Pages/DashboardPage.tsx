@@ -4,6 +4,8 @@ import { ReactTyped } from "react-typed";
 import Card from '../Components/Card/Card';
 import Plancard from '../Components/PlanCard/PlanCard';
 import person1 from '../assets/person1.jpg';
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function DashboardPage() {
     return (
@@ -18,20 +20,39 @@ function DashboardPage() {
                     </div>
                 </div>
             </div>
-            <div className="banner">
-                <div className="banner-text">
-                <ReactTyped
-                    strings={[
-                        "Hello friends!",
-                        "It's time to unleash your knowledge to conquer the seas of wisdom with scholar sharks.",
-                        "Use your skills and knowledge to bag outstanding prizes and make a difference with our outstanding quizzes."
-                    ]}
-                    typeSpeed={100}
-                />
-                </div>
-                <video className='video' width="100%" height="100%" loop autoPlay muted>
-                    <source src={sharkVideo} type="video/webm" />
-                </video>
+            <div className="bannersection">
+                <Carousel autoPlay>
+                    <div className='banner'>
+                        <div className="banner-text">
+                            <ReactTyped
+                                strings={[
+                                    "Hello friends!",
+                                    "It's time to unleash your knowledge to conquer the seas of wisdom with scholar sharks.",
+                                    "Use your skills and knowledge to bag outstanding prizes and make a difference with our outstanding quizzes."
+                                ]}
+                                typeSpeed={100}
+                            />
+                        </div>
+                        <video className='video' width="100%" height="100%" loop autoPlay muted>
+                            <source src={sharkVideo} type="video/webm" />
+                        </video>
+                    </div>
+                    <div className='banner'>
+                        <div className="banner-text">
+                            {/* <ReactTyped
+                                strings={[
+                                    "Hello friends!",
+                                    "It's time to unleash your knowledge to conquer the seas of wisdom with scholar sharks.",
+                                    "Use your skills and knowledge to bag outstanding prizes and make a difference with our outstanding quizzes."
+                                ]}
+                                typeSpeed={100}
+                            /> */}
+                        </div>
+                        <video className='video' width="100%" height="100%" loop autoPlay muted>
+                            <source src={sharkVideo} type="video/webm" />
+                        </video>
+                    </div>
+                </Carousel>
             </div>
             <div className="plans">
                 <h3>Your Plans</h3>
