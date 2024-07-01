@@ -115,7 +115,7 @@ function Quizpage() {
             <Lighthouse light />
             <div className='quizPanel'>
                 <div className='quizPanel-left'>
-                    <div>
+                    <div className='quizPanel-text'>
                         <h1>Unlesh your knowledge</h1>
                         <h4>Where learning takes a dive</h4>
                     </div>
