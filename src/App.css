@@ -561,6 +561,7 @@ img.prize-ticket {
 
 .card-grp > div {
     margin-right: 20px;
+    position: relative;
 }
 
 .plancard-grp {
