@@ -114,12 +114,22 @@ button {
 }
 
 @media (max-width : 768px) {
+  .quizPanel{
+    flex-direction: column;
+    border-radius: 0;
+  }
+
   .quizPanel-left {
-    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 0;
   }
 
   .quizPanel-right {
     width: 100%;
+    border-radius: 0;
   }
 }
 

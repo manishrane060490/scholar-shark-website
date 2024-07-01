@@ -115,6 +115,10 @@ function Quizpage() {
             <Lighthouse light />
             <div className='quizPanel'>
                 <div className='quizPanel-left'>
+                    <div>
+                        <h1>Unlesh your knowledge</h1>
+                        <h4>Where learning takes a dive</h4>
+                    </div>
                     {/* <img src={quizImg} alt='quizImg' /> */}
 
                     {/* <source src={sharkVideo} type="video/mp4" /> */}
