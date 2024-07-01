@@ -485,7 +485,7 @@ span.wrong {
 
 .banner video {
     position: absolute;
-    top: 5%;
+    bottom: -13%;
     z-index: 1;
     height: 100%;
     right: 0;
@@ -517,6 +517,13 @@ span.wrong {
 
 .card-grp > div {
     margin-right: 20px;
+}
+
+.plancard-grp {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    gap: 15px;
 }
 
 @media (max-width: 768px) {
@@ -564,5 +571,28 @@ span.wrong {
     .panel-left {
         padding: 0 10px;
         overflow: auto;
+    }
+
+    .card-grp, .plancard-grp {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card-grp > div {
+        margin-right: 0;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    .banner video {
+        display: none;
+    }
+
+    .banner-text {
+        font-size: 24px;
+        width: 100%;
+        margin-right: 10%;
     }
 }
