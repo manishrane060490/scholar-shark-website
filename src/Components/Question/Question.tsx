@@ -5,7 +5,8 @@ export default function Question({disabled, number, question, onAnswerClick, onA
 
   return (
     <div className='question'>
-        <h2>{number + 1}. {question.question}</h2>
+        <h4 className='question-num'>Question {number + 1}</h4>
+        <h2>{question.question}</h2>
         <ul className='options' id='options'>
             {question.answerOptions.map((option: { text: string; isCorrect: boolean }) => {
                 return (

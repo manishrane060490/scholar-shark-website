@@ -123,6 +123,7 @@ button {
 .quizPanel-text {
   margin: auto;
   color: rgba(192, 192, 192, 0.9);
+  margin-top: 20px;
 }
 
 .quizPanel-text h1 {
@@ -133,6 +134,24 @@ button {
 .quizPanel-text h4 {
   font-size: 28px;
   margin: 10px 0 0;
+}
+
+.question-num {
+  color: #5a5a91;
+}
+
+.quizPanel-section{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.quizPanel-logo{
+  margin-left: auto;
+}
+
+.quizPanel-logo img{
+  width: 100px;
 }
 
 @media (max-width : 768px) {
@@ -160,8 +179,13 @@ button {
     display: flex;
     color: rgba(192, 192, 192, 0.9);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 0;
+  }
+
+  .quizPanel-section{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
   }
 
   .quizPanel-text h1 {
