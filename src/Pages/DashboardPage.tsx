@@ -2,6 +2,7 @@ import logo from '../assets/logo.png';
 import sharkVideo from '../assets/IdleAlphaWEBM.webm';
 import { ReactTyped } from "react-typed";
 import Card from '../Components/Card/Card';
+import Plancard from '../Components/PlanCard/PlanCard';
 
 function DashboardPage() {
     return (
@@ -9,6 +10,9 @@ function DashboardPage() {
             <div className="header">
                 <div className="left-side">
                     <img src={logo} className="home-logo" alt="Scholar Shark"/>
+                </div>
+                <div className='right-side'>
+                    
                 </div>
             </div>
             <div className="banner">
@@ -28,6 +32,11 @@ function DashboardPage() {
             </div>
             <div className="plans">
                 <h3>Your Plans</h3>
+                <div className='plancard-grp'>
+                    <Plancard title={'cricket'} count={200}/>
+                    <Plancard title={'cricket'} count={200}/>
+                    <Plancard title={'cricket'} count={200}/>
+                </div>
             </div>
             <div className="quizs">
                 <h3>Quizes</h3>
