@@ -19,6 +19,7 @@
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
     backdrop-filter: blur(1rem);
     box-shadow: 0 0 0 8px #28284b;
+    background: #06061c;
 }
 
 .quizPanel-left {
@@ -79,7 +80,7 @@
 .options > li > button {
     margin-bottom: 10px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
     border: 2px solid #45429f;
 }
@@ -146,6 +147,9 @@ button {
   padding: 10px;
 }
 
+.sharkGif {
+  width: 80%;
+}
 .quizPanel-logo{
   margin-left: auto;
 }
@@ -181,12 +185,13 @@ button {
     color: rgba(192, 192, 192, 0.9);
     flex-direction: column;
     margin-top: 0;
+    display: none;
   }
 
   .quizPanel-section{
     display: flex;
     flex-direction: row-reverse;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
   }
 
   .quizPanel-text h1 {
@@ -198,15 +203,21 @@ button {
     font-size: 22px;
     margin: 10px 0 0;
   }
+
+  .sharkGif {
+    width: 50%;
+    position: relative;
+    margin-bottom: -12px;
+  }
 }
 
-.correct {
+.options > li > .correct {
   background-color: #2fb12f;
   color: #fff;
   transition: all 1s ease-in;
 }
 
-.wrong {
+.options > li > .wrong {
   background-color: #df4e4e;
   color: #fff;
   transition: all 1s ease-in;

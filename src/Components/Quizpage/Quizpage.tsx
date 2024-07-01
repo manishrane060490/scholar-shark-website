@@ -9,6 +9,9 @@ import { PlansContext } from '../../Context';
 import sharkVideo from '../../assets/IdleAlphaWEBM.webm';
 import sharkThumpsUpVideo from '../../assets/ThumbsUpAlphaWEBM.webm';
 import sharkThumpsDownVideo from '../../assets/ThumbsDownAlphaWEBM.webm';
+import staticshark from '../../assets/IdleAlphaGIF.gif';
+import thumpsup from '../../assets/ThumbsUpAlphaGIF.gif';
+import thumpsdown from '../../assets/ThumbsDownAlphaGIF.gif';
 import logo from '../../assets/logo.png';
 
 function useWindowSize() {
@@ -32,7 +35,7 @@ function Quizpage() {
     const [userAnswers, setUserAnswers] = useState<any>([]);
     const [explanation, setExplanation] = useState(false);
     const [nextDisabled, setNextDisabled] = useState(true);
-    const [showShark, setShowShark] = useState('static');
+    const [showShark, setShowShark] = useState('staticshark');
     const [disabled, setDisabled] = useState(false);
     const [randomObject, setRandomObject] = useState(null);
     const [windowWidth, setWindowWidth] = useState<number>(0);
@@ -76,7 +79,7 @@ function Quizpage() {
 
         setExplanation(false);
         setNextDisabled(true);
-        setShowShark('static');
+        setShowShark('staticshark');
         setDisabled(false);
 
         // if((questions.length - 2) === currentQuestion) {
@@ -124,13 +127,33 @@ function Quizpage() {
                             <h1>Unlesh your knowledge</h1>
                             <h4>Where learning takes a dive</h4>
                         </div>
+                        <div>
+                        {showShark === 'staticshark' && windowWidth < 991 &&
+                            <img src={staticshark} alt="shark" className='sharkGif'/>
+                        }
+                        {showShark === 'thumpsup' && windowWidth <  991 &&
+                            <img src={thumpsup} alt="shark" className='sharkGif'/>
+                        }
+                        {showShark === 'thumpsdown' && windowWidth < 991 &&
+                            <img src={thumpsdown} alt="shark" className='sharkGif'/>
+                        }
+                        </div>
                     </div>
                     
                     {/* <img src={quizImg} alt='quizImg' /> */}
 
                     {/* <source src={sharkVideo} type="video/mp4" /> */}
                     {/* <source src="/video/video.ogv" type="video/ogg" /> */}
-                    {showShark === 'static' && windowWidth > 768 &&
+                    {showShark === 'staticshark' && windowWidth > 768 &&
+                        <img src={staticshark} alt="shark" className='sharkGif'/>
+                    }
+                    {showShark === 'thumpsup' && windowWidth > 768 &&
+                        <img src={thumpsup} alt="shark" className='sharkGif'/>
+                    }
+                    {showShark === 'thumpsdown' && windowWidth > 768 &&
+                        <img src={thumpsdown} alt="shark" className='sharkGif'/>
+                    }
+                    {/* {showShark === 'static' && windowWidth > 768 &&
                         <video className='video' width="100%" height="100%" loop autoPlay muted>
                             <source src={sharkVideo} type="video/webm" />
                         </video>
@@ -144,7 +167,7 @@ function Quizpage() {
                         <video className='video' width="100%" height="100%" loop autoPlay muted>
                             <source src={sharkThumpsDownVideo} type="video/webm" />
                         </video>
-                    }
+                    } */}
                 </div>
                 <div className='quizPanel-right'>
 
