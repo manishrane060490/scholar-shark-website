@@ -7,8 +7,12 @@ import person1 from '../assets/person1.jpg';
 import ticket from '../assets/ticket.png';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { useContext } from 'react';
+import { PlansContext } from '../Context';
 
 function DashboardPage() {
+    const { plans, setPlans } = useContext(PlansContext);
+    console.log(plans);
     return (
         <div className="homePage">
             <div className="header">
@@ -80,8 +84,8 @@ function DashboardPage() {
                 <h3>Your Plans</h3>
                 <div className='plancard-grp'>
                     <Plancard title={'Silver'} count={100} type={'silver'}/>
-                    <Plancard title={'Gold'} count={150} type={'gold'}/>
-                    <Plancard title={'Diamond'} count={300} type={'diamond'}/>
+                    <Plancard title={'Gold'} count={150} type={'gold'} disabled={true}/>
+                    <Plancard title={'Diamond'} count={300} type={'diamond'} disabled={true}/>
                 </div>
             </div>
             <div className="quizs">
@@ -94,12 +98,12 @@ function DashboardPage() {
                 </div>
                 <h4>Gold Quiz</h4>
                 <div className='card-grp'>
-                    <Card title={'travel'} count={200}/>
-                    <Card title={'indian-mythology'} count={200}/>
+                    <Card title={'travel'} count={200} />
+                    <Card title={'indian-mythology'} count={200} />
                 </div>
                 <h4>Diamon Quiz</h4>
                 <div className='card-grp'>
-                    <Card title={'finance'} count={200}/>
+                    <Card title={'finance'} count={200} />
                 </div>
             </div>
             <div className="leaderboard"></div>
