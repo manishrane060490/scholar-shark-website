@@ -3,9 +3,6 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Lighthouse from "../Components/Lighthouse/Lighthouse";
 import { PlansContext } from "../Context";
-import axios from 'axios';
-import logo from '../assets/logo.png';
-import useRazorpay from "react-razorpay";
 
 function SummaryPage() {
     const { plans, info } = useContext(PlansContext);
