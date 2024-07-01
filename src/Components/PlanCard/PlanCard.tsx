@@ -12,7 +12,7 @@ function Plancard({ title, count, type, disabled }: any) {
           <div className='plancard-info'>
             <div className='plancard-text'>
               <div>
-                <h3>{title} Plan</h3>
+                <h3>{title} Tier</h3>
                 <span>3 Quizes</span>
               </div>
               {/* <div>
@@ -24,7 +24,7 @@ function Plancard({ title, count, type, disabled }: any) {
               <span className='progress-line'></span>
               <span className='progress-main'></span>
             </div> */}
-            <button className='button full-width'>{disabled ? 'Subscribe' : 'Selected'}</button>
+            <button className='button full-width'>{disabled ? 'Challenge' : 'Selected'}</button>
           </div>
 
         </div>

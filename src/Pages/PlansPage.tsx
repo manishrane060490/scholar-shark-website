@@ -13,6 +13,8 @@ function PlansPage() {
         setPlan(true);
     }
 
+    console.log(plans);
+
     useEffect(() => {
         setPlan(false);
     }, [])
