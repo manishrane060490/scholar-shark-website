@@ -4,9 +4,9 @@ import { ReactTyped } from "react-typed";
 import Card from '../Components/Card/Card';
 import Plancard from '../Components/PlanCard/PlanCard';
 import person1 from '../assets/person1.jpg';
-import merce from '../assets/mercedes.png';
-import iphone from '../assets/iphone.png';
-import ticket from '../assets/ticket.png';
+import goldbg from '../assets/goldbg.png';
+import dbg from '../assets/diamondbg.png';
+import silverbg from '../assets/silverbg.png';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useContext } from 'react';
@@ -49,10 +49,10 @@ function DashboardPage() {
                     </div>
                     <div className='banner silver-banner'>
                         <div className="banner-text">
-                            <h1>Silver Plan</h1>
+                            <h1>Silver Tier</h1>
                             <div className='banner-prize'>
-                                <img src={ticket} alt='prizes' className='prize-ticket'/>
-                                <h6>In this you can win upto 40k per quiz</h6>
+                                <img src={silverbg} alt='prizes' className='prize-ticket'/>
+                                <h6>Participate in silver tier and win prizes upto 1 lakh* every week </h6>
                             </div>
                         </div>
                         {/* <video className='video' width="100%" height="100%" loop autoPlay muted>
@@ -62,25 +62,24 @@ function DashboardPage() {
                     </div>
                     <div className='banner gold-banner'>
                         <div className="banner-text">
-                            <h1>Gold Plan</h1>
+                            <h1>Gold Tier</h1>
                             <div className='banner-prize'>
-                                <img src={ticket} alt='prizes' className='prize-ticket'/>
-                                <h6>In this you can win upto 80k per quiz</h6>
+                                <img src={goldbg} alt='prizes' className='prize-ticket'/>
+                                <h6>Participate in gold tier and win prizes upto 2 lakh* bi-weekly</h6>
                             </div>
                         </div>
                         <img src={staticshark} alt="shark" className='sharkGif'/>
                     </div>
                     <div className='banner diamond-banner'>
                         <div className="banner-text">
-                            <h1>Diamond Plan</h1>
+                            <h1>Diamond Tier</h1>
                             <div className='banner-prize'>
                                 {/* <img src={ticket} alt='prizes' className='prize-ticket'/> */}
                                 <div className='imgGrp'>
-                                    <img src={merce} className='img1' />
-                                    <img src={iphone} className='img1' />
+                                    <img src={dbg} className='img1' />
 
                                 </div>
-                                <h6>In this you can win mercedes</h6>
+                                <h6>Participate in Diamond tier and get a chance to win a mercedes and much every Quater</h6>
                             </div>
                         </div>
                         <img src={staticshark} alt="shark" className='sharkGif'/>
