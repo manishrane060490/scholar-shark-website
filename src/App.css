@@ -329,22 +329,22 @@ img.leader-logo {
     padding: 20px 10px;
     border-radius: 10px;
     margin: 10px;
-    background: linear-gradient(90deg, rgba(31, 65, 95, 0.1) 0%, rgba(31, 65, 95, 0.1) 12%);
-    -webkit-backdrop-filter: blur(1rem);
-    backdrop-filter: blur(1rem);
+    background: linear-gradient(90deg, rgba(31, 65, 95, 0.1) 0%, rgba(0, 0, 0, 0.1) 40%);
+    /* -webkit-backdrop-filter: blur(1rem); */
+    /* backdrop-filter: blur(1rem); */
     font-size: 20px;
 }
 
 .row:first-child {
-    background: linear-gradient(90deg, rgba(255, 215, 0, 0.5) 0%, rgba(31, 65, 95, 0.1) 12%);
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 40%);
 }
 
 .row:nth-child(2) {
-    background: linear-gradient(90deg, rgba(192, 192, 192, 0.5) 0%, rgba(31, 65, 95, 0.1) 12%);
+    background: linear-gradient(90deg, rgba(192, 192, 192, 0.5) 0%, rgba(0, 0, 0, 0.1) 40%);
 }
 
 .row:nth-child(3) {
-    background: linear-gradient(90deg, rgba(205, 127, 50, 0.5) 0%, rgba(31, 65, 95, 0.1) 12%);
+    background: linear-gradient(90deg, rgba(205, 127, 50, 0.5) 0%, rgba(0, 0, 0, 0.1) 40%);
 }
 
 .leader-result {
