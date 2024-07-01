@@ -141,7 +141,9 @@ function Quizpage() {
                     </div>
                     
                     {/* <img src={quizImg} alt='quizImg' /> */}
-
+                    <img src={staticshark} alt="shark" className='sharkGifhidden'/>
+                    <img src={staticshark} alt="shark" className='sharkGifhidden'/>
+                    <img src={staticshark} alt="shark" className='sharkGifhidden'/>
                     {/* <source src={sharkVideo} type="video/mp4" /> */}
                     {/* <source src="/video/video.ogv" type="video/ogg" /> */}
                     {showShark === 'staticshark' && windowWidth > 990 &&
