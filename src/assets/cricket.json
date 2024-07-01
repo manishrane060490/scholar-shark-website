@@ -1,0 +1,262 @@
+[
+    {
+        "srNo": 75,
+        "category": "how to save taxes:",
+        "question": "Which cricketer had scored the most runs at the ODI World Cup until 2019?",
+        "answerOptions": [
+            {
+                "text": "Sachin Tendulkar",
+                "isCorrect": true
+            },
+            {
+                "text": "Mohammad Azharuddin",
+                "isCorrect": false
+            },
+            {
+                "text": "Saurav Ganguly",
+                "isCorrect": false
+            },
+            {
+                "text": "Rahul Dravid",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Sachin Tendulkar",
+        "explanation": "Sachin Tendulkar is the correct answer because he has scored the most runs at the World Cup. Throughout his career, Tendulkar displayed exceptional batting skills and consistency, making him one of the greatest cricketers of all time. He participated in six World Cup tournaments and accumulated a total of 2,278 runs, including six centuries and 15 half-centuries.",
+        "url": null
+    },
+    {
+        "srNo": 121,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "Up until 2019, which cricketers have the record for the highest-run partnership in the ODI World Cup for India?",
+        "answerOptions": [
+            {
+                "text": "Sachin Tendulkar and Saurav Ganguly",
+                "isCorrect": false
+            },
+            {
+                "text": "Saurav Ganguly and Rahul Dravid",
+                "isCorrect": true
+            },
+            {
+                "text": "Saurav Ganguly and Virender Sehwag",
+                "isCorrect": false
+            },
+            {
+                "text": "Rahul Dravid and Sachin Tendulkar",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Saurav Ganguly and Rahul Dravid",
+        "explanation": "The highest-run partnership in the ICC Cricket World Cup for India was between Sourav Ganguly and Rahul Dravid. They had a partnership of 318 runs for the second wicket during the 1999 Cricket World Cup. This partnership was against Sri Lanka in a group-stage match.",
+        "url": null
+    },
+    {
+        "srNo": 58,
+        "category": "how to save taxes:",
+        "question": "Who was the highest wicket-taker for India during the historic 1983 Prudential World Cup held in England?",
+        "answerOptions": [
+            {
+                "text": "Ravi Shashtri",
+                "isCorrect": false
+            },
+            {
+                "text": "Kapil Dev",
+                "isCorrect": false
+            },
+            {
+                "text": "Sandeep Patil",
+                "isCorrect": false
+            },
+            {
+                "text": "Roger Binny",
+                "isCorrect": true
+            }
+        ],
+        "rightAnswer": "Roger Binny",
+        "explanation": "Roger Binny was the highest wicket-taker for India during the historic 1983 Prudential World Cup held in England. His accurate and disciplined bowling played a significant role in India's victory in the 1983 World Cup. He took a total of 18 wickets from 8 matches.",
+        "url": null
+    },
+    {
+        "srNo": 4,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "During the 'Wills World Cup' of 1996, India was eliminated at the stage of?",
+        "answerOptions": [
+            {
+                "text": "Quarter-Finals",
+                "isCorrect": false
+            },
+            {
+                "text": "Semi-Finals",
+                "isCorrect": true
+            },
+            {
+                "text": "Finals",
+                "isCorrect": false
+            },
+            {
+                "text": "Group Matches",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Semi-Finals",
+        "explanation": "In the 1996 Wills World Cup, India was eliminated at the semi-final stage by Sri Lanka, chasing a target of 252 runs. The match was against Sri Lanka and took place at Eden Gardens. This was a significant event in the history of Indian cricket.",
+        "url": null
+    },
+    {
+        "srNo": 69,
+        "category": "how to save taxes:",
+        "question": "Who was the captain of the Indian team during the first World Cup in England in 1975?",
+        "answerOptions": [
+            {
+                "text": "Srinivasaraghavan Venkataraghavan",
+                "isCorrect": true
+            },
+            {
+                "text": "Abid Ali",
+                "isCorrect": false
+            },
+            {
+                "text": "Sunil Gavaskar",
+                "isCorrect": false
+            },
+            {
+                "text": "Gundappa Viswanath",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Srinivasaraghavan Venkataraghavan",
+        "explanation": "Srinivasaraghavan Venkataraghavan was the captain of the Indian team during the first World Cup in England in 1975. He was a renowned off-spin bowler and a reliable middle-order batsman. Venkataraghavan led the Indian team with his experience and leadership skills, guiding them through their first-ever World Cup campaign.",
+        "url": null
+    },
+    {
+        "srNo": 80,
+        "category": "how to save taxes:",
+        "question": "Against which country did India score their highest total at the ODI World Cup in 2007?",
+        "answerOptions": [
+            {
+                "text": "Bermuda",
+                "isCorrect": true
+            },
+            {
+                "text": "Kenya",
+                "isCorrect": false
+            },
+            {
+                "text": "Sri Lanka",
+                "isCorrect": false
+            },
+            {
+                "text": "Namibia",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Bermuda",
+        "explanation": "India's highest total in the ICC Cricket World Cup was scored against Bermuda. India scored 413 runs for the loss of five wickets in a group-stage match during the 2007 Cricket World Cup. The best batsman in the match between India and Bermuda in the 2007 World Cup was Virender Sehwag from India. He scored 114 runs off 87 balls, including 17 fours and 3 sixes.",
+        "url": null
+    },
+    {
+        "srNo": 142,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "Who was the highest wicket-taker for India at the 2015 ODI World Cup?",
+        "answerOptions": [
+            {
+                "text": "Anil Kumble",
+                "isCorrect": false
+            },
+            {
+                "text": "Mohammed Shami",
+                "isCorrect": false
+            },
+            {
+                "text": "Umesh Yadav",
+                "isCorrect": true
+            },
+            {
+                "text": "Zaheer Khan",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Umesh Yadav",
+        "explanation": "The highest wicket-taker for India at the 2015 ODI World Cup was Umesh Yadav. He picked 18 wickets in eight matches in the tournament. Umesh Yadav’s best bowling figures in the 2015 ODI World Cup were 4/31.",
+        "url": null
+    },
+    {
+        "srNo": 92,
+        "category": "how to save taxes:",
+        "question": "Which cricketer has scored the most ducks at the ODI World Cup for India as of 2023?",
+        "answerOptions": [
+            {
+                "text": "Ajit Agarkar",
+                "isCorrect": false
+            },
+            {
+                "text": "Sachin Tendulkar",
+                "isCorrect": false
+            },
+            {
+                "text": "Krishnamachari Srikkanth",
+                "isCorrect": true
+            },
+            {
+                "text": "Javagal Srinath",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "Krishnamachari Srikkanth",
+        "explanation": "Krishnamachari Srikkanth, the former Indian cricketer, holds the record for the most ducks in ODI World Cup matches for India. He scored a total of 4 ducks in ODI World Cup matches during his career.",
+        "url": null
+    },
+    {
+        "srNo": 44,
+        "category": "general",
+        "question": "How many runs did India make in its historic World Cup win over West Indies in 1983?",
+        "answerOptions": [
+            {
+                "text": "374",
+                "isCorrect": false
+            },
+            {
+                "text": "175",
+                "isCorrect": false
+            },
+            {
+                "text": "183",
+                "isCorrect": true
+            },
+            {
+                "text": "259",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "183",
+        "explanation": "In the historic World Cup final of 1983, India made a total of 183 runs against the West Indies. India's bowling attack performed exceptionally well, and they managed to bowl out the West Indies for 140 runs, securing India's first-ever Cricket World Cup victory.",
+        "url": null
+    },
+    {
+        "srNo": 138,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "Which country did India score their lowest total against in the history of the ODI World Cup?",
+        "answerOptions": [
+            {
+                "text": "West Indies",
+                "isCorrect": false
+            },
+            {
+                "text": "England",
+                "isCorrect": false
+            },
+            {
+                "text": "New Zealand",
+                "isCorrect": false
+            },
+            {
+                "text": "Australia",
+                "isCorrect": true
+            }
+        ],
+        "rightAnswer": "Australia",
+        "explanation": "India recorded their lowest total in the history of the ODI World Cup against Australia. This occurred during the 1983 World Cup when India was bowled out for just 183 runs in the final match. Despite this low score, India went on to win the match and secured their first World Cup title. This game is particularly famous for India's unexpected victory against the heavily favored Australian team.",
+        "url": null
+    }
+]

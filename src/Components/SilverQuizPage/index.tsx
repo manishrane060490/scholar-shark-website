@@ -1,0 +1,1 @@
+import SilverQuizPage from './SilverQuizPage'
