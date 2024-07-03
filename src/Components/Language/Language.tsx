@@ -98,8 +98,8 @@ function Language() {
 
         <div className='button-container'>
           <Link className='button' to="/quiz">English</Link>
-          <Link className='button' to="/quiz">Marathi</Link>
-          <Link className='button' to="/quiz">Hindi</Link>
+          {/* <Link className='button' to="/quiz">Marathi</Link>
+          <Link className='button' to="/quiz">Hindi</Link> */}
         </div>
       </div>
       <div className='rotate-screen'>
