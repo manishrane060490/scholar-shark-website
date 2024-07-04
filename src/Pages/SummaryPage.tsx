@@ -3,10 +3,15 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Lighthouse from "../Components/Lighthouse/Lighthouse";
 import { PlansContext } from "../Context";
+import axios from 'axios';
+import logo from '../assets/logo.png';
 
 function SummaryPage() {
+    const [responseId, setResponseId] = useState("");
+    const [responseState, setResponseStatus] = useState([]);
     const { plans, info } = useContext(PlansContext);
     console.log(info);
+    console.log(plans);
 
     // const planSelected = (plan: string, amt: string) => {
     //     setPlans({ plan, amt });
@@ -17,109 +22,75 @@ function SummaryPage() {
     //     setPlan(false);
     // }, [])
 
-    // function loadScript(src: string) {
-    //     return new Promise((resolve) => {
-    //         const script = document.createElement('script');
-    //         script.src = src;
-    //         script.onload = () => {
-    //             resolve(true);
-    //         };
-    //         script.onerror = () => {
-    //             resolve(false);
-    //         };
-    //         document.body.appendChild(script);
-    //     });
-    // }
+    const loadScript = (src: string) => {
+        return new Promise((resolve) => {
+          const script = document.createElement('script');
+          script.src = src;
+          script.onload = () => {
+            resolve(true);
+          };
+          script.onerror = () => {
+            resolve(false);
+          };
+          document.body.appendChild(script);
+        });
+    }
 
-    // async function displayRazorpay() {
-    //     const res = await loadScript(
-    //         'https://checkout.razorpay.com/v1/checkout.js'
-    //     );
+    const createRazorpayOrder = (amount: number) => {
+        let data = JSON.stringify({
+          amount: amount * 100,
+          currency: "INR"
+        })
+    
+        let config = {
+          method: "post",
+          maxBosyLength: Infinity,
+          url: "http://localhost:1000/orders",
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          data: data
+        }
+    
+        axios.request(config)
+        .then(response => {
+          console.log(JSON.stringify(response.data))
+          handleRazorpayScreen(response.data.amount)
+        })
+        .catch(error => {
+          console.log("error at", error)
+        })
+    }
+    
+    const handleRazorpayScreen = async(amount: number) => {
+    const res = await loadScript("https://checkout.razorpay.com/v1/checkout.js")
 
-    //     if (!res) {
-    //         alert('Razorpay SDK failed to load. Are you online?');
-    //         return;
-    //     }
+    if(!res) {
+        alert("Some error at razorpay screen loading")
+        return;
+    }
 
-    //     const result = await axios.post('/payment/orders');
+    const options = {
+        key: 'rzp_test_xVhe8Kc1nyWe7C',
+        amount: amount,
+        currency: 'INR',
+        name: info.name,
+        description: "payment",
+        handler: function(response: any) {
+            setResponseId(response.razorpay_payment_id)
+        },
+        prefill: {
+        name: info.name,
+        email: info.email
+        },
+        theme: {
+        color: "#f4c430"
+        }
+    }
 
-    //     if (!result) {
-    //         alert('Server error. Are you online?');
-    //         return;
-    //     }
-
-    //     const { amount, id: order_id, currency } = result.data;
-
-    //     const options = {
-    //         key: 'rzp_test_2eWKVCYqyhZ5Ni', // Enter the Key ID generated from the Dashboard
-    //         amount: 800,
-    //         currency: 'INR',
-    //         name: 'Soumya Corp.',
-    //         description: 'Test Transaction',
-    //         image: { logo },
-    //         order_id: '123',
-    //         handler: async function (response: any) {
-    //             const data = {
-    //                 orderCreationId: '123',
-    //                 razorpayPaymentId: response.razorpay_payment_id,
-    //                 razorpayOrderId: response.razorpay_order_id,
-    //                 razorpaySignature: response.razorpay_signature,
-    //             };
-
-    //             const result = await axios.post('/payment/success', data);
-
-    //             alert(result.data.msg);
-    //         },
-    //         prefill: {
-    //             name: 'Manish',
-    //             email: 'example@example.com',
-    //             contact: '9999999999',
-    //         },
-    //         notes: {
-    //             address: 'Example Corporate Office',
-    //         },
-    //         theme: {
-    //             color: '#61dafb',
-    //         },
-    //     };
-
-    //     const paymentObject = new (window as any).Razorpay(options);
-    //     paymentObject.open();
-    // }
-
-    // const [Razorpay] = useRazorpay();
-
-    // const handlePayment = useCallback(() => {
-    //     // const order = await createOrder(params);
-
-    //     const options: any = {
-    //         key: "rzp_test_2eWKVCYqyhZ5Ni",
-    //         amount: "3000",
-    //         currency: "INR",
-    //         name: "Acme Corp",
-    //         description: "Test Transaction",
-    //         image: "https://example.com/your_logo",
-    //         order_id: '123',
-    //         handler: (res: any) => {
-    //             console.log(res);
-    //         },
-    //         prefill: {
-    //             name: "Piyush Garg",
-    //             email: "youremail@example.com",
-    //             contact: "9999999999",
-    //         },
-    //         notes: {
-    //             address: "Razorpay Corporate Office",
-    //         },
-    //         theme: {
-    //             color: "#3399cc",
-    //         },
-    //     };
-
-    //     const rzpay = new Razorpay(options);
-    //     rzpay.open();
-    // }, [Razorpay]);
-
+    const paymentObject = new (window as any).Razorpay(options);
+    paymentObject.open()
+    }
     return (
         <>
             <Lighthouse light={false} />
@@ -237,13 +208,13 @@ function SummaryPage() {
                             </div>
                         </div>
 
-                        <Link to='/login' className="register-btn">
+                        {/* <Link to='/login' className="register-btn">
                             Proceed to Payment
-                        </Link>
+                        </Link> */}
 
-                        {/* <button onClick={} className="register-btn">
+                        <button onClick={() => createRazorpayOrder(plans.amt.slice(1))} className="register-btn">
                             Proceed to Payment
-                        </button> */}
+                        </button>
 
 
                     </div>
