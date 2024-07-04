@@ -1,0 +1,262 @@
+[
+    {
+        "srNo": 75,
+        "category": "how to save taxes:",
+        "question": "टी२० आंतरराष्ट्रीय क्रिकेटमध्ये शतक झळकावणारा पहिला क्रिकेटपटू कोण होता?",
+        "answerOptions": [
+            {
+                "text": "ख्रिस गेल",
+                "isCorrect": false
+            },
+            {
+                "text": "ब्रेंडन मॅक्कलम",
+                "isCorrect": true
+            },
+            {
+                "text": "केविन पीटरसन",
+                "isCorrect": false
+            },
+            {
+                "text": "युवराज सिंग",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "ब्रेंडन मॅक्कलम",
+        "explanation": "ब्रेंडन मॅक्कलमने 2005 मध्ये टी२० आंतरराष्ट्रीय क्रिकेटमध्ये पहिले शतक केले. हा पराक्रम टी२० क्रिकेटच्या इतिहासात एक महत्त्वाचा टप्पा होता.",
+        "url": null
+    },
+    {
+        "srNo": 121,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "वनडे क्रिकेटमध्ये 200 धावांची द्विशतक झळकावणारा पहिला खेळाडू कोण आहे?",
+        "answerOptions": [
+            {
+                "text": "सचिन तेंडुलकर",
+                "isCorrect": true
+            },
+            {
+                "text": "विरेंद्र सेहवाग",
+                "isCorrect": false
+            },
+            {
+                "text": "रोहित शर्मा",
+                "isCorrect": false
+            },
+            {
+                "text": "मार्टिन गुप्टिल",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "सचिन तेंडुलकर",
+        "explanation": "2010 मध्ये सचिन तेंडुलकरने दक्षिण आफ्रिकेविरुद्ध 200 धावा करून वनडे क्रिकेटमध्ये पहिले द्विशतक झळकावले.",
+        "url": null
+    },
+    {
+        "srNo": 58,
+        "category": "how to save taxes:",
+        "question": "कोणत्या क्रिकेटपटूने सर्वाधिक वेळा आयपीएलचे ऑरेंज कॅप जिंकली आहे?",
+        "answerOptions": [
+            {
+                "text": "ख्रिस गेल",
+                "isCorrect": false
+            },
+            {
+                "text": "डेविड वॉर्नर",
+                "isCorrect": true
+            },
+            {
+                "text": "विराट कोहली",
+                "isCorrect": false
+            },
+            {
+                "text": "सुरेश रैना",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "डेविड वॉर्नर",
+        "explanation": "डेविड वॉर्नरने आयपीएलमध्ये सर्वाधिक वेळा ऑरेंज कॅप (सर्वाधिक धावा करणारा खेळाडू) जिंकली आहे.",
+        "url": null
+    },
+    {
+        "srNo": 4,
+        "category": "Banking in India and Maximizing Benefits:",
+        "question": "क्रिकेटमध्ये 'गुगली' हा शब्द कोणत्या प्रकारच्या गोलंदाजीत वापरला जातो?",
+        "answerOptions": [
+            {
+                "text": "फास्ट बॉलिंग",
+                "isCorrect": false
+            },
+            {
+                "text": "ऑफ स्पिन",
+                "isCorrect": false
+            },
+            {
+                "text": "लेग स्पिन",
+                "isCorrect": true
+            },
+            {
+                "text": "स्लोअर बॉल",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "लेग स्पिन",
+        "explanation": "गुगली हा शब्द लेग स्पिन गोलंदाजांच्या एका विशेष प्रकारच्या चेंडूसाठी वापरला जातो, ज्यामध्ये चेंडूची दिशा बदलते.",
+        "url": null
+    },
+    {
+        "srNo": 69,
+        "category": "how to save taxes:",
+        "question": "विराट कोहलीने कोणत्या वर्षी वनडे क्रिकेटमध्ये आपला पहिला शतक झळकावला?",
+        "answerOptions": [
+            {
+                "text": "2008",
+                "isCorrect": false
+            },
+            {
+                "text": "2009",
+                "isCorrect": true
+            },
+            {
+                "text": "2010",
+                "isCorrect": false
+            },
+            {
+                "text": "2011",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "2009",
+        "explanation": "विराट कोहलीने 2009 मध्ये श्रीलंकेविरुद्ध आपले पहिले वनडे शतक झळकावले.",
+        "url": null
+    },
+    {
+        "srNo": 80,
+        "category": "how to save taxes:",
+        "question": "कोणत्या खेळाडूने क्रिकेटमध्ये 'स्विंग' गोलंदाजीचा विकास केला?",
+        "answerOptions": [
+            {
+                "text": "कपिल देव",
+                "isCorrect": false
+            },
+            {
+                "text": "वसीम अक्रम",
+                "isCorrect": true
+            },
+            {
+                "text": "जेम्स अँडरसन",
+                "isCorrect": false
+            },
+            {
+                "text": "ग्लेन मॅक्ग्रा",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "वसीम अक्रम",
+        "explanation": "वसीम अक्रमने स्विंग गोलंदाजीचा विकास केला आणि त्यात मोठे कौशल्य प्राप्त केले, ज्यामुळे तो जगातील सर्वोत्तम स्विंग गोलंदाजांपैकी एक मानला जातो.",
+        "url": null
+    },
+    {
+        "srNo": 142,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "कोणत्या संघाने पहिले टी२० विश्वचषक जिंकला?",
+        "answerOptions": [
+            {
+                "text": "भारत",
+                "isCorrect": true
+            },
+            {
+                "text": "पाकिस्तान",
+                "isCorrect": false
+            },
+            {
+                "text": "वेस्ट इंडीज",
+                "isCorrect": false
+            },
+            {
+                "text": "श्रीलंका",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "भारत",
+        "explanation": "भारताने 2007 मध्ये पहिले टी२० विश्वचषक जिंकला.",
+        "url": null
+    },
+    {
+        "srNo": 92,
+        "category": "how to save taxes:",
+        "question": "एमएस धोनीने कोणत्या वर्षी भारताच्या कसोटी क्रिकेट संघाचे कर्णधारपद स्वीकारले?",
+        "answerOptions": [
+            {
+                "text": "2007",
+                "isCorrect": false
+            },
+            {
+                "text": "2008",
+                "isCorrect": true
+            },
+            {
+                "text": "2009",
+                "isCorrect": false
+            },
+            {
+                "text": "2010",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "2008",
+        "explanation": "एमएस धोनीने 2008 मध्ये भारताच्या कसोटी क्रिकेट संघाचे कर्णधारपद स्वीकारले.",
+        "url": null
+    },
+    {
+        "srNo": 44,
+        "category": "general",
+        "question": "कोणत्या क्रिकेटपटूने आयपीएलमध्ये सर्वाधिक शतके झळकावली आहेत?",
+        "answerOptions": [
+            {
+                "text": "ख्रिस गेल",
+                "isCorrect": true
+            },
+            {
+                "text": "विराट कोहली",
+                "isCorrect": false
+            },
+            {
+                "text": "डेविड वॉर्नर",
+                "isCorrect": false
+            },
+            {
+                "text": "रोहित शर्मा",
+                "isCorrect": false
+            }
+        ],
+        "rightAnswer": "ख्रिस गेल",
+        "explanation": "ख्रिस गेलने आयपीएलमध्ये सर्वाधिक शतके झळकावली आहेत.",
+        "url": null
+    },
+    {
+        "srNo": 138,
+        "category": "Managing Personal Finance and Improving Financial Health:",
+        "question": "टी२० आंतरराष्ट्रीय क्रिकेटमध्ये सर्वाधिक विकेट घेणारा गोलंदाज कोण आहे?",
+        "answerOptions": [
+            {
+                "text": "जसप्रित बुमराह",
+                "isCorrect": false
+            },
+            {
+                "text": "राशिद खान",
+                "isCorrect": false
+            },
+            {
+                "text": "शाहीद आफ्रिदी",
+                "isCorrect": false
+            },
+            {
+                "text": "लसिथ मलिंगा",
+                "isCorrect": true
+            }
+        ],
+        "rightAnswer": "लसिथ मलिंगा",
+        "explanation": "लसिथ मलिंगाने टी२० आंतरराष्ट्रीय क्रिकेटमध्ये सर्वाधिक विकेट घेतल्या आहेत.",
+        "url": null
+    }
+]

@@ -1,6 +1,6 @@
-import { useState, useLayoutEffect, useContext,useEffect } from 'react';
+import { useState, useLayoutEffect, useContext, useEffect } from 'react';
 import './index.css';
-import questions from '../../assets/cricket.json';
+import questions from '../../assets/cricket-marathi.json';
 import Question from '../Question/Question';
 import Result from '../Result/Result';
 import Lighthouse from '../Lighthouse/Lighthouse';
@@ -40,10 +40,31 @@ function SilverQuizPage() {
     const [randomObject, setRandomObject] = useState(null);
     const [windowWidth, setWindowWidth] = useState<number>(0);
 
+    // set time for each question
+    const [timer, setTimer] = useState(10);
+    const [quizStarted, setQuizStarted] = useState(false);
+    const [isLastq, setIsLastq] = useState(false);
+
     useEffect(() => {
         // windowHeight = document.getElementsByTagName('body')[0].clientWidth;
         setWindowWidth(window.innerWidth)
     }, []);
+
+    useEffect(() => {
+            const interval = setInterval(() => {
+                setTimer(prevTimer => {
+                    if (prevTimer > 0) {
+                        return prevTimer - 1;
+                    } else {
+                        setCurrentQuestion(prevQuestion => prevQuestion + 1);
+                        // Reset timer for the next question
+                        return 10;
+                    }
+                });
+            }, 1000);
+
+            return () => clearInterval(interval);
+    }, [currentQuestion, quizStarted]);
 
     const navigate = useNavigate();
 
@@ -81,6 +102,7 @@ function SilverQuizPage() {
         setNextDisabled(true);
         setShowShark('staticshark');
         setDisabled(false);
+        setTimer(10);
 
         // if((questions.length - 2) === currentQuestion) {
         //     alert('demo'); 
@@ -128,18 +150,18 @@ function SilverQuizPage() {
                             <h4>Where learning takes a dive</h4>
                         </div>
                         <div>
-                        {showShark === 'staticshark' && windowWidth < 991 &&
-                            <img src={staticshark} alt="shark" className='sharkGif'/>
-                        }
-                        {showShark === 'thumpsup' && windowWidth <  991 &&
-                            <img src={thumpsup} alt="shark" className='sharkGif'/>
-                        }
-                        {showShark === 'thumpsdown' && windowWidth < 991 &&
-                            <img src={thumpsdown} alt="shark" className='sharkGif'/>
-                        }
+                            {showShark === 'staticshark' && windowWidth < 991 &&
+                                <img src={staticshark} alt="shark" className='sharkGif' />
+                            }
+                            {showShark === 'thumpsup' && windowWidth < 991 &&
+                                <img src={thumpsup} alt="shark" className='sharkGif' />
+                            }
+                            {showShark === 'thumpsdown' && windowWidth < 991 &&
+                                <img src={thumpsdown} alt="shark" className='sharkGif' />
+                            }
                         </div>
                     </div>
-                    
+
                     {/* <img src={quizImg} alt='quizImg' /> */}
                     {/* <img src={staticshark} alt="shark" className='sharkGifhidden'/>
                     <img src={staticshark} alt="shark" className='sharkGifhidden'/>
@@ -147,13 +169,13 @@ function SilverQuizPage() {
                     {/* <source src={sharkVideo} type="video/mp4" /> */}
                     {/* <source src="/video/video.ogv" type="video/ogg" /> */}
                     {showShark === 'staticshark' && windowWidth > 990 &&
-                        <img src={staticshark} alt="shark" className='sharkGif'/>
+                        <img src={staticshark} alt="shark" className='sharkGif' />
                     }
                     {showShark === 'thumpsup' && windowWidth > 990 &&
-                        <img src={thumpsup} alt="shark" className='sharkGif'/>
+                        <img src={thumpsup} alt="shark" className='sharkGif' />
                     }
                     {showShark === 'thumpsdown' && windowWidth > 990 &&
-                        <img src={thumpsdown} alt="shark" className='sharkGif'/>
+                        <img src={thumpsdown} alt="shark" className='sharkGif' />
                     }
                     {/* {showShark === 'static' && windowWidth > 768 &&
                         <video className='video' width="100%" height="100%" loop autoPlay muted>
@@ -172,7 +194,7 @@ function SilverQuizPage() {
                     } */}
                 </div>
                 <div className='quizPanel-right'>
-
+                    Time Remaining: {timer}
 
                     {
                         currentQuestion < questions.length &&

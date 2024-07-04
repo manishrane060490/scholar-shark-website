@@ -145,10 +145,11 @@ button {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  overflow: hidden;
 }
 
 .sharkGif {
-  width: 80%;
+  width: 50%;
 }
 .quizPanel-logo{
   margin-left: auto;
