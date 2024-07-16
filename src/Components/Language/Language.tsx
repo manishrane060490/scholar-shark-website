@@ -1,12 +1,13 @@
 import React, { useState, useLayoutEffect } from 'react';
 import './index.css';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Lighthouse from '../Lighthouse/Lighthouse';
 import logo from '../../assets/logo.png';
 import shark from '../../assets/shark.gif';
 import sharkVideo from '../../assets/IdleAlphaWEBM1.webm';
 import sharkVideoMov from '../../assets/IdleAlphaWEBM.ogg';
 import { ReactTyped, Typed } from "react-typed";
+import { useTranslation } from 'react-i18next';
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
@@ -24,7 +25,9 @@ function useWindowSize() {
 function Language() {
 
   const [width, height] = useWindowSize();
-  const [typed, setTyped] = useState<Typed | undefined>()
+  const [typed, setTyped] = useState<Typed | undefined>();
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
   let vh = height * 0.01;
@@ -47,6 +50,23 @@ function Language() {
     typed?.destroy();
     showLang();
   }
+
+  const changeLanguage = (lng: any) => {
+    i18n.changeLanguage(lng);
+    navigate('/quiz')
+  };
+
+  document.onmousemove = e => {
+    for(const card of document.getElementsByClassName('card-glow-border') as HTMLCollectionOf<HTMLElement>) {
+      const rect = card.getBoundingClientRect(),
+        x = e.clientX - rect.left,
+        y = e.clientY - rect.top;
+      
+      card.style.setProperty("--mouse-x", `${x}px`);
+      card.style.setProperty("--mouse-y", `${y}px`);
+    }
+  }
+
 
   return (
     <>
@@ -88,18 +108,20 @@ function Language() {
       </div>
 
       <Lighthouse light />
-      <div className='lang-selector' id="lang-selector">
+      <div className='lang-selector card-glow-border' id="lang-selector">
         <div>
-          <h1>
+          {/* <h1>
             Welcome to Scholarsharks
           </h1>
-          <h4>Please select your Language</h4>
+          <h4>Please select your Language</h4> */}
+          <h1>{t('welcome')}</h1>
+          <p>{t('description')}</p>
         </div>
 
         <div className='button-container'>
-          <Link className='button' to="/quiz">English</Link>
-          {/* <Link className='button' to="/quiz">Marathi</Link>
-          <Link className='button' to="/quiz">Hindi</Link> */}
+          <button className='button glow-on-hover' onClick={() => changeLanguage('en')}>English</button>
+          <button className='button glow-on-hover' onClick={() => changeLanguage('hi')}>हिंदी</button>
+          <button className='button glow-on-hover' onClick={() => changeLanguage('mr')}>मराठी</button>
         </div>
       </div>
       <div className='rotate-screen'>
