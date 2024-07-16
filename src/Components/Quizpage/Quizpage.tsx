@@ -114,10 +114,21 @@ function Quizpage() {
     // console.log(windowHeight)
     // console.log(windowHeight < 768)
 
+    document.onmousemove = e => {
+        for(const card of document.getElementsByClassName('card-glow-border') as HTMLCollectionOf<HTMLElement>) {
+          const rect = card.getBoundingClientRect(),
+            x = e.clientX - rect.left,
+            y = e.clientY - rect.top;
+          
+          card.style.setProperty("--mouse-x", `${x}px`);
+          card.style.setProperty("--mouse-y", `${y}px`);
+        }
+      }
+
     return (
         <>
             <Lighthouse light />
-            <div className='quizPanel'>
+            <div className='quizPanel card-glow-border'>
                 <div className='quizPanel-left'>
                     <div className='quizPanel-section'>
                         <div className='quizPanel-logo'>
