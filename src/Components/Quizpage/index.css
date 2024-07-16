@@ -235,6 +235,7 @@ button {
   }
 }
 
+
 .options > li > .correct {
   background-color: rgba(40, 255, 100, 1);
   color: #fff;
@@ -260,4 +261,103 @@ button {
   transform: scale(1.05,1.05);
   animation: pulse 1s;
   box-shadow: 0 0 0 2em transparent;
+}
+
+.glow-on-hover:not(.correct):not(.wrong):before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.glow-on-hover:not(.correct):not(.wrong):active:after {
+  background: transparent;
+}
+
+.glow-on-hover:not(.correct):not(.wrong):hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:not(.correct):not(.wrong):after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.card-glow-border {
+  padding: 1px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(245,245,245, 0.2);
+  position: relative;
+  box-shadow: 0 0px 15px rgba(0,0,0, 0.7);
+}
+
+.card-glow-border::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.8), transparent);
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card-glow-border:hover::before {
+  opacity: 1;
+}
+
+.card-middle{
+  background: rgb(20,20,20);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.card-content {
+  height: 500px;
+  width: 500px;
+  border: 1px solid rgba(245,245,245, 0.2);
+  border-radius: 5px;
+  background-color: rgb(30,30,30);
+  overflow: hidden;
+  position: relative;
+}
+
+.card-content::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), rgba(245, 245, 245, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.5s;
+  
+}
+
+.card-glow-border:hover .card-content::before {
+  opacity: 1;
 }

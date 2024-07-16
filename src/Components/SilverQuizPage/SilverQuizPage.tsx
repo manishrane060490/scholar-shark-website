@@ -41,7 +41,7 @@ function SilverQuizPage() {
     const [windowWidth, setWindowWidth] = useState<number>(0);
 
     // set time for each question
-    const [timer, setTimer] = useState(10);
+    const [timer, setTimer] = useState(1000);
     const [quizStarted, setQuizStarted] = useState(false);
     const [isLastq, setIsLastq] = useState(false);
 
@@ -135,6 +135,10 @@ function SilverQuizPage() {
     document.documentElement.style.setProperty('--vhwidth', `${vhWidth}px`);
     // console.log(windowHeight)
     // console.log(windowHeight < 768)
+  
+    
+   
+    
 
     return (
         <>
