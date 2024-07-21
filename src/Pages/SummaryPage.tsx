@@ -5,11 +5,13 @@ import Lighthouse from "../Components/Lighthouse/Lighthouse";
 import { PlansContext } from "../Context";
 import axios from 'axios';
 import logo from '../assets/logo.png';
+import { useNavigate } from 'react-router-dom';
 
 function SummaryPage() {
     const [responseId, setResponseId] = useState("");
     const [responseState, setResponseStatus] = useState([]);
     const { plans, info } = useContext(PlansContext);
+    const navigate = useNavigate();
     console.log(info);
     console.log(plans);
 
@@ -75,9 +77,11 @@ function SummaryPage() {
         amount: amount,
         currency: 'INR',
         name: info.name,
-        description: "payment",
+        description: `Purchasing ${plans.plan} tier`,
+        image: logo,
         handler: function(response: any) {
-            setResponseId(response.razorpay_payment_id)
+            setResponseId(response.razorpay_payment_id);
+            navigate('/dashboard');
         },
         prefill: {
         name: info.name,

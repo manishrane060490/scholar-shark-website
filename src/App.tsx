@@ -10,6 +10,7 @@ import DashboardPage from './Pages/DashboardPage';
 import { PlansProvider } from './Context';
 import SummaryPage from './Pages/SummaryPage';
 import SilverQuizPage from './Components/SilverQuizPage/SilverQuizPage';
+import './i18n';
 
 
 function App() {
