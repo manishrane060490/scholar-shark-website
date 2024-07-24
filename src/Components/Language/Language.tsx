@@ -52,7 +52,7 @@ function Language() {
   }
 
   const changeLanguage = (lng: any) => {
-    i18n.changeLanguage(lng);
+    // i18n.changeLanguage(lng);
     navigate('/quiz')
   };
 
@@ -108,20 +108,20 @@ function Language() {
       </div>
 
       <Lighthouse light />
-      <div className='lang-selector card-glow-border' id="lang-selector">
+      <div className='lang-selector card-glow-borde' id="lang-selector">
         <div>
           {/* <h1>
             Welcome to Scholarsharks
           </h1>
           <h4>Please select your Language</h4> */}
           <h1>{t('welcome')}</h1>
-          <p>{t('description')}</p>
+          <p>Please select your Language</p>
         </div>
 
         <div className='button-container'>
-          <button className='button glow-on-hover' onClick={() => changeLanguage('en')}>English</button>
-          <button className='button glow-on-hover' onClick={() => changeLanguage('hi')}>हिंदी</button>
-          <button className='button glow-on-hover' onClick={() => changeLanguage('mr')}>मराठी</button>
+          <button className='button' onClick={() => changeLanguage('en')}>English</button>
+          <button className='button disabled' onClick={() => changeLanguage('hi')}>हिंदी <span className='coming-text'>Coming soon</span></button>
+          <button className='button disabled' onClick={() => changeLanguage('mr')}>मराठी <span className='coming-text'>Coming soon</span></button>
         </div>
       </div>
       <div className='rotate-screen'>

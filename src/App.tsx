@@ -10,6 +10,7 @@ import DashboardPage from './Pages/DashboardPage';
 import { PlansProvider } from './Context';
 import SummaryPage from './Pages/SummaryPage';
 import SilverQuizPage from './Components/SilverQuizPage/SilverQuizPage';
+import Videopage from './Components/Videopage/Videopage';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
               <Route path="dashboard" element={<DashboardPage />} />
               <Route path="summary" element={<SummaryPage />} />
               <Route path="silverQuiz" element={<SilverQuizPage />} />
+              <Route path="intro" element={<Videopage />} />
               {/* <Route path="*" element={<NoPage />} />  */}
             {/* </Route> */}
           </Routes>
