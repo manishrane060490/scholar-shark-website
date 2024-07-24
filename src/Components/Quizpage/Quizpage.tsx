@@ -128,7 +128,7 @@ function Quizpage() {
     return (
         <>
             <Lighthouse light />
-            <div className='quizPanel card-glow-border'>
+            <div className='quizPanel'>
                 <div className='quizPanel-left'>
                     <div className='quizPanel-section'>
                         <div className='quizPanel-logo'>
