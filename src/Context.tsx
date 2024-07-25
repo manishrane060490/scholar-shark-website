@@ -7,9 +7,10 @@ const PlansProvider = ({ children }: any) => {
   const [answer, setAnswer] = useState(0);
   const [ansCount, setAnsCount] = useState([]);
   const [info, setInfo] = useState([]);
+  const [userInfo, setUserInfo] = useState([]);
 
   return (
-    <PlansContext.Provider value={{ plans, setPlans, answer, setAnswer, ansCount, setAnsCount, info, setInfo }}>
+    <PlansContext.Provider value={{ plans, setPlans, answer, setAnswer, ansCount, setAnsCount, info, setInfo, userInfo, setUserInfo }}>
       {children}
     </PlansContext.Provider>
   );

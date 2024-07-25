@@ -24,72 +24,72 @@ function SummaryPage() {
 
     const loadScript = (src: string) => {
         return new Promise((resolve) => {
-          const script = document.createElement('script');
-          script.src = src;
-          script.onload = () => {
-            resolve(true);
-          };
-          script.onerror = () => {
-            resolve(false);
-          };
-          document.body.appendChild(script);
+            const script = document.createElement('script');
+            script.src = src;
+            script.onload = () => {
+                resolve(true);
+            };
+            script.onerror = () => {
+                resolve(false);
+            };
+            document.body.appendChild(script);
         });
     }
 
     const createRazorpayOrder = (amount: number) => {
         let data = JSON.stringify({
-          amount: amount * 100,
-          currency: "INR"
+            amount: amount * 100,
+            currency: "INR"
         })
-    
+
         let config = {
-          method: "post",
-          maxBosyLength: Infinity,
-          url: "http://localhost:1000/orders",
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          data: data
+            method: "post",
+            maxBosyLength: Infinity,
+            url: "http://localhost:1000/orders",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data: data
         }
-    
+
         axios.request(config)
-        .then(response => {
-          console.log(JSON.stringify(response.data))
-          handleRazorpayScreen(response.data.amount)
-        })
-        .catch(error => {
-          console.log("error at", error)
-        })
-    }
-    
-    const handleRazorpayScreen = async(amount: number) => {
-    const res = await loadScript("https://checkout.razorpay.com/v1/checkout.js")
-
-    if(!res) {
-        alert("Some error at razorpay screen loading")
-        return;
+            .then(response => {
+                console.log(JSON.stringify(response.data))
+                handleRazorpayScreen(response.data.amount)
+            })
+            .catch(error => {
+                console.log("error at", error)
+            })
     }
 
-    const options = {
-        key: 'rzp_test_xVhe8Kc1nyWe7C',
-        amount: amount,
-        currency: 'INR',
-        name: info.name,
-        description: "payment",
-        handler: function(response: any) {
-            setResponseId(response.razorpay_payment_id)
-        },
-        prefill: {
-        name: info.name,
-        email: info.email
-        },
-        theme: {
-        color: "#f4c430"
+    const handleRazorpayScreen = async (amount: number) => {
+        const res = await loadScript("https://checkout.razorpay.com/v1/checkout.js")
+
+        if (!res) {
+            alert("Some error at razorpay screen loading")
+            return;
         }
-    }
 
-    const paymentObject = new (window as any).Razorpay(options);
-    paymentObject.open()
+        const options = {
+            key: 'rzp_test_xVhe8Kc1nyWe7C',
+            amount: amount,
+            currency: 'INR',
+            name: info.name,
+            description: "payment",
+            handler: function (response: any) {
+                setResponseId(response.razorpay_payment_id)
+            },
+            prefill: {
+                name: info.name,
+                email: info.email
+            },
+            theme: {
+                color: "#f4c430"
+            }
+        }
+
+        const paymentObject = new (window as any).Razorpay(options);
+        paymentObject.open()
     }
     return (
         <>
@@ -212,7 +212,7 @@ function SummaryPage() {
                             Proceed to Payment
                         </Link> */}
 
-                        <button onClick={() => createRazorpayOrder(plans.amt.slice(1))} className="register-btn">
+                        <button onClick={() => handleRazorpayScreen(700)} className="register-btn">
                             Proceed to Payment
                         </button>
 

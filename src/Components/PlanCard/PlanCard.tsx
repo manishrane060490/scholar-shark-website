@@ -2,8 +2,10 @@ import './index.css';
 import person1 from '../../assets/person1.jpg';
 import person2 from '../../assets/person2.jpg';
 import person3 from '../../assets/person3.jpg';
+import { useNavigate } from 'react-router-dom';
 
 function Plancard({ title, count, type, disabled }: any) {
+  const navigate = useNavigate();
 
   return (
     <div className={`plancard ${disabled ? 'disabled' : ''}`}>
@@ -24,7 +26,7 @@ function Plancard({ title, count, type, disabled }: any) {
               <span className='progress-line'></span>
               <span className='progress-main'></span>
             </div> */}
-            <button className='button full-width'>{disabled ? 'Challenge' : 'Selected'}</button>
+            <button className='button full-width' onClick={() => navigate('/plans')}>{disabled ? 'Challenge' : 'Selected'}</button>
           </div>
 
         </div>
