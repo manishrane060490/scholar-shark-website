@@ -30,6 +30,36 @@ function RegisterPage() {
     const [showCode, setShowCode] = useState(false);
     const navigate = useNavigate();
 
+    const updatePlanInDB = (userId: string) => {
+        let data = JSON.stringify({
+                userId: userId,
+                profilePictureURL: "https://scholarsharks.in/assets/images/logos/shark.png",
+                email: email,
+                name: name,
+                phoneNumber: phone,
+                createdOn: Date.now().toString()
+        })
+
+        let config = {
+            method: "post",
+            maxBosyLength: Infinity,
+            url: "https://iy5ispsidmfhpzojalaofamqiq0nerep.lambda-url.ap-south-1.on.aws/updateuserdetails",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data: data
+        }
+
+        axios.request(config)
+            .then(response => {
+                console.log(JSON.stringify(response.data))
+                // handleRazorpayScreen(response.data.amount)
+            })
+            .catch(error => {
+                console.log("error at", error)
+            })
+    }
+
     const verifyAccount = (e: any) => {
         e.preventDefault();
         const user = new CognitoUser({
@@ -40,8 +70,9 @@ function RegisterPage() {
         user.confirmRegistration(code, true, (err, data) => {
             if (err) {
                 console.log(err);
-                alert("Couldn't verify account");
-
+                // alert("Couldn't verify account");
+                setShowCode(false);
+                navigate('/login');
             } else {
                 console.log(data);
                 // alert('Account verified successfully');
@@ -100,28 +131,7 @@ function RegisterPage() {
                         } else {
                             console.log(data);
                             setShowCode(true);
-
-                            //   axios({
-                            //     method: "post",
-                            //     dataType: "jsonp",
-                            //     url: "http://democoffeetech.in/api/users/syncuser",
-                            //     data: {
-                            //       "username": data.userSub,
-                            //       "email": data.user.username,
-                            //       "phone_number": "9870329846",
-                            //       "walletbalance": 0,
-                            //       "ispractiseonedone": true,
-                            //       "ispractisetwodone": true
-                            //     },
-                            //   }).then(function (response) {
-                            //       console.log(response);
-
-                            //       alert('User Added Successfully');
-                            //       Navigate('/dashboard');
-                            //     })
-                            //     .catch(function (error) {
-                            //       console.log(error);
-                            //     });
+                            updatePlanInDB(data.userSub);
 
                         }
                     });
@@ -133,7 +143,6 @@ function RegisterPage() {
     }
 
     const formInputChange = (formField: string, value: string) => {
-        console.log(formField);
         if (formField === "email") {
             setEmail(value);
         }

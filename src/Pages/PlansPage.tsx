@@ -74,7 +74,19 @@ function PlansPage() {
     const updatePlanInDB = (plan: string) => {
         let data = JSON.stringify({
             userId: userInfo.user,
-            planType: plan
+            planType: plans.plan,
+            isActive: true,
+            from: Date.now().toString(),
+            to: Date.now().toString(),
+            isUpgraded: true,
+            createdOn: Date.now().toString(),
+            updatedOn: Date.now().toString(),
+            value1: '12',
+            value2: 'value1',
+            value3: 'value1',
+            value4: 'value1',
+            value5: 'value1',
+            planId: ''
         })
 
         let config = {
@@ -216,7 +228,7 @@ function PlansPage() {
 
                     {
                         plan && 
-                        <Button fullWidth type='submit' variant='contained' style={{marginTop: '20px'}} onClick={() => handleRazorpayScreen(plans.amt.slice(1))}>Proceed to pay</Button>
+                        <Button fullWidth type='submit' variant='contained' style={{marginTop: '20px'}} onClick={() => updatePlanInDB(plans.amt.slice(1))}>Proceed to pay</Button>
                     }  
                 </div>
                 <div className='panel-right'>

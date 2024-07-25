@@ -13,6 +13,7 @@ import { useContext, useEffect, useState } from 'react';
 import { PlansContext } from '../Context';
 import staticshark from '../assets/IdleAlphaGIF.gif';
 import Userpool from '../Userpool';
+import axios from 'axios';
 
 function DashboardPage() {
     const { plans, info, userInfo, setUserInfo } = useContext(PlansContext);
@@ -48,7 +49,32 @@ function DashboardPage() {
 
                 callback(attr);
             })
+
+            fetchPlans(session.accessToken.payload.username)
         })
+    }
+
+    const fetchPlans = (userId: string) => {
+        console.log(userId);
+        // let config = {
+
+        //     method: "get",
+        //     maxBosyLength: Infinity,
+        //     url: `https://iy5ispsidmfhpzojalaofamqiq0nerep.lambda-url.ap-south-1.on.aws/getplans/${userId}`,
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     }
+        // }
+
+        axios.get(`https://iy5ispsidmfhpzojalaofamqiq0nerep.lambda-url.ap-south-1.on.aws/getplans/${userId}`)
+            .then((res: any) => {
+                console.log(JSON.stringify(res.data))
+                // handleRazorpayScreen(response.data.amount)
+                
+            })
+            .catch((error: any) => {
+                console.log("error at", error)
+            })
     }
 
     useEffect(() => {
@@ -77,8 +103,6 @@ function DashboardPage() {
                 }
             }
         })
-
-        
     }, [])
     
     return (
