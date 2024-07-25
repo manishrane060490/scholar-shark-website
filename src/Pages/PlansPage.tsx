@@ -90,7 +90,7 @@ function PlansPage() {
         axios.request(config)
             .then(response => {
                 console.log(JSON.stringify(response.data))
-                handleRazorpayScreen(response.data.amount)
+                // handleRazorpayScreen(response.data.amount)
             })
             .catch(error => {
                 console.log("error at", error)
@@ -216,7 +216,7 @@ function PlansPage() {
 
                     {
                         plan && 
-                        <Button fullWidth type='submit' variant='contained' style={{marginTop: '20px'}} onClick={() => createRazorpayOrder(plans.amt.slice(1))}>Proceed to pay</Button>
+                        <Button fullWidth type='submit' variant='contained' style={{marginTop: '20px'}} onClick={() => handleRazorpayScreen(plans.amt.slice(1))}>Proceed to pay</Button>
                     }  
                 </div>
                 <div className='panel-right'>
