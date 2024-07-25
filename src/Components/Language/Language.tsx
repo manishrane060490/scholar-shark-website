@@ -57,11 +57,11 @@ function Language() {
   };
 
   document.onmousemove = e => {
-    for(const card of document.getElementsByClassName('card-glow-border') as HTMLCollectionOf<HTMLElement>) {
+    for (const card of document.getElementsByClassName('card-glow-border') as HTMLCollectionOf<HTMLElement>) {
       const rect = card.getBoundingClientRect(),
         x = e.clientX - rect.left,
         y = e.clientY - rect.top;
-      
+
       card.style.setProperty("--mouse-x", `${x}px`);
       card.style.setProperty("--mouse-y", `${y}px`);
     }
@@ -108,20 +108,22 @@ function Language() {
       </div>
 
       <Lighthouse light />
-      <div className='lang-selector card-glow-borde' id="lang-selector">
-        <div>
-          {/* <h1>
+      <div className='lang-selector card-glow-border' id="lang-selector">
+        <div className='card-glow-border-inner'>
+          <div>
+            {/* <h1>
             Welcome to Scholarsharks
           </h1>
           <h4>Please select your Language</h4> */}
-          <h1>{t('welcome')}</h1>
-          <p>Please select your Language</p>
-        </div>
+            <h1>{t('welcome')}</h1>
+            <p>Please select your Language</p>
+          </div>
 
-        <div className='button-container'>
-          <button className='button' onClick={() => changeLanguage('en')}>English</button>
-          <button className='button disabled' onClick={() => changeLanguage('hi')}>हिंदी <span className='coming-text'>Coming soon</span></button>
-          <button className='button disabled' onClick={() => changeLanguage('mr')}>मराठी <span className='coming-text'>Coming soon</span></button>
+          <div className='button-container'>
+            <button className='button' onClick={() => changeLanguage('en')}>English</button>
+            <button className='button disabled' onClick={() => changeLanguage('hi')}>हिंदी <span className='coming-text'>Coming soon</span></button>
+            <button className='button disabled' onClick={() => changeLanguage('mr')}>मराठी <span className='coming-text'>Coming soon</span></button>
+          </div>
         </div>
       </div>
       <div className='rotate-screen'>
