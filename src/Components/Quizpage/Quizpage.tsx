@@ -1,6 +1,6 @@
 import { useState, useLayoutEffect, useContext,useEffect } from 'react';
 import './index.css';
-import questions from '../../assets/questions.json';
+// import questions from '../../assets/questions.json';
 import Question from '../Question/Question';
 import Result from '../Result/Result';
 import Lighthouse from '../Lighthouse/Lighthouse';
@@ -13,6 +13,7 @@ import staticshark from '../../assets/IdleAlphaGIF.gif';
 import thumpsup from '../../assets/ThumbsUpAlphaGIF.gif';
 import thumpsdown from '../../assets/ThumbsDownAlphaGIF.gif';
 import logo from '../../assets/logo.png';
+import axios from 'axios';
 
 function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -39,15 +40,32 @@ function Quizpage() {
     const [disabled, setDisabled] = useState(false);
     const [randomObject, setRandomObject] = useState(null);
     const [windowWidth, setWindowWidth] = useState<number>(0);
+    const [questions, setQuestions] = useState([]);
 
     useEffect(() => {
         // windowHeight = document.getElementsByTagName('body')[0].clientWidth;
-        setWindowWidth(window.innerWidth)
+        setWindowWidth(window.innerWidth);
+        fetchQuiz();
     }, []);
+
+    
+
+    const fetchQuiz = async () => {
+        await axios.get('https://zwhxhdbmy25zqawk7h4wohtbda0vwaoy.lambda-url.ap-south-1.on.aws/prequiz/eng/10/cat')
+            .then((res: any) => {
+                setQuestions(res.data.questions);
+                // handleRazorpayScreen(response.data.amount)
+                
+            })
+            .catch((error: any) => {
+                console.log("error at", error)
+            })
+    }
 
     const navigate = useNavigate();
 
     const onAnswerCheck = (e: any, question: any, text: any) => {
+        console.log(text);
         if (text === question.rightAnswer) {
             e.target.classList.add('correct');
             // const newAnswer = { isCorrect: true };
@@ -125,6 +143,8 @@ function Quizpage() {
         }
       }
 
+    console.log(questions);
+
     return (
         <>
             <Lighthouse light />
@@ -186,7 +206,7 @@ function Quizpage() {
 
 
                     {
-                        currentQuestion < questions.length &&
+                        questions && currentQuestion < questions.length &&
                         <Question disabled={disabled} number={currentQuestion} nextDisabled={nextDisabled} question={questions[currentQuestion]} explanation={explanation} onAnswerCheck={onAnswerCheck} onAnswerClick={handleNextQuestion} />
                     }
                     {
