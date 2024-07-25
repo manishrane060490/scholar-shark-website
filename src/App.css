@@ -1,7 +1,12 @@
 body {
     color: #fff;
     font-family: 'unset';
+    margin: 0;
 }
+
+.formfield {
+    margin: 10px;
+  }
 
 /* Quiz page */
 
@@ -18,6 +23,7 @@ span.coming-text {
 .plan-page p, .register-page p {
     color: #c9c7c3;
 }
+
 .panel {
     min-width: 95%;
     height: 95VH;
@@ -615,6 +621,9 @@ img.dropdown-img {
     color: #666666;
 }
 
+.textfield input {
+    background-color: #fff !important;
+}
 
 
 @media (max-width: 991px) {

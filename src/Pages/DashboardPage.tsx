@@ -9,18 +9,75 @@ import dbg from '../assets/diamondbg.png';
 import silverbg from '../assets/silverbg.png';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { PlansContext } from '../Context';
 import staticshark from '../assets/IdleAlphaGIF.gif';
+import Userpool from '../Userpool';
 
 function DashboardPage() {
     const { plans, info } = useContext(PlansContext);
-    console.log(plans);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [plan, setPlan] = useState('');
+    const [name, setName] = useState('');
+    const [profile, setProfile] = useState('');
+    const [emailErr, setEmailErr] = useState('');
+    const [passwordErr, setPasswordErr] = useState('');
+    const getCurrentUser = (callback: any) => {
+        const cognitoUser = Userpool.getCurrentUser();
+
+        if (!cognitoUser) return false;
+
+        cognitoUser.getSession((err: any, session: any) => {
+            if (err) {
+                console.log(err);
+                return;
+            }
+
+            console.log("Session valid:" + session.isValid());
+            console.log(session);
+
+            cognitoUser.getUserAttributes((err, attr) => {
+                if (err) return console.log(err);
+
+                callback(attr);
+            })
+        })
+    }
+
+    useEffect(() => {
+        getCurrentUser((attr : any) => {
+            for (let i = 0; i < attr.length; i++) {
+                console.log(attr[i].Name)
+                if (attr[i].Name === "email") {
+                    // console.log(attr[i].)
+                    setEmail(attr[i].Value);
+                }
+
+                if (attr[i].Name === "phone_number") {
+                    setPassword(attr[i].Value);
+                }
+
+                if (attr[i].Name === "custom:plan") {
+                    setPlan(attr[i].Value);
+                }
+
+                if (attr[i].Name === "picture") {
+                    setProfile(attr[i].Value);
+                }
+
+                if (attr[i].Name === "name") {
+                    setName(attr[i].Value);
+                }
+            }
+        })
+    }, [])
+    
     return (
         <div className="homePage">
             <div className="header">
                 <div className="left-side">
-                    <img src={logo} className="home-logo" alt="Scholar Shark"/>
+                    <img src={logo} className="home-logo" alt="Scholar Shark" />
                 </div>
                 <div className='right-side'>
                     <div>
@@ -45,30 +102,30 @@ function DashboardPage() {
                         {/* <video className='video' width="100%" height="100%" loop autoPlay muted>
                             <source src={sharkVideo} type="video/webm" />
                         </video> */}
-                        <img src={staticshark} alt="shark" className='sharkGif'/>
+                        <img src={staticshark} alt="shark" className='sharkGif' />
                     </div>
                     <div className='banner silver-banner'>
                         <div className="banner-text">
                             <h1>Silver Tier</h1>
                             <div className='banner-prize'>
-                                <img src={silverbg} alt='prizes' className='prize-ticket'/>
+                                <img src={silverbg} alt='prizes' className='prize-ticket' />
                                 <h6>Participate in silver tier and win prizes upto 1 lakh* every week </h6>
                             </div>
                         </div>
                         {/* <video className='video' width="100%" height="100%" loop autoPlay muted>
                             <source src={sharkVideo} type="video/webm" />
                         </video> */}
-                        <img src={staticshark} alt="shark" className='sharkGif'/>
+                        <img src={staticshark} alt="shark" className='sharkGif' />
                     </div>
                     <div className='banner gold-banner'>
                         <div className="banner-text">
                             <h1>Gold Tier</h1>
                             <div className='banner-prize'>
-                                <img src={goldbg} alt='prizes' className='prize-ticket'/>
+                                <img src={goldbg} alt='prizes' className='prize-ticket' />
                                 <h6>Participate in gold tier and win prizes upto 2 lakh* bi-weekly</h6>
                             </div>
                         </div>
-                        <img src={staticshark} alt="shark" className='sharkGif'/>
+                        <img src={staticshark} alt="shark" className='sharkGif' />
                     </div>
                     <div className='banner diamond-banner'>
                         <div className="banner-text">
@@ -82,7 +139,7 @@ function DashboardPage() {
                                 <h6>Participate in Diamond tier and get a chance to win a mercedes and much every Quater</h6>
                             </div>
                         </div>
-                        <img src={staticshark} alt="shark" className='sharkGif'/>
+                        <img src={staticshark} alt="shark" className='sharkGif' />
                     </div>
                 </Carousel>
             </div>
@@ -92,18 +149,18 @@ function DashboardPage() {
             <div className="plans">
                 <h3>Your Plans</h3>
                 <div className='plancard-grp'>
-                    <Plancard title={'Silver'} count={100} type={'silver'}/>
-                    <Plancard title={'Gold'} count={150} type={'gold'} disabled={plans.plan !== 'gold'}/>
-                    <Plancard title={'Diamond'} count={300} type={'diamond'} disabled={plans.plan !== 'diamond'}/>
+                    <Plancard title={'Silver'} count={100} type={'silver'} />
+                    <Plancard title={'Gold'} count={150} type={'gold'} disabled={plans.plan !== 'gold'} />
+                    <Plancard title={'Diamond'} count={300} type={'diamond'} disabled={plans.plan !== 'diamond'} />
                 </div>
             </div>
             <div className="quizs">
                 <h3>Quizes</h3>
                 <h4>Silver Quiz</h4>
                 <div className='card-grp'>
-                    <Card title={'cricket'} count={200}/>
-                    <Card title={'history'} count={200}/>
-                    <Card title={'food'} count={200}/>
+                    <Card title={'cricket'} count={200} />
+                    <Card title={'history'} count={200} />
+                    <Card title={'food'} count={200} />
                 </div>
                 <h4>Gold Quiz</h4>
                 <div className='card-grp'>
