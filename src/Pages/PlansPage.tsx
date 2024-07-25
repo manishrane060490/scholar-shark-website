@@ -54,7 +54,7 @@ function PlansPage() {
         let config = {
             method: "post",
             maxBosyLength: Infinity,
-            url: "http://43.247.136.239:1000/orders",
+            url: "https://node-express-api-vercel-p096h4p73-manishrane060490s-projects.vercel.app/orders",
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -65,6 +65,40 @@ function PlansPage() {
             .then(response => {
                 console.log(JSON.stringify(response.data))
                 handleRazorpayScreen(response.data.amount)
+            })
+            .catch(error => {
+                console.log("error at", error)
+            })
+    }
+
+    const updatePaymentStatus = (taxnId: string) => {
+        let data = JSON.stringify({
+            userId: userInfo.user,
+            transactionId: taxnId,
+            orderId: taxnId,
+            paymentStatus: 'success',
+            amount: plans.amt,
+            value1: '12',
+            value2: 'value1',
+            value3: 'value1',
+            value4: 'value1',
+            value5: 'value1'
+        })
+
+        let config = {
+            method: "post",
+            maxBosyLength: Infinity,
+            url: "https://iy5ispsidmfhpzojalaofamqiq0nerep.lambda-url.ap-south-1.on.aws/updatestatus",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data: data
+        }
+
+        axios.request(config)
+            .then(response => {
+                console.log(JSON.stringify(response.data))
+                // handleRazorpayScreen(response.data.amount)
             })
             .catch(error => {
                 console.log("error at", error)
@@ -125,7 +159,9 @@ function PlansPage() {
             description: "payment",
             handler: function (response: any) {
                 setResponseId(response.razorpay_payment_id);
-                updatePlanInDB(plans.plan)
+
+                updatePlanInDB(plans.plan);
+                updatePaymentStatus(response.razorpay_payment_id);
                 navigate('/dashboard');
                 
             },
@@ -228,7 +264,7 @@ function PlansPage() {
 
                     {
                         plan && 
-                        <Button fullWidth type='submit' variant='contained' style={{marginTop: '20px'}} onClick={() => updatePlanInDB(plans.amt.slice(1))}>Proceed to pay</Button>
+                        <Button fullWidth type='submit' variant='contained' style={{marginTop: '20px'}} onClick={() => createRazorpayOrder(plans.amt.slice(1))}>Proceed to pay</Button>
                     }  
                 </div>
                 <div className='panel-right'>
