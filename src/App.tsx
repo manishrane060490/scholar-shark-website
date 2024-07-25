@@ -15,20 +15,22 @@ import Videopage from './Components/Videopage/Videopage';
 
 function App() {
 
+  var loginUser = true;
+
   return (
     <div className="App">
       <PlansProvider>
         <BrowserRouter>
           <Routes>
             {/* <Route path="/" element={<Language />}> */}
-              <Route index element={<LanguagePage />} />
+              <Route index element={<Videopage />} />
               <Route path="plans" element={<PlansPage />} />
               <Route path="quiz" element={<Quizpage />} />
               <Route path="register" element={<RegisterPage />} />
               <Route path="language" element={<LanguagePage />} />
               <Route path="login" element={<LoginPage />} />
               <Route path="leaderboard" element={<LeaderboardPage />} />
-              <Route path="dashboard" element={<DashboardPage />} />
+              <Route path="dashboard" element={loginUser ? <DashboardPage /> : <LoginPage />} />
               <Route path="summary" element={<SummaryPage />} />
               <Route path="silverQuiz" element={<SilverQuizPage />} />
               <Route path="intro" element={<Videopage />} />

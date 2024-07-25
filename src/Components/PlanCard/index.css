@@ -6,7 +6,24 @@
     background: #111430;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
+
+/* .plancard:after {
+    content: "Please buy a plan";
+    height: 100%;
+    width: 100%;
+    background: red;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(0.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+} */
 
 .plancard-body {
     display: flex;

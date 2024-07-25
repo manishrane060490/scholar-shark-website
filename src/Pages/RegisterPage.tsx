@@ -44,9 +44,10 @@ function RegisterPage() {
 
             } else {
                 console.log(data);
-                alert('Account verified successfully');
+                // alert('Account verified successfully');
                 // window.location.href = '/login';
                 setShowCode(false);
+                navigate('/login');
             }
         });
     };
@@ -128,7 +129,7 @@ function RegisterPage() {
             }, err => console.log(err))
             .catch(err => console.log(err));
 
-        navigate('/login');
+        
     }
 
     const formInputChange = (formField: string, value: string) => {

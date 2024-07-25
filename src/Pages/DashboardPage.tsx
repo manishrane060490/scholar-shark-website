@@ -15,7 +15,7 @@ import staticshark from '../assets/IdleAlphaGIF.gif';
 import Userpool from '../Userpool';
 
 function DashboardPage() {
-    const { plans, info } = useContext(PlansContext);
+    const { plans, info, userInfo, setUserInfo } = useContext(PlansContext);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [plan, setPlan] = useState('');
@@ -23,6 +23,8 @@ function DashboardPage() {
     const [profile, setProfile] = useState('');
     const [emailErr, setEmailErr] = useState('');
     const [passwordErr, setPasswordErr] = useState('');
+    const [user, setUser] = useState('');
+
     const getCurrentUser = (callback: any) => {
         const cognitoUser = Userpool.getCurrentUser();
 
@@ -36,6 +38,10 @@ function DashboardPage() {
 
             console.log("Session valid:" + session.isValid());
             console.log(session);
+            setUser(session.accessToken.payload.username)
+            setUserInfo({
+                user: session.accessToken.payload.username
+            })
 
             cognitoUser.getUserAttributes((err, attr) => {
                 if (err) return console.log(err);
@@ -71,6 +77,8 @@ function DashboardPage() {
                 }
             }
         })
+
+        
     }, [])
     
     return (
@@ -149,27 +157,27 @@ function DashboardPage() {
             <div className="plans">
                 <h3>Your Plans</h3>
                 <div className='plancard-grp'>
-                    <Plancard title={'Silver'} count={100} type={'silver'} />
-                    <Plancard title={'Gold'} count={150} type={'gold'} disabled={plans.plan !== 'gold'} />
-                    <Plancard title={'Diamond'} count={300} type={'diamond'} disabled={plans.plan !== 'diamond'} />
+                    <Plancard title={'Silver'} count={100} type={'silver'} disabled={true}/>
+                    <Plancard title={'Gold'} count={150} type={'gold'} disabled={true} />
+                    <Plancard title={'Diamond'} count={300} type={'diamond'} disabled={true} />
                 </div>
             </div>
             <div className="quizs">
                 <h3>Quizes</h3>
                 <h4>Silver Quiz</h4>
                 <div className='card-grp'>
-                    <Card title={'cricket'} count={200} />
-                    <Card title={'history'} count={200} />
-                    <Card title={'food'} count={200} />
+                    <Card title={'cricket'} count={200} disabled={true}/>
+                    <Card title={'history'} count={200} disabled={true}/>
+                    <Card title={'food'} count={200} disabled={true}/>
                 </div>
                 <h4>Gold Quiz</h4>
                 <div className='card-grp'>
-                    <Card title={'travel'} count={200} />
-                    <Card title={'indian-mythology'} count={200} />
+                    <Card title={'travel'} count={200} disabled={true}/>
+                    <Card title={'indian-mythology'} count={200} disabled={true}/>
                 </div>
                 <h4>Diamon Quiz</h4>
                 <div className='card-grp'>
-                    <Card title={'finance'} count={200} />
+                    <Card title={'finance'} count={200} disabled={true}/>
                 </div>
             </div>
             <div className="leaderboard"></div>
