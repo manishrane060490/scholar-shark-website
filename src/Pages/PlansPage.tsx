@@ -54,7 +54,7 @@ function PlansPage() {
         let config = {
             method: "post",
             maxBosyLength: Infinity,
-            url: "http://localhost:1000/orders",
+            url: "http://43.247.136.239:1000/orders",
             headers: {
                 'Content-Type': 'application/json'
             },
