@@ -161,7 +161,7 @@ function PlansPage() {
                 setResponseId(response.razorpay_payment_id);
 
                 updatePlanInDB(plans.plan);
-                updatePaymentStatus(response.razorpay_payment_id);
+                // updatePaymentStatus(response.razorpay_payment_id);
                 navigate('/dashboard');
                 
             },
