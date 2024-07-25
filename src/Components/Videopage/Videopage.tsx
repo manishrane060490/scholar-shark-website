@@ -17,11 +17,12 @@ function Videopage() {
 
   return (
     <>
-      <video width="100%" height="100%" controls autoPlay muted>
+      <video width="100%" height="100%" controls={false} autoPlay muted loop>
         <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
         <source src="https://www.w3schools.com/tags/movie.ogg" type="video/ogg" />
         Your browser does not support the video tag.
       </video>
+      <div className='text'><h1>Welcome to Scholar shark</h1></div>
       <div className='rotate-screen' id="screen">
         <h1>Please rotate a screen for best experience</h1>
       </div>
