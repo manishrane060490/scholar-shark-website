@@ -1258,3 +1258,12 @@ html {
     display: flex;
   }
 }
+
+.deep-sea-bg {
+  background: url('../../assets/intro-bg.gif');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

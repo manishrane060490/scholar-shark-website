@@ -27,7 +27,7 @@ function LeaderboardPage() {
     
 
     useEffect(() => {
-        var sceneHeight = document.getElementsByClassName('scene')[0].clientHeight;
+        var sceneHeight = document.getElementsByClassName('deep-sea-bg')[0].clientHeight;
         var panelHeaderHeight = document.getElementById('panel-header')?.clientHeight || 0;
         var panelStaticHeight = document.getElementById('static-height')?.clientHeight || 100;
         var PanelBodyHeight = sceneHeight - panelHeaderHeight - panelStaticHeight - 200;

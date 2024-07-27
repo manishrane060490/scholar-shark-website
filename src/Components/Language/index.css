@@ -29,6 +29,7 @@
 .card-glow-border-inner{
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
   padding: 15px;
+  border-radius: 10px;
 }
 
 .lang-selector * {

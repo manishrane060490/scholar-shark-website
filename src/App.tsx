@@ -11,6 +11,7 @@ import { PlansProvider } from './Context';
 import SummaryPage from './Pages/SummaryPage';
 import SilverQuizPage from './Components/SilverQuizPage/SilverQuizPage';
 import Videopage from './Components/Videopage/Videopage';
+import HomePage from './Pages/HomePage';
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
               <Route path="login" element={<LoginPage />} />
               <Route path="leaderboard" element={<LeaderboardPage />} />
               <Route path="dashboard" element={loginUser ? <DashboardPage /> : <LoginPage />} />
-              <Route path="summary" element={<SummaryPage />} />
+              <Route path="home" element={<HomePage />} />
               <Route path="silverQuiz" element={<SilverQuizPage />} />
               <Route path="intro" element={<Videopage />} />
               {/* <Route path="*" element={<NoPage />} />  */}
