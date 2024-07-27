@@ -14,6 +14,7 @@ import { PlansContext } from '../Context';
 import staticshark from '../assets/IdleAlphaGIF.gif';
 import Userpool from '../Userpool';
 import axios from 'axios';
+import HomePage from './HomePage';
 
 function DashboardPage() {
     const { plans, info, userInfo, setUserInfo } = useContext(PlansContext);
@@ -25,6 +26,8 @@ function DashboardPage() {
     const [emailErr, setEmailErr] = useState('');
     const [passwordErr, setPasswordErr] = useState('');
     const [user, setUser] = useState('');
+    const [purchasedPlans, setPurchasedPlans] = useState(0);
+    const purchasedPlan: any = [];
 
     const getCurrentUser = (callback: any) => {
         const cognitoUser = Userpool.getCurrentUser();
@@ -56,6 +59,7 @@ function DashboardPage() {
 
     const fetchPlans = (userId: string) => {
         console.log(userId);
+        
         // let config = {
 
         //     method: "get",
@@ -70,11 +74,16 @@ function DashboardPage() {
             .then((res: any) => {
                 console.log(res.data)
                 // handleRazorpayScreen(response.data.amount)
-
+                res.data.map((d:any) => purchasedPlan.push(d.planType));
+                setPurchasedPlans(purchasedPlan.length)
             })
             .catch((error: any) => {
                 console.log("error at", error)
             })
+
+            console.log(purchasedPlans)
+
+        // setPurchasedPlans([...purchasedPlans, purchasedPlan])
     }
 
     useEffect(() => {
@@ -106,7 +115,10 @@ function DashboardPage() {
     }, [])
     
     return (
-        <div className="dashboardPage">
+            (purchasedPlans === 0) ? 
+                <HomePage />
+            : 
+            <div className="dashboardPage">
             <div className="header">
                 <div className="left-side">
                     <img src={logo} className="home-logo" alt="Scholar Shark" />
@@ -205,7 +217,7 @@ function DashboardPage() {
                 </div>
             </div>
             <div className="leaderboard"></div>
-        </div>
+        </div>  
     )
 }
 
