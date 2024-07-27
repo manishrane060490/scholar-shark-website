@@ -43,12 +43,26 @@ span.coming-text {
     width: 50%;
     height: 100%;
     position: relative;
-    background-image: url('./assets/planbg.PNG');
+    background-image: url('./assets/planbg.png');
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 30px;
+    padding: 50px;
+    font-family: 'Roboto';
+}
+
+.panel-right h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.panel-right p {
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #fff
 }
 
 .panel-left {
@@ -635,8 +649,14 @@ img.dropdown-img {
 
 
 @media (max-width: 991px) {
+    .panel {
+        flex-direction: column-reverse;
+    }
+
     .panel-right {
-        display: none;
+        width: 100%;
+        height: 200px;
+        padding: 20px;
     }
 
     .panel-left {
@@ -901,4 +921,43 @@ img.dropdown-img {
     background: transparent;
     margin-top: 20px;
     /* color of the tracking area */
+}
+
+@media (max-width: 991px)  {
+    .homePage .banner-inner h1 {
+        font-size: 30px;
+    }
+
+    .homePage .banner-inner h4 {
+        font-size: 20px;
+    }
+    .homePage .banner-inner .shark-img {
+        display: none;
+    }
+    .homePage .banner-inner {
+        height: auto;
+        margin: 5% 5% 150px 5%;
+        padding: 12px;
+        width: 90%;
+    }
+
+    .homePage .banner-inner .person {
+        width: 25px;
+        height: 25px;
+    }
+
+    .homePage .bannersection {
+        height: auto;
+    }
+
+    .homePage .bannersection:after {
+        height: 100px;
+    }
+
+    .homePage .plans, .homePage .quizs, .homePage .about, .homePage .rules {
+        margin: 100px 10px;
+    }
+    .homePage .plans .plan-container {
+        flex-direction: column;
+    }
 }

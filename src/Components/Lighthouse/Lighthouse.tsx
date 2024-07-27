@@ -31,7 +31,7 @@ function Lighthouse({light}: {light: boolean}) {
 
   return (
     <>
-      {/* <div className="scene">
+      <div className="scene">
         <div className="background">
           <div className="stars">
             <div className="star"></div>
@@ -177,9 +177,9 @@ function Lighthouse({light}: {light: boolean}) {
         
         }
         
-      </div> */}
+      </div>
       
-      <div className='deep-sea-bg'></div>
+      {/* <div className='deep-sea-bg'></div> */}
     </>
   )
 }

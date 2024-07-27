@@ -293,6 +293,8 @@ function RegisterPage() {
 
                 </div>
                 <div className='panel-right'>
+                    <h1>Unleash your <br/> knowledge</h1>
+                    <p>Where Learning Takes a Dive!</p>
                 </div>
             </div>
         </>
