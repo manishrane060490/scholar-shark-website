@@ -4,7 +4,7 @@ import { url } from 'inspector';
 import {Link, useNavigate} from 'react-router-dom';
 import { Button } from '@mui/material';
 
-function Card({title, count, disabled}: any) {
+function Card({title, count, disabled, showCount}: any) {
   const navigate = useNavigate();
 
   return (
@@ -19,10 +19,14 @@ function Card({title, count, disabled}: any) {
                 </Link>
                 {/* <button disabled={true} className='full-width button disabled'>Take Quiz</button> */}
             </div>
-            <div className='card-count'>
+            {
+              showCount && 
+              <div className='card-count'>
                 <span className='right'></span>
                 <h4>{count} People Quizing</h4>
-            </div>
+              </div>
+            }
+            
         </div>
         {disabled && 
             <div className='subDiv'>

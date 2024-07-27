@@ -53,15 +53,15 @@ function Language() {
 
   const changeLanguage = (lng: any) => {
     // i18n.changeLanguage(lng);
-    navigate('/quiz')
+    navigate('/register')
   };
 
   document.onmousemove = e => {
-    for(const card of document.getElementsByClassName('card-glow-border') as HTMLCollectionOf<HTMLElement>) {
+    for (const card of document.getElementsByClassName('card-glow-border') as HTMLCollectionOf<HTMLElement>) {
       const rect = card.getBoundingClientRect(),
         x = e.clientX - rect.left,
         y = e.clientY - rect.top;
-      
+
       card.style.setProperty("--mouse-x", `${x}px`);
       card.style.setProperty("--mouse-y", `${y}px`);
     }
@@ -71,57 +71,25 @@ function Language() {
   return (
     <>
       <img className='logo' src={logo} />
-      <div className='shark-talk' id='shark-talk'>
-        <section className='fade-container'>
-          <blockquote className="speech bubble fade">
-            <ReactTyped
-              strings={[
-                "Hello friends!",
-                "It's time to unleash your knowledge to conquer the seas of wisdom with scholar sharks.",
-                "Use your skills and knowledge to bag outstanding prizes and make a difference with our outstanding quizzes."
-              ]}
-              typeSpeed={100}
-              // onComplete={() => showLang()}
-              // onDestroy={() => showLang()}
-              typedRef={setTyped}
-            />
-            <div className='bubble-buttons'>
-              <button className='btn skip-btn' onClick={() => skipLang()}>Skip Intro</button>
-              <Link className='btn start-btn' to="/quiz">Start Test</Link>
-            </div>
-          </blockquote>
-          {/* <blockquote className="speech bubble"></blockquote> */}
-        </section>
-        <img src={shark} className='shark' />
-        {/* <button className='btn skip-btn' onClick={() => skipLang()}>Skip Intro</button>
-        <button className='btn start-btn' onClick={() => skipLang()}>Start Test</button> */}
-        {/* <video width="100%" height="100%" controls autoPlay muted>
-          <source src='../../assets/IdleAlphaWEBM.webm' type="video/xwebm" />
-          Your browser does not support the video tag.
-        </video> */}
-        {/* <div id="video-container">
-        </div> */}
-        {/* <video id="video" playsInline className='video' width="100%" height="100%" loop autoPlay muted>
-          <source src={sharkVideoMov} type="video/mov" />
-          <source src={sharkVideo} type="video/webm" />
-        </video> */}
-      </div>
+      
 
       <Lighthouse light />
-      <div className='lang-selector card-glow-borde' id="lang-selector">
-        <div>
-          {/* <h1>
+      <div className='lang-selector card-glow-border lang-animation' id="lang-selector">
+        <div className='card-glow-border-inner'>
+          <div>
+            {/* <h1>
             Welcome to Scholarsharks
           </h1>
           <h4>Please select your Language</h4> */}
-          <h1>{t('welcome')}</h1>
-          <p>Please select your Language</p>
-        </div>
+            <h1>{t('welcome')}</h1>
+            <p>Please select your Language</p>
+          </div>
 
-        <div className='button-container'>
-          <button className='button' onClick={() => changeLanguage('en')}>English</button>
-          <button className='button disabled' onClick={() => changeLanguage('hi')}>हिंदी <span className='coming-text'>Coming soon</span></button>
-          <button className='button disabled' onClick={() => changeLanguage('mr')}>मराठी <span className='coming-text'>Coming soon</span></button>
+          <div className='button-container'>
+            <button className='button' onClick={() => changeLanguage('en')}>English</button>
+            <button className='button disabled' onClick={() => changeLanguage('hi')}>हिंदी <span className='coming-text'>Coming soon</span></button>
+            <button className='button disabled' onClick={() => changeLanguage('mr')}>मराठी <span className='coming-text'>Coming soon</span></button>
+          </div>
         </div>
       </div>
       <div className='rotate-screen'>

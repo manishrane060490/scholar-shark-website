@@ -1,0 +1,99 @@
+.rules .container {
+    padding-top: 0 !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.page.page-cover {
+    background: linear-gradient(135deg, rgba(24,27,48, 0.3) 0%, rgba(36,43,113,0.3) 100%);
+    color: #fff;
+    border: 1px solid rgba(0,71,255,0.25);
+  }
+  .page.--left {
+    border-right: 0;
+    box-shadow: inset -7px 0 30px -7px rgba(0,0,0,.4);
+  }
+  
+  .page.--right {
+    border-left: 0;
+    box-shadow: inset 7px 0 30px -7px rgba(0,0,0,.4);
+  }
+  
+  .page {
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(24,27,48, 1) 0%, rgba(36,43,113,1) 100%);
+    color: #fff;
+    border: 1px solid rgba(0,71,255,0.25);
+    overflow: hidden;
+    height: 150px;
+  }
+  
+  .page-content {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .page-text {
+    font-size: 24px;
+  }
+  
+  .flip-book {
+    /* background: url(../images/backgrounds/background.jpeg); */
+    background-color: #111430;
+    min-width: 205px;
+    min-height: 150px;
+    width: 100%;
+    /* max-width: 2000px; */
+    display: block;
+    margin: 100px
+  }
+  
+  .product-1-slide-1 .slide-1-title{
+    color: #e9c46a;
+    font-size: 72px;
+    line-height: 1;
+  }
+  
+  .slide-1-content {
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+  }
+  
+  .slide-1-content:before {
+    content: "";
+    border: 1px solid #352652;
+    height: 78px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  } 
+  
+  .slide-1-content:after {
+    content: "";
+    border: 1px solid #352652;
+    height: 78px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+  
+  .slide-1-block {
+    background: #468fbd;
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+  
+  .slide-1-block h4 {
+    padding: 8px 24px;
+    color: #352652;
+    font-size: 35px;
+  }
+  
+  .slide-1-content p {
+    font-size: 30px;
+    margin-top: 24px;
+  }

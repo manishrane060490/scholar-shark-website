@@ -153,7 +153,7 @@ function PlansPage() {
 
         const options = {
             key: 'rzp_test_xVhe8Kc1nyWe7C',
-            amount: amount,
+            amount: amount * 100,
             currency: 'INR',
             name: info.name,
             description: "payment",
@@ -161,7 +161,7 @@ function PlansPage() {
                 setResponseId(response.razorpay_payment_id);
 
                 updatePlanInDB(plans.plan);
-                // updatePaymentStatus(response.razorpay_payment_id);
+                updatePaymentStatus(response.razorpay_payment_id);
                 navigate('/dashboard');
                 
             },
@@ -264,7 +264,7 @@ function PlansPage() {
 
                     {
                         plan && 
-                        <Button fullWidth type='submit' variant='contained' style={{marginTop: '20px'}} onClick={() => createRazorpayOrder(plans.amt.slice(1))}>Proceed to pay</Button>
+                        <Button fullWidth type='submit' variant='contained' style={{marginTop: '20px'}} onClick={() => handleRazorpayScreen(plans.amt.slice(1))}>Proceed to pay</Button>
                     }  
                 </div>
                 <div className='panel-right'>

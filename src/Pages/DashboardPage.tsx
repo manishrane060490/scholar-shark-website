@@ -68,9 +68,9 @@ function DashboardPage() {
 
         axios.get(`https://iy5ispsidmfhpzojalaofamqiq0nerep.lambda-url.ap-south-1.on.aws/getplans/${userId}`)
             .then((res: any) => {
-                console.log(JSON.stringify(res.data))
+                console.log(res.data)
                 // handleRazorpayScreen(response.data.amount)
-                
+
             })
             .catch((error: any) => {
                 console.log("error at", error)
@@ -106,7 +106,7 @@ function DashboardPage() {
     }, [])
     
     return (
-        <div className="homePage">
+        <div className="dashboardPage">
             <div className="header">
                 <div className="left-side">
                     <img src={logo} className="home-logo" alt="Scholar Shark" />
@@ -191,17 +191,17 @@ function DashboardPage() {
                 <h4>Silver Quiz</h4>
                 <div className='card-grp'>
                     <Card title={'cricket'} count={200} disabled={true}/>
-                    <Card title={'history'} count={200} disabled={true}/>
-                    <Card title={'food'} count={200} disabled={true}/>
+                    <Card title={'history'} showCount={true} count={200} disabled={true}/>
+                    <Card title={'food'} showCount={true} count={200} disabled={true}/>
                 </div>
                 <h4>Gold Quiz</h4>
                 <div className='card-grp'>
-                    <Card title={'travel'} count={200} disabled={true}/>
-                    <Card title={'indian-mythology'} count={200} disabled={true}/>
+                    <Card title={'travel'} showCount={true} count={200} disabled={true}/>
+                    <Card title={'indian-mythology'} showCount={true} count={200} disabled={true}/>
                 </div>
                 <h4>Diamon Quiz</h4>
                 <div className='card-grp'>
-                    <Card title={'finance'} count={200} disabled={true}/>
+                    <Card title={'finance'} showCount={true} count={200} disabled={true}/>
                 </div>
             </div>
             <div className="leaderboard"></div>
