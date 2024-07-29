@@ -281,6 +281,7 @@ function RegisterPage() {
                         }
 
                     </div>
+                    <Link to='/login' className="linkDisplay">If you are register member click here</Link>
                     {/* {
                         <button onClick={handleSummary} className={`register-btn ${(email.length > 0 && phone.length > 0 && name.length > 0) === true ? '' : 'disabled'}`}>
                             Summary

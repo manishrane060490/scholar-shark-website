@@ -923,6 +923,15 @@ img.dropdown-img {
     /* color of the tracking area */
 }
 
+.linkDisplay {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
+
 @media (max-width: 991px)  {
     .homePage .banner-inner h1 {
         font-size: 30px;
@@ -953,6 +962,7 @@ img.dropdown-img {
     .homePage .bannersection:after {
         height: 100px;
     }
+
 
     .homePage .plans, .homePage .quizs, .homePage .about, .homePage .rules {
         margin: 100px 10px;

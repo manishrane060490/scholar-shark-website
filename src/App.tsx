@@ -12,6 +12,7 @@ import SummaryPage from './Pages/SummaryPage';
 import SilverQuizPage from './Components/SilverQuizPage/SilverQuizPage';
 import Videopage from './Components/Videopage/Videopage';
 import HomePage from './Pages/HomePage';
+import AnimatedRoutes from './AnimatedRoutes';
 
 
 function App() {
@@ -22,22 +23,7 @@ function App() {
     <div className="App">
       <PlansProvider>
         <BrowserRouter>
-          <Routes>
-            {/* <Route path="/" element={<Language />}> */}
-              <Route index element={<Videopage />} />
-              <Route path="plans" element={<PlansPage />} />
-              <Route path="quiz" element={<Quizpage />} />
-              <Route path="register" element={<RegisterPage />} />
-              <Route path="language" element={<LanguagePage />} />
-              <Route path="login" element={<LoginPage />} />
-              <Route path="leaderboard" element={<LeaderboardPage />} />
-              <Route path="dashboard" element={loginUser ? <DashboardPage /> : <LoginPage />} />
-              <Route path="home" element={<HomePage />} />
-              <Route path="silverQuiz" element={<SilverQuizPage />} />
-              <Route path="intro" element={<Videopage />} />
-              {/* <Route path="*" element={<NoPage />} />  */}
-            {/* </Route> */}
-          </Routes>
+          <AnimatedRoutes />
         </BrowserRouter>
       </PlansProvider>
     
