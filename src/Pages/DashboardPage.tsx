@@ -75,13 +75,13 @@ function DashboardPage() {
                 console.log(res.data)
                 // handleRazorpayScreen(response.data.amount)
                 res.data.map((d:any) => purchasedPlan.push(d.planType));
-                setPurchasedPlans(purchasedPlan.length)
+                // setPurchasedPlans(purchasedPlan.length)
             })
             .catch((error: any) => {
                 console.log("error at", error)
             })
 
-            console.log(purchasedPlans)
+            // console.log(purchasedPlans)
 
         // setPurchasedPlans([...purchasedPlans, purchasedPlan])
     }
@@ -115,9 +115,6 @@ function DashboardPage() {
     }, [])
     
     return (
-            (purchasedPlans === 0) ? 
-                <HomePage />
-            : 
             <div className="dashboardPage">
             <div className="header">
                 <div className="left-side">

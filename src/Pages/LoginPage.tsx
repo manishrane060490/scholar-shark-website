@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Lighthouse from "../Components/Lighthouse/Lighthouse";
-import { Link } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { authenticate } from "../authenticate";
 import { Button, TextField, Typography } from "@mui/material";
 
@@ -106,6 +105,7 @@ function LoginPage() {
                         <div className='formfield'>
                             <Button type='submit' fullWidth variant='contained' onClick={handleClick}>Login</Button>
                         </div>
+                        <Link to='/Register' className="linkDisplay">If you are not register member click here</Link>
                         <Typography variant="body1">{loginErr}</Typography>
                     </div>
                 </div>

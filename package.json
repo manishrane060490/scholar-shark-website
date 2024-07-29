@@ -17,6 +17,7 @@
     "amazon-cognito-identity-js": "^6.3.12",
     "aws-amplify": "^6.4.3",
     "axios": "^1.7.2",
+    "framer-motion": "^11.3.19",
     "i18next": "^23.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

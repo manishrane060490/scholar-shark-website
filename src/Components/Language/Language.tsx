@@ -53,7 +53,7 @@ function Language() {
 
   const changeLanguage = (lng: any) => {
     // i18n.changeLanguage(lng);
-    navigate('/register')
+    navigate('/login')
   };
 
   document.onmousemove = e => {
