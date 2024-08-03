@@ -26,7 +26,7 @@ function Plancard({ title, count, type, disabled }: any) {
               <span className='progress-line'></span>
               <span className='progress-main'></span>
             </div> */}
-            <button className='button full-width' onClick={() => navigate('/plans')}>{disabled ? 'Challenge' : 'Selected'}</button>
+            <button className='button full-width' onClick={() => navigate('/silverQuiz')}>{disabled ? 'Challenge' : 'Selected'}</button>
           </div>
 
         </div>

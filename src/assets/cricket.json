@@ -3,21 +3,21 @@
         "srNo": 75,
         "category": "how to save taxes:",
         "question": "Which cricketer had scored the most runs at the ODI World Cup until 2019?",
-        "answerOptions": [
+        "answers": [
             {
-                "text": "Sachin Tendulkar",
+                "answertext": "Sachin Tendulkar",
                 "isCorrect": true
             },
             {
-                "text": "Mohammad Azharuddin",
+                "answertext": "Mohammad Azharuddin",
                 "isCorrect": false
             },
             {
-                "text": "Saurav Ganguly",
+                "answertext": "Saurav Ganguly",
                 "isCorrect": false
             },
             {
-                "text": "Rahul Dravid",
+                "answertext": "Rahul Dravid",
                 "isCorrect": false
             }
         ],
@@ -29,21 +29,21 @@
         "srNo": 121,
         "category": "Managing Personal Finance and Improving Financial Health:",
         "question": "Up until 2019, which cricketers have the record for the highest-run partnership in the ODI World Cup for India?",
-        "answerOptions": [
+        "answers": [
             {
-                "text": "Sachin Tendulkar and Saurav Ganguly",
+                "answertext": "Sachin Tendulkar and Saurav Ganguly",
                 "isCorrect": false
             },
             {
-                "text": "Saurav Ganguly and Rahul Dravid",
+                "answertext": "Saurav Ganguly and Rahul Dravid",
                 "isCorrect": true
             },
             {
-                "text": "Saurav Ganguly and Virender Sehwag",
+                "answertext": "Saurav Ganguly and Virender Sehwag",
                 "isCorrect": false
             },
             {
-                "text": "Rahul Dravid and Sachin Tendulkar",
+                "answertext": "Rahul Dravid and Sachin Tendulkar",
                 "isCorrect": false
             }
         ],
@@ -55,21 +55,21 @@
         "srNo": 58,
         "category": "how to save taxes:",
         "question": "Who was the highest wicket-taker for India during the historic 1983 Prudential World Cup held in England?",
-        "answerOptions": [
+        "answers": [
             {
-                "text": "Ravi Shashtri",
+                "answertext": "Ravi Shashtri",
                 "isCorrect": false
             },
             {
-                "text": "Kapil Dev",
+                "answertext": "Kapil Dev",
                 "isCorrect": false
             },
             {
-                "text": "Sandeep Patil",
+                "answertext": "Sandeep Patil",
                 "isCorrect": false
             },
             {
-                "text": "Roger Binny",
+                "answertext": "Roger Binny",
                 "isCorrect": true
             }
         ],
@@ -81,21 +81,21 @@
         "srNo": 4,
         "category": "Banking in India and Maximizing Benefits:",
         "question": "During the 'Wills World Cup' of 1996, India was eliminated at the stage of?",
-        "answerOptions": [
+        "answers": [
             {
-                "text": "Quarter-Finals",
+                "answertext": "Quarter-Finals",
                 "isCorrect": false
             },
             {
-                "text": "Semi-Finals",
+                "answertext": "Semi-Finals",
                 "isCorrect": true
             },
             {
-                "text": "Finals",
+                "answertext": "Finals",
                 "isCorrect": false
             },
             {
-                "text": "Group Matches",
+                "answertext": "Group Matches",
                 "isCorrect": false
             }
         ],
@@ -107,21 +107,21 @@
         "srNo": 69,
         "category": "how to save taxes:",
         "question": "Who was the captain of the Indian team during the first World Cup in England in 1975?",
-        "answerOptions": [
+        "answers": [
             {
-                "text": "Srinivasaraghavan Venkataraghavan",
+                "answertext": "Srinivasaraghavan Venkataraghavan",
                 "isCorrect": true
             },
             {
-                "text": "Abid Ali",
+                "answertext": "Abid Ali",
                 "isCorrect": false
             },
             {
-                "text": "Sunil Gavaskar",
+                "answertext": "Sunil Gavaskar",
                 "isCorrect": false
             },
             {
-                "text": "Gundappa Viswanath",
+                "answertext": "Gundappa Viswanath",
                 "isCorrect": false
             }
         ],
@@ -133,21 +133,21 @@
         "srNo": 80,
         "category": "how to save taxes:",
         "question": "Against which country did India score their highest total at the ODI World Cup in 2007?",
-        "answerOptions": [
+        "answers": [
             {
-                "text": "Bermuda",
+                "answertext": "Bermuda",
                 "isCorrect": true
             },
             {
-                "text": "Kenya",
+                "answertext": "Kenya",
                 "isCorrect": false
             },
             {
-                "text": "Sri Lanka",
+                "answertext": "Sri Lanka",
                 "isCorrect": false
             },
             {
-                "text": "Namibia",
+                "answertext": "Namibia",
                 "isCorrect": false
             }
         ],
@@ -159,21 +159,21 @@
         "srNo": 142,
         "category": "Managing Personal Finance and Improving Financial Health:",
         "question": "Who was the highest wicket-taker for India at the 2015 ODI World Cup?",
-        "answerOptions": [
+        "answers": [
             {
-                "text": "Anil Kumble",
+                "answertext": "Anil Kumble",
                 "isCorrect": false
             },
             {
-                "text": "Mohammed Shami",
+                "answertext": "Mohammed Shami",
                 "isCorrect": false
             },
             {
-                "text": "Umesh Yadav",
+                "answertext": "Umesh Yadav",
                 "isCorrect": true
             },
             {
-                "text": "Zaheer Khan",
+                "answertext": "Zaheer Khan",
                 "isCorrect": false
             }
         ],
@@ -185,21 +185,21 @@
         "srNo": 92,
         "category": "how to save taxes:",
         "question": "Which cricketer has scored the most ducks at the ODI World Cup for India as of 2023?",
-        "answerOptions": [
+        "answers": [
             {
-                "text": "Ajit Agarkar",
+                "answertext": "Ajit Agarkar",
                 "isCorrect": false
             },
             {
-                "text": "Sachin Tendulkar",
+                "answertext": "Sachin Tendulkar",
                 "isCorrect": false
             },
             {
-                "text": "Krishnamachari Srikkanth",
+                "answertext": "Krishnamachari Srikkanth",
                 "isCorrect": true
             },
             {
-                "text": "Javagal Srinath",
+                "answertext": "Javagal Srinath",
                 "isCorrect": false
             }
         ],
@@ -211,21 +211,21 @@
         "srNo": 44,
         "category": "general",
         "question": "How many runs did India make in its historic World Cup win over West Indies in 1983?",
-        "answerOptions": [
+        "answers": [
             {
-                "text": "374",
+                "answertext": "374",
                 "isCorrect": false
             },
             {
-                "text": "175",
+                "answertext": "175",
                 "isCorrect": false
             },
             {
-                "text": "183",
+                "answertext": "183",
                 "isCorrect": true
             },
             {
-                "text": "259",
+                "answertext": "259",
                 "isCorrect": false
             }
         ],
@@ -237,21 +237,21 @@
         "srNo": 138,
         "category": "Managing Personal Finance and Improving Financial Health:",
         "question": "Which country did India score their lowest total against in the history of the ODI World Cup?",
-        "answerOptions": [
+        "answers": [
             {
-                "text": "West Indies",
+                "answertext": "West Indies",
                 "isCorrect": false
             },
             {
-                "text": "England",
+                "answertext": "England",
                 "isCorrect": false
             },
             {
-                "text": "New Zealand",
+                "answertext": "New Zealand",
                 "isCorrect": false
             },
             {
-                "text": "Australia",
+                "answertext": "Australia",
                 "isCorrect": true
             }
         ],

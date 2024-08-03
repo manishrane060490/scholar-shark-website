@@ -26,7 +26,7 @@ function DashboardPage() {
     const [emailErr, setEmailErr] = useState('');
     const [passwordErr, setPasswordErr] = useState('');
     const [user, setUser] = useState('');
-    const [purchasedPlans, setPurchasedPlans] = useState(0);
+    const [purchasedPlans, setPurchasedPlans] = useState<any[] | undefined>();
     const purchasedPlan: any = [];
 
     const getCurrentUser = (callback: any) => {
@@ -40,8 +40,8 @@ function DashboardPage() {
                 return;
             }
 
-            console.log("Session valid:" + session.isValid());
-            console.log(session);
+            // console.log("Session valid:" + session.isValid());
+            // console.log(session);
             setUser(session.accessToken.payload.username)
             setUserInfo({
                 user: session.accessToken.payload.username
@@ -70,12 +70,14 @@ function DashboardPage() {
         //     }
         // }
 
-        axios.get(`https://iy5ispsidmfhpzojalaofamqiq0nerep.lambda-url.ap-south-1.on.aws/getplans/${userId}`)
+        axios.get(`https://iy5ispsidmfhpzojalaofamqiq0nerep.lambda-url.ap-south-1.on.aws/getplans/a1932dca-5011-70a3-1568-b9f8eb4e4888`)
             .then((res: any) => {
                 console.log(res.data)
                 // handleRazorpayScreen(response.data.amount)
                 res.data.map((d:any) => purchasedPlan.push(d.planType));
-                // setPurchasedPlans(purchasedPlan.length)
+                console.log(purchasedPlan);
+                setPurchasedPlans(purchasedPlan)
+                // console.log(purchasedPlans)
             })
             .catch((error: any) => {
                 console.log("error at", error)
@@ -189,11 +191,20 @@ function DashboardPage() {
             </div> */}
             <div className="plans">
                 <h3>Your Plans</h3>
-                <div className='plancard-grp'>
+                {
+                    purchasedPlans?.map((plan: any) => (
+                        <div className='plancard-grp'>
+                            <Plancard title={'Silver'} count={100} type={'silver'} disabled={plan !== 'silver'}/>
+                            <Plancard title={'Gold'} count={150} type={'gold'} disabled={plan !== 'gold'} />
+                            <Plancard title={'Diamond'} count={300} type={'diamond'} disabled={plan !== 'diamond'} />
+                        </div>
+                    ))
+                }
+                {/* <div className='plancard-grp'>
                     <Plancard title={'Silver'} count={100} type={'silver'} disabled={true}/>
                     <Plancard title={'Gold'} count={150} type={'gold'} disabled={true} />
                     <Plancard title={'Diamond'} count={300} type={'diamond'} disabled={true} />
-                </div>
+                </div> */}
             </div>
             <div className="quizs">
                 <h3>Quizes</h3>

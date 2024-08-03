@@ -8,6 +8,7 @@ import sharkVideo from '../../assets/IdleAlphaWEBM1.webm';
 import sharkVideoMov from '../../assets/IdleAlphaWEBM.ogg';
 import { ReactTyped, Typed } from "react-typed";
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
@@ -71,11 +72,15 @@ function Language() {
   return (
     <>
       <img className='logo' src={logo} />
-      
 
-      <Lighthouse light />
-      <div className='lang-selector card-glow-border lang-animation' id="lang-selector">
-        <div className='card-glow-border-inner'>
+
+      
+      <motion.div initial={{ opacity: 0, x: '40%' }} animate={{ opacity: 1, x: 0 }} transition={{
+        ease: "linear",
+        duration: 1,
+        x: { duration: 1 }
+      }} className='lang-selector card-glow-border glow-on-hover lang-animation' id="lang-selector">
+        <div className='card-glow-border-inner '>
           <div>
             {/* <h1>
             Welcome to Scholarsharks
@@ -91,7 +96,7 @@ function Language() {
             <button className='button disabled' onClick={() => changeLanguage('mr')}>मराठी <span className='coming-text'>Coming soon</span></button>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className='rotate-screen'>
         <h1>Please rotate a screen for best experience</h1>
       </div>

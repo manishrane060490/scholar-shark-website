@@ -27,7 +27,7 @@
 }
 
 .card-glow-border-inner{
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
   padding: 15px;
   border-radius: 10px;
 }
@@ -82,7 +82,7 @@ img.logo {
 }
 
 @media (max-height : 700px) and (orientation: landscape) {
-  .lang-selector {
+  /* .lang-selector {
     display: none;
   }
 
@@ -90,7 +90,7 @@ img.logo {
     display: flex;
     position: absolute;
     top: 0;
-  }
+  } */
 
   .shark-talk {
     display: none;
@@ -116,8 +116,8 @@ img.logo {
 }
 
 .lang-animation {
-  animation: move-lang 1s forwards;
-  animation-delay: 1s;
+  /* animation: move-lang 1s forwards;
+  animation-delay: 1s; */
 }
 
 @keyframes move-shark {
@@ -386,8 +386,8 @@ video {
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
   animation: glowing 20s linear infinite;
   opacity: 0;
   transition: opacity .3s ease-in-out;
@@ -410,6 +410,17 @@ video {
   background: #111;
   left: 0;
   top: 0;
+}
+
+.lang-selector.glow-on-hover:not(.correct):not(.wrong):after {
+  background: #383763;
+}
+.lang-selector.glow-on-hover:not(.correct):not(.wrong):active:after {
+  background: #383763;
+}
+.lang-selector.glow-on-hover:not(.correct):not(.wrong):before {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
 }
 
 @keyframes glowing {

@@ -6,6 +6,7 @@ import { PlansContext } from "../Context";
 import axios from 'axios';
 import logo from '../assets/logo.png';
 import { Button } from "@mui/material";
+import Layout from "./Layout";
 
 function PlansPage() {
     const { plans, setPlans, userInfo } = useContext(PlansContext);
@@ -179,8 +180,7 @@ function PlansPage() {
     }
 
     return (
-        <>
-            <Lighthouse light={false}/>
+        <Layout>
             <div className='panel plan-page'>
                 <div className='panel-left'>
                     <h2>Welcome Shark &#128075;</h2>
@@ -272,7 +272,7 @@ function PlansPage() {
                 <p>Where Learning Takes a Dive!</p>
                 </div>
             </div>
-        </>
+        </Layout>
     )
 }
 

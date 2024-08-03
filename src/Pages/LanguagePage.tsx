@@ -1,8 +1,12 @@
 import Language from "../Components/Language/Language";
+import Layout from "./Layout";
 
 function LanguagePage() {
     return (
-        <Language />
+        <Layout lightBg={true}>
+            <Language />
+        </Layout>
+        
     )
 }
 

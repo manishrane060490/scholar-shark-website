@@ -14,6 +14,7 @@ import thumpsup from '../../assets/ThumbsUpAlphaGIF.gif';
 import thumpsdown from '../../assets/ThumbsDownAlphaGIF.gif';
 import logo from '../../assets/logo.png';
 import axios from 'axios';
+import Layout from '../../Pages/Layout';
 
 function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -146,8 +147,8 @@ function Quizpage() {
     console.log(questions);
 
     return (
-        <>
-            <Lighthouse light />
+        <Layout>
+            
             <div className='quizPanel'>
                 <div className='quizPanel-left'>
                     <div className='quizPanel-section'>
@@ -232,7 +233,7 @@ function Quizpage() {
                     </div> */}
                 </div>
             </div>
-        </>
+        </Layout>
     )
 }
 

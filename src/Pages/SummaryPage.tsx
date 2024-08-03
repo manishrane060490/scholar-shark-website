@@ -97,7 +97,7 @@ function SummaryPage() {
             <div className='panel plan-page'>
                 <div className='panel-left'>
                     <h2>Welcome Shark &#128075;</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
 
                     <div className="plan-container">
 

@@ -32,6 +32,7 @@ html {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   width: calc(var(--vhwidth, 1vh) * 100);
+  overflow: hidden;
 }
 
 .background {
@@ -1250,13 +1251,13 @@ html {
 }
 
 @media (max-height : 700px) and (orientation: landscape){
-  .lang-selector {
+  /* .lang-selector {
     display: none;
   }
 
   .rotate-screen {
     display: flex;
-  }
+  } */
 }
 
 .deep-sea-bg {

@@ -5,6 +5,7 @@ import logo from '../assets/logo.png';
 import { Link } from "react-router-dom";
 import { PlansContext } from "../Context";
 import leaders from '../assets/leader.json';
+import Layout from "./Layout";
 
 function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -35,8 +36,7 @@ function LeaderboardPage() {
     }, [])
 
     return (
-        <>
-            <Lighthouse light={false}/>
+        <Layout>
             <div className='panel leader-page'>
                 <div className='panel-header' id='panel-header'>
                     <div>
@@ -146,7 +146,7 @@ function LeaderboardPage() {
                     <Link className='button' to='/plans'>Select Plan</Link>
                 </div>
             </div>
-        </>
+        </Layout>
     )
 }
 

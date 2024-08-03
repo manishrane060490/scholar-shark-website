@@ -18,16 +18,16 @@ function Lighthouse({light}: {light: boolean}) {
 
   let lightShow = light
 
-  const [width, height] = useWindowSize();
+  // const [width, height] = useWindowSize();
 
-  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-  let vh = height * 0.01;
-  // Then we set the value in the --vh custom property to the root of the document
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  // // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+  // let vh = height * 0.01;
+  // // Then we set the value in the --vh custom property to the root of the document
+  // document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-  let vhWidth = width * 0.01;
-  // Then we set the value in the --vh custom property to the root of the document
-  document.documentElement.style.setProperty('--vhwidth', `${vhWidth}px`);
+  // let vhWidth = width * 0.01;
+  // // Then we set the value in the --vh custom property to the root of the document
+  // document.documentElement.style.setProperty('--vhwidth', `${vhWidth}px`);
 
   return (
     <>

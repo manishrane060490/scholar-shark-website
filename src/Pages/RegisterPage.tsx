@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useMemo } from "react";
 import Lighthouse from "../Components/Lighthouse/Lighthouse";
 import { Link } from "react-router-dom";
 import { PlansContext } from "../Context";
@@ -6,7 +6,9 @@ import { useNavigate } from 'react-router-dom';
 import { CognitoUserAttribute, CognitoUser } from 'amazon-cognito-identity-js';
 import axios from 'axios';
 import Userpool from "../Userpool";
-import { Button, TextField } from '@mui/material';
+import { Button, TextField, Select, MenuItem } from '@mui/material';
+import countryList from 'react-select-country-list';
+import Layout from "./Layout";
 
 // const useStyles = makeStyles((theme: any) => ({
 //   input: {
@@ -29,7 +31,14 @@ function RegisterPage() {
     const [validEmail, setValidEmail] = useState(false);
     const [showCode, setShowCode] = useState(false);
     const navigate = useNavigate();
+    const [value, setValue] = useState('')
+    const options = useMemo(() => countryList().getData(), [])
 
+    const changeHandler = (value: any) => {
+        setValue(value)
+      }
+
+    console.log(options)
     const updatePlanInDB = (userId: string) => {
         let data = JSON.stringify({
                 userId: userId,
@@ -127,7 +136,7 @@ function RegisterPage() {
                     Userpool.signUp(email, password, attributeList, null, (err: any, data: any) => {
                         if (err) {
                             console.log(err);
-                            alert("Couldn't sign up");
+                            alert("Please try again, facing some issue");
                         } else {
                             console.log(data);
                             setShowCode(true);
@@ -150,7 +159,7 @@ function RegisterPage() {
             setPassword(value);
         }
         if (formField === "phone") {
-            setPhone(value);
+            setPhone(`+91${value}`);
         }
         if (formField === "code") {
             setCode(value);
@@ -188,12 +197,11 @@ function RegisterPage() {
 
     console.log((email.length > 0 && phone.length > 0 && name.length > 0))
     return (
-        <>
-            <Lighthouse light={false} />
+        <Layout>
             <div className='panel register-page'>
                 <div className='panel-left'>
                     <h2>Welcome Shark &#128075;</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
 
                     <div className="register-form">
                         {
@@ -237,6 +245,22 @@ function RegisterPage() {
                                     />
                                 </div>
                                 <div className='formfield'>
+                               {/* <select
+                                        labelId="demo-simple-select-label"
+                                        id="demo-simple-select"
+                                        value={value}
+                                        label="Country code"
+                                        onChange={changeHandler}
+                                    >
+                                        
+                                        {
+                                            options.map((opt:any) => {
+                                                <op value={opt.value}>{opt.label}</MenuItem>
+                                            })
+                                        }
+                                        
+                                    </select> */}
+                                    {/* <select options={options} value={value} onChange={changeHandler} /> */}
                                     <TextField
                                         value={phone}
                                         onChange={(e) => { formInputChange("phone", e.target.value) }}
@@ -298,7 +322,7 @@ function RegisterPage() {
                     <p>Where Learning Takes a Dive!</p>
                 </div>
             </div>
-        </>
+        </Layout>
     )
 }
 

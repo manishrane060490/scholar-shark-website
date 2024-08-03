@@ -1,6 +1,6 @@
 import { useState, useLayoutEffect, useContext, useEffect } from 'react';
 import './index.css';
-import questions from '../../assets/cricket-marathi.json';
+import questions from '../../assets/cricket.json';
 import Question from '../Question/Question';
 import Result from '../Result/Result';
 import Lighthouse from '../Lighthouse/Lighthouse';
