@@ -8,6 +8,15 @@ body {
     margin: 10px;
 }
 
+/* .App{
+    background: url('./assets/intro-bg.gif');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
 /* Quiz page */
 
 span.coming-text {
@@ -970,4 +979,12 @@ img.dropdown-img {
     .homePage .plans .plan-container {
         flex-direction: column;
     }
+}
+
+.slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

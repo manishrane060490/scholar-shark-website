@@ -3,6 +3,7 @@ import Lighthouse from "../Components/Lighthouse/Lighthouse";
 import { useNavigate, Link } from 'react-router-dom';
 import { authenticate } from "../authenticate";
 import { Button, TextField, Typography } from "@mui/material";
+import Layout from "./Layout";
 
 function LoginPage() {
     const Navigate = useNavigate();
@@ -69,8 +70,7 @@ function LoginPage() {
 
 
     return (
-        <>
-            <Lighthouse light={false} />
+        <Layout>
             <div className='panel register-page'>
                 <div className='panel-left'>
                     <h2>Welcome Shark &#128075;</h2>
@@ -105,7 +105,7 @@ function LoginPage() {
                         <div className='formfield'>
                             <Button type='submit' fullWidth variant='contained' onClick={handleClick}>Login</Button>
                         </div>
-                        <Link to='/Register' className="linkDisplay">If you are not register member click here</Link>
+                        <Link to='/Register' className="linkDisplay">If you are not registered member click here</Link>
                         <Typography variant="body1">{loginErr}</Typography>
                     </div>
                 </div>
@@ -115,7 +115,7 @@ function LoginPage() {
                 </div>
 
             </div>
-        </>
+        </Layout>
     )
 }
 
