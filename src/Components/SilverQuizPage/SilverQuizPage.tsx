@@ -1,6 +1,6 @@
 import { useState, useLayoutEffect, useContext, useEffect } from 'react';
 import './index.css';
-import questions from '../../assets/cricket.json';
+// import questions from '../../assets/cricket.json';
 import Question from '../Question/Question';
 import Result from '../Result/Result';
 import Lighthouse from '../Lighthouse/Lighthouse';
@@ -13,6 +13,8 @@ import staticshark from '../../assets/IdleAlphaGIF.gif';
 import thumpsup from '../../assets/ThumbsUpAlphaGIF.gif';
 import thumpsdown from '../../assets/ThumbsDownAlphaGIF.gif';
 import logo from '../../assets/logo.png';
+import axios from 'axios';
+import Timer from '../Timer/Timer';
 
 function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -39,16 +41,32 @@ function SilverQuizPage() {
     const [disabled, setDisabled] = useState(false);
     const [randomObject, setRandomObject] = useState(null);
     const [windowWidth, setWindowWidth] = useState<number>(0);
+    const [questions, setQuestions] = useState([]);
 
     // set time for each question
     const [timer, setTimer] = useState(1000);
     const [quizStarted, setQuizStarted] = useState(false);
     const [isLastq, setIsLastq] = useState(false);
+    // const timerPer = `(${timer} * 10)%`
 
     useEffect(() => {
         // windowHeight = document.getElementsByTagName('body')[0].clientWidth;
-        setWindowWidth(window.innerWidth)
+        setWindowWidth(window.innerWidth);
+        fetchQuiz();
     }, []);
+
+    const fetchQuiz = async () => {
+        await axios.get(`https://zwhxhdbmy25zqawk7h4wohtbda0vwaoy.lambda-url.ap-south-1.on.aws/prequizcategory/eng/15/food`)
+            .then((res: any) => {
+                setQuestions(res.data.questions);
+                // handleRazorpayScreen(response.data.amount)
+                
+            })
+            .catch((error: any) => {
+                console.log("error at", error)
+            })
+    }
+    
 
     useEffect(() => {
             const interval = setInterval(() => {
@@ -134,7 +152,9 @@ function SilverQuizPage() {
     // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty('--vhwidth', `${vhWidth}px`);
     // console.log(windowHeight)
-    // console.log(windowHeight < 768)
+    // console.log(windowHeight < 768);
+
+    document.documentElement.style.setProperty('--timerPer', `${timer * 10}%`);
   
     
    
@@ -149,10 +169,10 @@ function SilverQuizPage() {
                         <div className='quizPanel-logo'>
                             <img src={logo} alt="logo" />
                         </div>
-                        <div className='quizPanel-text'>
+                        {/* <div className='quizPanel-text'>
                             <h1>Unlesh your knowledge</h1>
                             <h4>Where learning takes a dive</h4>
-                        </div>
+                        </div> */}
                         <div>
                             {showShark === 'staticshark' && windowWidth < 991 &&
                                 <img src={staticshark} alt="shark" className='sharkGif' />
@@ -165,39 +185,26 @@ function SilverQuizPage() {
                             }
                         </div>
                     </div>
-
-                    {/* <img src={quizImg} alt='quizImg' /> */}
-                    {/* <img src={staticshark} alt="shark" className='sharkGifhidden'/>
-                    <img src={staticshark} alt="shark" className='sharkGifhidden'/>
-                    <img src={staticshark} alt="shark" className='sharkGifhidden'/> */}
-                    {/* <source src={sharkVideo} type="video/mp4" /> */}
-                    {/* <source src="/video/video.ogv" type="video/ogg" /> */}
-                    {showShark === 'staticshark' && windowWidth > 990 &&
-                        <img src={staticshark} alt="shark" className='sharkGif' />
-                    }
-                    {showShark === 'thumpsup' && windowWidth > 990 &&
-                        <img src={thumpsup} alt="shark" className='sharkGif' />
-                    }
-                    {showShark === 'thumpsdown' && windowWidth > 990 &&
-                        <img src={thumpsdown} alt="shark" className='sharkGif' />
-                    }
-                    {/* {showShark === 'static' && windowWidth > 768 &&
-                        <video className='video' width="100%" height="100%" loop autoPlay muted>
-                            <source src={sharkVideo} type="video/webm" />
-                        </video>
-                    }
-                    {showShark === 'thumpsup' && windowWidth > 768 &&
-                        <video className='video' width="100%" height="100%" loop autoPlay muted>
-                            <source src={sharkThumpsUpVideo} type="video/webm" />
-                        </video>
-                    }
-                    {showShark === 'thumpsdown' && windowWidth > 768 &&
-                        <video className='video' width="100%" height="100%" loop autoPlay muted>
-                            <source src={sharkThumpsDownVideo} type="video/webm" />
-                        </video>
-                    } */}
+                    <div className='timer-block'>
+                        {/* <Timer /> */}
+                        <div className='countdown'>
+                            <div className="countdown__fill" id="ticker"></div>
+                            <div className="countdown__digit" id="seconds">{timer}</div>
+                            
+                        </div>
+                        {showShark === 'staticshark' && windowWidth > 990 &&
+                            <img src={staticshark} alt="shark" className='sharkGif' />
+                        }
+                        {showShark === 'thumpsup' && windowWidth > 990 &&
+                            <img src={thumpsup} alt="shark" className='sharkGif' />
+                        }
+                        {showShark === 'thumpsdown' && windowWidth > 990 &&
+                            <img src={thumpsdown} alt="shark" className='sharkGif' />
+                        }
+                    </div>
                 </div>
                 <div className='quizPanel-right'>
+                    
                     Time Remaining: {timer}
 
                     {
