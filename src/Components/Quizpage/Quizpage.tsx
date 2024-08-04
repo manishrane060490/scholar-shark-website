@@ -15,6 +15,7 @@ import thumpsdown from '../../assets/ThumbsDownAlphaGIF.gif';
 import logo from '../../assets/logo.png';
 import axios from 'axios';
 import Layout from '../../Pages/Layout';
+import { AnimatePresence } from 'framer-motion';
 
 function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -144,6 +145,9 @@ function Quizpage() {
         }
       }
 
+      // @ts-ignore
+      questions.map(ques => console.log(ques.explanation));
+
     console.log(questions);
 
     return (
@@ -204,15 +208,16 @@ function Quizpage() {
                     } */}
                 </div>
                 <div className='quizPanel-right'>
-
-
+                    <AnimatePresence>
                     {
                         questions && currentQuestion < questions.length &&
                         <Question disabled={disabled} number={currentQuestion} nextDisabled={nextDisabled} question={questions[currentQuestion]} explanation={explanation} onAnswerCheck={onAnswerCheck} onAnswerClick={handleNextQuestion} />
+                       
                     }
                     {
                         currentQuestion === questions.length && <h1>Welcome</h1>
                     }
+                    </AnimatePresence>
 
                     {/* <div className='mobile-display'>
                         {showShark === 'static' &&

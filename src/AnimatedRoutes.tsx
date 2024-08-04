@@ -11,6 +11,7 @@ import DashboardPage from './Pages/DashboardPage';
 import HomePage from './Pages/HomePage';
 import SilverQuizPage from './Components/SilverQuizPage/SilverQuizPage';
 import { AnimatePresence } from 'framer-motion';
+import Carousal from './Components/Carousal/Carousal';
 
 const AnimatedRoutes = () => {
 
@@ -31,6 +32,7 @@ const AnimatedRoutes = () => {
                 <Route path="home" element={<HomePage />} />
                 <Route path="silverQuiz" element={<SilverQuizPage />} />
                 <Route path="intro" element={<Videopage />} />
+                <Route path="test" element={<Carousal />} />
                 {/* <Route path="*" element={<NoPage />} />  */}
                 {/* </Route> */}
             </Routes>
