@@ -7,6 +7,7 @@ import carThree from '../../assets/carousel/3.jpg';
 
 
 
+
 export default function Carousal() {
 
     function test() {
@@ -123,10 +124,24 @@ export default function Carousal() {
         }
     }
 
+    // alert(isTablet);
 
 
     useEffect(() => {
         test();
+        // alert(isMobile);
+        // alert(isTablet);
+        const userAgent = navigator.userAgent.toLowerCase();
+    //     const isMobile = /iphone|ipad|ipod|android|blackberry|windows phone/g.test(userAgent);
+    //   const isTablet = /(ipad|tablet|playbook|silk)|(android(?!.*mobile))/g.test(userAgent);
+
+    //   if (isMobile) {
+    //     alert('Mobile');
+    //   } else if (isTablet) {
+    //     alert('Tablet');
+    //   } else {
+    //     alert('Desktop');
+    //   }
     }, [])
 
     // test();

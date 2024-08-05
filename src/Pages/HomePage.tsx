@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import { useContext, useState } from 'react';
 import { PlansContext } from '../Context';
 import Rules from '../Components/Rules/Rules';
+import { isMobile, isTablet } from 'react-device-detect';
 
 function HomePage() {
     const navigate = useNavigate();
