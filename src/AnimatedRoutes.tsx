@@ -10,8 +10,11 @@ import LeaderboardPage from './Pages/LeaderboardPage';
 import DashboardPage from './Pages/DashboardPage';
 import HomePage from './Pages/HomePage';
 import SilverQuizPage from './Components/SilverQuizPage/SilverQuizPage';
-import { AnimatePresence } from 'framer-motion';
+import { AcceleratedAnimation, AnimatePresence } from 'framer-motion';
 import Carousal from './Components/Carousal/Carousal';
+import HomeDesktop from './Pages/HomeDesktop';
+import { AccordionActions } from '@mui/material';
+import AccordionCarousel from './Components/AccordionCarousel/AccordionCarousel';
 
 const AnimatedRoutes = () => {
 
@@ -33,6 +36,8 @@ const AnimatedRoutes = () => {
                 <Route path="silverQuiz" element={<SilverQuizPage />} />
                 <Route path="intro" element={<Videopage />} />
                 <Route path="test" element={<Carousal />} />
+                <Route path="test1" element={<AccordionCarousel />} />
+                <Route path="desk" element={<HomeDesktop />} />
                 {/* <Route path="*" element={<NoPage />} />  */}
                 {/* </Route> */}
             </Routes>
