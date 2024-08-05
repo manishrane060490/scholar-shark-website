@@ -3,6 +3,7 @@ import Carousal from '../Components/Carousal/Carousal';
 import AccordionCarousel from '../Components/AccordionCarousel/AccordionCarousel';
 import ThreeDCarousel from '../Components/ThreeDCarousel/ThreeDCarousel';
 import InfiniteCarousal from '../Components/InfiniteCarousal/InfiniteCarousal';
+import Footer from '../Components/Footer/Footer';
 
 export default function HomeDesktop() {
     return (
@@ -24,6 +25,7 @@ export default function HomeDesktop() {
             <div className="section"></div>
             <div className="section">
                 <InfiniteCarousal />
+                <Footer />
             </div>
         </div>
     )
