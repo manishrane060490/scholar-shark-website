@@ -50,7 +50,7 @@ main {
   &:nth-child(6) { left: calc(50% + 660px); opacity: 0; }
 }
 
-.content {
+.acc-content{
   width: min(30vw,400px);
   position: absolute;
   top: 50%;
@@ -84,7 +84,7 @@ main {
   }
 }
 
-.item:nth-of-type(2) .content {
+.item:nth-of-type(2) .acc-content{
   display: block;
   animation: show 0.75s ease-in-out 0.3s forwards;
 }
@@ -124,7 +124,7 @@ main {
 }
 
 @media (width > 650px) and (width < 900px) {
-  .content {
+  .acc-content{
     & .title        { font-size: 1rem; }
     & .description  { font-size: 0.7rem; }
     & button        { font-size: 0.7rem; }
@@ -141,7 +141,7 @@ main {
 }
 
 @media (width < 650px) {
-  .content {
+  .acc-content{
     & .title        { font-size: 0.9rem; }
     & .description  { font-size: 0.65rem; }
     & button        { font-size: 0.7rem; }

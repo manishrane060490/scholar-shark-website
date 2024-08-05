@@ -637,13 +637,13 @@ img.dropdown-img {
     margin-left: auto;
 }
 
-.carousel {
+/* .carousel {
     display: none;
 }
 
 .carousel.carousel-slider {
     display: block;
-}
+} */
 
 .button-container>.button.disabled {
     background: gray;
