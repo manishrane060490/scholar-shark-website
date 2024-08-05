@@ -2,6 +2,7 @@ import React from 'react';
 import Carousal from '../Components/Carousal/Carousal';
 import AccordionCarousel from '../Components/AccordionCarousel/AccordionCarousel';
 import ThreeDCarousel from '../Components/ThreeDCarousel/ThreeDCarousel';
+import InfiniteCarousal from '../Components/InfiniteCarousal/InfiniteCarousal';
 
 export default function HomeDesktop() {
     return (
@@ -21,7 +22,9 @@ export default function HomeDesktop() {
                 <ThreeDCarousel />
             </div>
             <div className="section"></div>
-            <div className="section"></div>
+            <div className="section">
+                <InfiniteCarousal />
+            </div>
         </div>
     )
 }

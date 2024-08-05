@@ -16,6 +16,7 @@ import HomeDesktop from './Pages/HomeDesktop';
 import { AccordionActions } from '@mui/material';
 import AccordionCarousel from './Components/AccordionCarousel/AccordionCarousel';
 import ThreeDCarousel from './Components/ThreeDCarousel/ThreeDCarousel';
+import InfiniteCarousal from './Components/InfiniteCarousal/InfiniteCarousal';
 
 const AnimatedRoutes = () => {
 
@@ -37,7 +38,7 @@ const AnimatedRoutes = () => {
                 <Route path="silverQuiz" element={<SilverQuizPage />} />
                 <Route path="intro" element={<Videopage />} />
                 <Route path="test" element={<Carousal />} />
-                <Route path="test1" element={<ThreeDCarousel />} />
+                <Route path="test1" element={<InfiniteCarousal />} />
                 <Route path="desk" element={<HomeDesktop />} />
                 {/* <Route path="*" element={<NoPage />} />  */}
                 {/* </Route> */}
