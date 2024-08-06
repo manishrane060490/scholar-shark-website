@@ -7,7 +7,8 @@ import { CognitoUserAttribute, CognitoUser } from 'amazon-cognito-identity-js';
 import axios from 'axios';
 import Userpool from "../Userpool";
 import { Button, TextField, Select, MenuItem } from '@mui/material';
-import countryList from 'react-select-country-list';
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 import Layout from "./Layout";
 
 // const useStyles = makeStyles((theme: any) => ({
@@ -32,13 +33,12 @@ function RegisterPage() {
     const [showCode, setShowCode] = useState(false);
     const navigate = useNavigate();
     const [value, setValue] = useState('')
-    const options = useMemo(() => countryList().getData(), [])
+    const [phoneValue, setPhoneValue] = useState();
 
     const changeHandler = (value: any) => {
         setValue(value)
       }
 
-    console.log(options)
     const updatePlanInDB = (userId: string) => {
         let data = JSON.stringify({
                 userId: userId,
@@ -81,7 +81,7 @@ function RegisterPage() {
                 console.log(err);
                 // alert("Couldn't verify account");
                 setShowCode(false);
-                navigate('/login');
+                // navigate('/login');
             } else {
                 console.log(data);
                 // alert('Account verified successfully');
@@ -91,6 +91,27 @@ function RegisterPage() {
             }
         });
     };
+
+    const resendCode = (e: any) => {
+        const user = new CognitoUser({
+            Username: email,
+            Pool: Userpool,
+        });
+        user.resendConfirmationCode((err, data) => {
+            if (err) {
+                console.log(err);
+                // alert("Couldn't verify account");
+                // setShowCode(false);
+                // navigate('/login');
+            } else {
+                console.log(data);
+                // alert('Account verified successfully');
+                // window.location.href = '/login';
+                // setShowCode(false);
+                // navigate('/login');
+            }
+        })
+    }
 
     const handleClick = () => {
         setInfo({
@@ -111,7 +132,7 @@ function RegisterPage() {
                         }),
                         new CognitoUserAttribute({
                             Name: 'phone_number',
-                            Value: phone
+                            Value: `+91${phone}`
                         }),
                         new CognitoUserAttribute({
                             Name: 'name',
@@ -159,7 +180,7 @@ function RegisterPage() {
             setPassword(value);
         }
         if (formField === "phone") {
-            setPhone(`+91${value}`);
+            setPhone(`${value}`);
         }
         if (formField === "code") {
             setCode(value);
@@ -272,9 +293,18 @@ function RegisterPage() {
                                         fullWidth
                                         className="textfield"
                                     />
+
+<PhoneInput
+      placeholder="Enter phone number"
+      value={phoneValue}
+      // @ts-ignore
+      onChange={setPhoneValue}/>
                                 </div>
                                 <div className='formfield'>
                                     <Button type='submit' variant='contained' fullWidth onClick={handleClick}>Signup</Button>
+                                </div>
+                                <div className='formfield'>
+                                    <Button type='submit' variant='contained' fullWidth onClick={resendCode}>Resend</Button>
                                 </div>
                                 {/* <div className='formfield'>
                                 <Button type='submit' variant='contained' onClick={verifyAccount}>Signup</Button>

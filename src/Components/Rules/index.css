@@ -1,99 +1,86 @@
-.rules .container {
-    padding-top: 0 !important;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+
+
+
+.threeDCarousel {
+  /* width: 100vw; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: linear-gradient(45deg, #8B5CF6, #EC4899);
+  font-family: "Montserrat", sans-serif;
+}
+.threeDCarousel .carousel {
+  overflow: unset;
+  position: relative;
+  width: 23rem;
+  height: 23rem;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}  
+.card-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(calc(var(--offset) * 50deg)) scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -5rem));
+  filter: blur(calc(var(--abs-offset) * 1rem));
+  transition: all 0.3s ease-out;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: hsl(280deg, 40%, calc(100% - var(--abs-offset) * 50%));
+  border-radius: 1rem;
+  color: #9CA3AF;
+  text-align: justify;
+  transition: all 0.3s ease-out;
+}
+.card h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 0.7em;
+  color: #1F2937;
+}
+.card p, .card h2 {
+  transition: all 0.3s ease-out;
+  opacity: var(--active);
+}
+.carNav {
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  z-index: 2;
+  cursor: pointer;
+  user-select: none;
+  background: unset;
+  border: unset;
+  width: 100px;
+}
+.carNav.left {
+  transform: translateX(-100%) translatey(-50%);
+}
+.carNav.right {
+  right: 0px;
+  transform: translateX(100%) translatey(-50%);
 }
 
-.page.page-cover {
-    background: linear-gradient(135deg, rgba(24,27,48, 0.3) 0%, rgba(36,43,113,0.3) 100%);
-    color: #fff;
-    border: 1px solid rgba(0,71,255,0.25);
+
+@media (max-width: 991px) {
+  .carNav.left {
+    transform: translateX(-65%) translatey(-50%);
   }
-  .page.--left {
-    border-right: 0;
-    box-shadow: inset -7px 0 30px -7px rgba(0,0,0,.4);
+  .carNav.right {
+    right: 35px;
+    transform: translateX(100%) translatey(-50%);
   }
-  
-  .page.--right {
-    border-left: 0;
-    box-shadow: inset 7px 0 30px -7px rgba(0,0,0,.4);
+  .about {
+    flex-direction: column-reverse;
   }
-  
-  .page {
-    padding: 20px;
-    background: linear-gradient(135deg, rgba(24,27,48, 1) 0%, rgba(36,43,113,1) 100%);
-    color: #fff;
-    border: 1px solid rgba(0,71,255,0.25);
-    overflow: hidden;
-    height: 150px;
-  }
-  
-  .page-content {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .page-text {
-    font-size: 24px;
-  }
-  
-  .flip-book {
-    /* background: url(../images/backgrounds/background.jpeg); */
-    background-color: #111430;
-    min-width: 205px;
-    min-height: 150px;
-    width: 100%;
-    /* max-width: 2000px; */
-    display: block;
-    margin: 100px
-  }
-  
-  .product-1-slide-1 .slide-1-title{
-    color: #e9c46a;
-    font-size: 72px;
-    line-height: 1;
-  }
-  
-  .slide-1-content {
-    text-align: center;
-    padding: 100px 0;
-    position: relative;
-  }
-  
-  .slide-1-content:before {
-    content: "";
-    border: 1px solid #352652;
-    height: 78px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-  } 
-  
-  .slide-1-content:after {
-    content: "";
-    border: 1px solid #352652;
-    height: 78px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-  }
-  
-  .slide-1-block {
-    background: #468fbd;
-    display: inline-block;
-    margin-bottom: 16px;
-  }
-  
-  .slide-1-block h4 {
-    padding: 8px 24px;
-    color: #352652;
-    font-size: 35px;
-  }
-  
-  .slide-1-content p {
-    font-size: 30px;
-    margin-top: 24px;
-  }
+}

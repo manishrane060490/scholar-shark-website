@@ -1018,6 +1018,9 @@ body {
 }
 .section:nth-child(2) {
     background: url(https://cdn.pixabay.com/photo/2015/06/02/12/59/narrative-794978_960_720.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section:nth-child(3) {

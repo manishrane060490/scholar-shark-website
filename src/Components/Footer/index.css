@@ -391,3 +391,12 @@ ul.social-icons-s1 {
     color: #fd4a18 !important;
   }
   
+  @media (max-width: 991px) {
+    .row {
+        flex-direction: column;
+    }
+    .col-xl-4.col-lg-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+  }
