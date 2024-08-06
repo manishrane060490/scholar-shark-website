@@ -18,6 +18,9 @@ import AccordionCarousel from './Components/AccordionCarousel/AccordionCarousel'
 import ThreeDCarousel from './Components/ThreeDCarousel/ThreeDCarousel';
 import InfiniteCarousal from './Components/InfiniteCarousal/InfiniteCarousal';
 import Footer from './Components/Footer/Footer';
+import Rules from './Components/Rules/Rules';
+import DemoCard from './Components/Rules/DemoCard';
+import Carousel from './Components/Rules/Carousel';
 
 const AnimatedRoutes = () => {
 
@@ -39,7 +42,7 @@ const AnimatedRoutes = () => {
                 <Route path="silverQuiz" element={<SilverQuizPage />} />
                 <Route path="intro" element={<Videopage />} />
                 <Route path="test" element={<Carousal />} />
-                <Route path="test1" element={<Footer />} />
+                <Route path="test1" element={<Carousel />} />
                 <Route path="desk" element={<HomeDesktop />} />
                 {/* <Route path="*" element={<NoPage />} />  */}
                 {/* </Route> */}
