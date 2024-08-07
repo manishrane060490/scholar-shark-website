@@ -1032,3 +1032,61 @@ body {
 .section:nth-child(5) {
     background: url(https://cdn.pixabay.com/photo/2014/05/03/00/46/notebook-336634_960_720.jpg);
 }
+
+.PhoneInput {
+    background: #fff;
+    color: #111;
+    padding: 13px 12px 8px;
+    border-radius: 8px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+
+.PhoneInputInput {
+    flex: 1 1;
+    min-width: 0;
+    border: none;
+    padding: 0;
+    height: 35px;
+    /* font-size: 25px; */
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+}
+
+.PhoneInputInput:focus-visible {
+   outline: none;
+}
+
+.PhoneInputCountryIcon {
+    height: auto;
+    width: 100%;
+    box-shadow: none;
+}
+
+.PhoneInputCountry {
+    width: 50px;
+}
+
+.passwordHint {
+    border: 1px solid #000;
+    background: #ddd;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    color: #111;
+    font-family: "Roboto";
+}
+
+.verifyAcc {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    text-decoration: underline;
+}

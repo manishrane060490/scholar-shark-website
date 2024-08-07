@@ -34,19 +34,25 @@ function RegisterPage() {
     const navigate = useNavigate();
     const [value, setValue] = useState('')
     const [phoneValue, setPhoneValue] = useState();
+    const [verifyCode, setVerifyCode] = useState(false);
+    const [checkPassword, setCheckPassword] = useState(true);
+
+    var pattern = new RegExp(
+        "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[-+_!@#$%^&*.,?]).+$"
+      );
 
     const changeHandler = (value: any) => {
         setValue(value)
-      }
+    }
 
     const updatePlanInDB = (userId: string) => {
         let data = JSON.stringify({
-                userId: userId,
-                profilePictureURL: "https://scholarsharks.in/assets/images/logos/shark.png",
-                email: email,
-                name: name,
-                phoneNumber: phone,
-                createdOn: Date.now().toString()
+            userId: userId,
+            profilePictureURL: "https://scholarsharks.in/assets/images/logos/shark.png",
+            email: email,
+            name: name,
+            phoneNumber: phone,
+            createdOn: Date.now().toString()
         })
 
         let config = {
@@ -105,6 +111,8 @@ function RegisterPage() {
                 // navigate('/login');
             } else {
                 console.log(data);
+                setShowCode(true);
+                setVerifyCode(false);
                 // alert('Account verified successfully');
                 // window.location.href = '/login';
                 // setShowCode(false);
@@ -132,7 +140,7 @@ function RegisterPage() {
                         }),
                         new CognitoUserAttribute({
                             Name: 'phone_number',
-                            Value: `+91${phone}`
+                            Value: phone
                         }),
                         new CognitoUserAttribute({
                             Name: 'name',
@@ -169,7 +177,7 @@ function RegisterPage() {
             }, err => console.log(err))
             .catch(err => console.log(err));
 
-        
+
     }
 
     const formInputChange = (formField: string, value: string) => {
@@ -177,6 +185,9 @@ function RegisterPage() {
             setEmail(value);
         }
         if (formField === "password") {
+            setCheckPassword(false);
+            const checkPass = pattern.test(password);
+            setCheckPassword(checkPass)
             setPassword(value);
         }
         if (formField === "phone") {
@@ -205,7 +216,7 @@ function RegisterPage() {
                 setPasswordErr("Password is required")
                 resolve({ email: "", password: "Password is required" });
             }
-            else if (password.length < 6) {
+            else if (password.length < 8) {
                 setPasswordErr("must be 6 character")
                 resolve({ email: "", password: "must be 6 character" });
             }
@@ -216,7 +227,7 @@ function RegisterPage() {
         });
     };
 
-    console.log((email.length > 0 && phone.length > 0 && name.length > 0))
+    console.log((phone));
     return (
         <Layout>
             <div className='panel register-page'>
@@ -226,7 +237,7 @@ function RegisterPage() {
 
                     <div className="register-form">
                         {
-                            !showCode &&
+                            !showCode && !verifyCode && 
                             <div className='form'>
                                 <div className="formfield">
                                     <TextField
@@ -264,9 +275,20 @@ function RegisterPage() {
                                         fullWidth
                                         className="textfield"
                                     />
+                                    {
+                                        !checkPassword && 
+                                        <div className="passwordHint">
+                                            <ul>
+                                                <li>Password must contain Capital letter</li>
+                                                <li>Password must contain Number</li>
+                                                <li>Password length must be 8 character</li>
+                                            </ul>
+                                        </div>
+                                    }
+                                    
                                 </div>
                                 <div className='formfield'>
-                               {/* <select
+                                    {/* <select
                                         labelId="demo-simple-select-label"
                                         id="demo-simple-select"
                                         value={value}
@@ -282,7 +304,7 @@ function RegisterPage() {
                                         
                                     </select> */}
                                     {/* <select options={options} value={value} onChange={changeHandler} /> */}
-                                    <TextField
+                                    {/* <TextField
                                         value={phone}
                                         onChange={(e) => { formInputChange("phone", e.target.value) }}
                                         type="text"
@@ -292,20 +314,21 @@ function RegisterPage() {
                                         margin="dense"
                                         fullWidth
                                         className="textfield"
-                                    />
+                                    /> */}
 
-<PhoneInput
-      placeholder="Enter phone number"
-      value={phoneValue}
-      // @ts-ignore
-      onChange={setPhoneValue}/>
+                                    <PhoneInput
+                                        placeholder="Enter phone number"
+                                        defaultCountry="IN"
+                                        country="US"
+                                        value={phone}
+                                        // @ts-ignore
+                                        onChange={setPhone} />
                                 </div>
                                 <div className='formfield'>
                                     <Button type='submit' variant='contained' fullWidth onClick={handleClick}>Signup</Button>
                                 </div>
-                                <div className='formfield'>
-                                    <Button type='submit' variant='contained' fullWidth onClick={resendCode}>Resend</Button>
-                                </div>
+                                <a className="verifyAcc" href="#" onClick={(e) => {e.preventDefault();setVerifyCode(true); setShowCode(false)}}>Verify Account</a>
+
                                 {/* <div className='formfield'>
                                 <Button type='submit' variant='contained' onClick={verifyAccount}>Signup</Button>
                             </div> */}
@@ -313,7 +336,7 @@ function RegisterPage() {
                         }
 
                         {
-                            showCode &&
+                            showCode && !verifyCode &&
                             <div className="form">
                                 <div className='formfield'>
                                     <TextField
@@ -330,6 +353,28 @@ function RegisterPage() {
                                 </div>
                                 <div className='formfield'>
                                     <Button type='submit' variant='contained' fullWidth onClick={verifyAccount}>Verify Account</Button>
+                                </div>
+                                
+                            </div>
+                        }
+
+                        {
+                            verifyCode && 
+                            <div className="form">
+                                <div className="formfield">
+                                    <TextField
+                                        value={email}
+                                        onChange={(e) => formInputChange("email", e.target.value)}
+                                        label="Email"
+                                        helperText={emailErr}
+                                        variant="filled"
+                                        margin="dense"
+                                        fullWidth
+                                        className="textfield"
+                                    />
+                                    <div className='formfield'>
+                                        <Button type='submit' variant='contained' fullWidth onClick={resendCode}>Resend</Button>
+                                    </div>
                                 </div>
                             </div>
                         }
@@ -348,7 +393,7 @@ function RegisterPage() {
 
                 </div>
                 <div className='panel-right'>
-                    <h1>Unleash your <br/> knowledge</h1>
+                    <h1>Unleash your <br /> knowledge</h1>
                     <p>Where Learning Takes a Dive!</p>
                 </div>
             </div>
