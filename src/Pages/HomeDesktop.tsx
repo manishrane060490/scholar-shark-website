@@ -64,8 +64,6 @@ export default function HomeDesktop() {
                         <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
                     ))}
                 </div>
-            </div>
-            <div className="section">
                 <InfiniteCarousal />
                 <Footer />
             </div>

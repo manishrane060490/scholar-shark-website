@@ -83,6 +83,7 @@
     backface-visibility: hidden;
     transform-origin: 50% 50%;
     transform: rotateX(0);
+    /* box-shadow: 0 0 3px 5px white; */
 }
 
 .js-spin-fwd .spinner {
