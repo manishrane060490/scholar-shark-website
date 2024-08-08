@@ -1001,6 +1001,12 @@ body {
     margin: 0;
     padding: 0;
 } */
+
+.about{
+    color: #fff;
+    font-family: "Roboto";
+    line-height: 1.5;
+}
 .deskHome {
     position: relative;
     width: 100%;
@@ -1017,7 +1023,7 @@ body {
     height: 100vh;
     background-size:  cover;
     scroll-snap-align: start;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .section:nth-child(2) {
     /* background: url(https://cdn.pixabay.com/photo/2015/06/02/12/59/narrative-794978_960_720.jpg); */

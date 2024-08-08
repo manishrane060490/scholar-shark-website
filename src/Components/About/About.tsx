@@ -1,5 +1,5 @@
 import React, {useRef, useEffect} from 'react';
-import sharkImg from '../../assets/shark-bg-trans.png';
+import sharkImg from '../../assets/IdleAlphaGIF.gif';
 import { motion, useAnimation, useInView } from 'framer-motion';
 
 
@@ -33,9 +33,10 @@ export default function About() {
                 <img
                     src={sharkImg}
                     alt="shark"
+                    style={{width: "100%"}}
                 />
             </motion.div>
-            <motion.div className='about' style={{ padding: '100px 40px', color: '#000' }} variants={{
+            <motion.div className='about' style={{ padding: '100px 40px', color: '#fff' }} variants={{
                         hidden: { opacity: 0, x: "100%" },
                         visible: { opacity: 1, x: 0 }
                     }}
