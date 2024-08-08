@@ -1008,6 +1008,8 @@ body {
     scroll-behavior: smooth;
     overflow: auto;
     scroll-snap-type: y mandatory;
+    background: linear-gradient(89deg, #1c2343 10%, #11152c 80%);
+    color: #fff;
 
 }
 .section {
@@ -1015,22 +1017,23 @@ body {
     height: 100vh;
     background-size:  cover;
     scroll-snap-align: start;
+    overflow-x: hidden;
 }
 .section:nth-child(2) {
-    background: url(https://cdn.pixabay.com/photo/2015/06/02/12/59/narrative-794978_960_720.jpg);
+    /* background: url(https://cdn.pixabay.com/photo/2015/06/02/12/59/narrative-794978_960_720.jpg); */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .section:nth-child(3) {
-    background: url(https://cdn.pixabay.com/photo/2015/12/19/20/32/paper-1100254_960_720.jpg);
+    /* background: url(https://cdn.pixabay.com/photo/2015/12/19/20/32/paper-1100254_960_720.jpg); */
 }
 .section:nth-child(4) {
-    background: url(https://cdn.pixabay.com/photo/2016/03/26/22/21/books-1281581_960_720.jpg);
+    /* background: url(https://cdn.pixabay.com/photo/2016/03/26/22/21/books-1281581_960_720.jpg); */
 }
 .section:nth-child(5) {
-    background: url(https://cdn.pixabay.com/photo/2014/05/03/00/46/notebook-336634_960_720.jpg);
+    /* background: url(https://cdn.pixabay.com/photo/2014/05/03/00/46/notebook-336634_960_720.jpg); */
 }
 
 .PhoneInput {
