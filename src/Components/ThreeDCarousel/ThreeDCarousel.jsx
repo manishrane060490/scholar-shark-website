@@ -178,12 +178,13 @@ export default function ThreeDCarousel() {
                         <div className="spinner__face js-active" data-bg="#27323c">
                             <div className="content" data-type="iceland" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/iceland.jpg')"}}>
                                 <div className="content__left">
-                                    <h1>ICELAND<br /><span>EUROPE</span></h1>
+                                    <h1>CRICKET<br /><span>Mr.Fin</span></h1>
                                 </div>
                                 <div className="content__right">
                                     <div className="content__main">
-                                        <p>“As I flew north to begin my third circuit of Iceland in four years, I was slightly anxious. The number of visitors to Iceland has doubled in that period, and I feared this might mean a little less magic to go around. At the end of this trip, 6000km later, I'm thrilled to report that the magic levels remain high. It's found in glorious football victories and Viking chants, kayaking among icebergs, sitting with puffins under the midnight sun and crunching across brand-new lava fields.” </p>
-                                        <p>– Carolyn Bain</p>
+                                        <p>“Did You Know?
+                                        Cricket is the second most popular sport after soccer/football with an estimated fan base of 2.5 billion people. If you are one such fan then challenge yourself among your peers and win assured prizes every week.” </p>
+                                        <p>– Challenge Now</p>
                                     </div>
                                     <h3 className="content__index">01</h3>
                                 </div>
@@ -192,12 +193,13 @@ export default function ThreeDCarousel() {
                         <div className="spinner__face" data-bg="#19304a">
                             <div className="content" data-type="china" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/china.jpg')"}}>
                                 <div className="content__left">
-                                    <h1>CHINA<br /><span>ASIA</span></h1>
+                                    <h1>HISTORY<br /><span>Mr.Fin</span></h1>
                                 </div>
                                 <div className="content__right">
                                     <div className="content__main">
-                                        <p>“Its modern face is dazzling, but China is no one-trick pony. The world's oldest continuous civilisation isn't all smoked glass and brushed aluminium and while you won't be tripping over artefacts – three decades of round-the-clock development and rash town-planning have taken their toll – rich seams of antiquity await.”</p>
-                                        <p>– Damian Harper</p>
+                                        <p>“Did You know?
+                                        India never invaded any country in her last 100000 years of history. Indian history is both ancient and fascinating. We are a tresure trove of rich memories filled with exciting events. If you're fan of such things, we got you covered. Give our history Quizzes a whirl and win amazing prizes once a week.”</p>
+                                        <p>– Challenge Now</p>
                                     </div>
                                     <h3 className="content__index">02</h3>
                                 </div>
@@ -220,7 +222,7 @@ export default function ThreeDCarousel() {
                         <div className="spinner__face" data-bg="#312f2d">
                             <div className="content" data-type="peru" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg')"}}>
                                 <div className="content__left">
-                                    <h1>PERU<br /><span>SOUTH AMERICA</span></h1>
+                                    <h1>FOOD<br /><span>Mr.Fin</span></h1>
                                 </div>
                                 <div className="content__right">
                                     <div className="content__main">

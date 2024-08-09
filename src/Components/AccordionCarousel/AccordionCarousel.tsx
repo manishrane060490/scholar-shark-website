@@ -31,7 +31,7 @@ export default function AccordionCarousel() {
         <>
             <main>
                 <ul className='slider'>
-                    <li className='item' style={{ backgroundImage: "url('https://cdn.mos.cms.futurecdn.net/dP3N4qnEZ4tCTCLq59iysd.jpg')" }}>
+                    {/* <li className='item' style={{ backgroundImage: "url('https://cdn.mos.cms.futurecdn.net/dP3N4qnEZ4tCTCLq59iysd.jpg')" }}>
                         <div className='acc-content'>
                             <h2 className='title'>"Lossless Youths"</h2>
                             <p className='description'> Lorem ipsum, dolor sit amet consectetur
@@ -39,30 +39,27 @@ export default function AccordionCarousel() {
                                 praesentium nisi. Id laboriosam ipsam enim.  </p>
                             <button>Read More</button>
                         </div>
-                    </li>
+                    </li> */}
                     <li className='item' style={{ backgroundImage: "url('https://i.redd.it/tc0aqpv92pn21.jpg')" }}>
                         <div className='acc-content'>
-                            <h2 className='title'>"Estrange Bond"</h2>
-                            <p className='description'> Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-                                praesentium nisi. Id laboriosam ipsam enim.  </p>
+                            <h2 className='title'>"Silver Tier"</h2>
+                            <p className='description'> Dip your toes into our world with our weekly quizzes. Come on sharks  </p>
                             <button>Read More</button>
                         </div>
                     </li>
                     <li className='item' style={{ backgroundImage: "url('https://wharferj.files.wordpress.com/2015/11/bio_north.jpg')" }}>
                         <div className='acc-content'>
-                            <h2 className='title'>"The Gate Keeper"</h2>
-                            <p className='description'> Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-                                praesentium nisi. Id laboriosam ipsam enim.  </p>
+                            <h2 className='title'>"Gold Tier"</h2>
+                            <p className='description'> You are a a big fish. You dream big because you have the power of knowledge backing you up.
+                                Come on Now!!!  </p>
                             <button>Read More</button>
                         </div>
                     </li>
                     <li className='item' style={{ backgroundImage: "url('https://images7.alphacoders.com/878/878663.jpg')" }}>
                         <div className='acc-content'>
-                            <h2 className='title'>"Last Trace Of Us"</h2>
+                            <h2 className='title'>"Diamond Tier"</h2>
                             <p className='description'>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+                            You are the Shark. You are the Apex predator. Swim with best of the best and Stand to win prizes worth crores.
                             </p>
                             <button>Read More</button>
                         </div>
