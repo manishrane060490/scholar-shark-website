@@ -47,9 +47,14 @@ export default function ThreeDCarousel() {
             $('.spinner').last().addClass('spinner--right')
             $('.spinner--right').removeClass('spinner--left')
 
-            $('.spinner--right').on('click', '.carBtn', function(){
+            $('.spinner--right').on('click', '.carQuizBtn', function () {
                 const type = $el.find('.dynamic-type').val();
-                navigate('/silverQuiz', {state:{type}})
+                navigate('/silverQuiz', { state: { type } })
+            });
+
+            $('.spinner--right').on('click', '.carBtn', function () {
+                // const type = $el.find('.dynamic-type').val();
+                navigate('/plans')
             });
         }
 
@@ -201,15 +206,18 @@ export default function ThreeDCarousel() {
                     <div className="spinner spinner--left">
                         <div className="spinner__face js-active" data-bg="#27323c">
                             <input className='dynamic-type' type='hidden' value="cricket" />
-                            <div className="content" data-type="iceland" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/iceland.jpg')"}}>
+                            <div className="content" data-type="iceland" style={{ backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/iceland.jpg')" }}>
                                 <div className="content__left">
                                     <h1>CRICKET<br /><span>Mr.Fin</span></h1>
                                 </div>
                                 <div className="content__right">
                                     <div className="content__main">
                                         <p>“Did You Know?
-                                        Cricket is the second most popular sport after soccer/football with an estimated fan base of 2.5 billion people. If you are one such fan then challenge yourself among your peers and win assured prizes every week.” </p>
-                                        <button className='carBtn pulse-btn-car'>Challenge Now</button>
+                                            Cricket is the second most popular sport after soccer/football with an estimated fan base of 2.5 billion people. If you are one such fan then challenge yourself among your peers and win assured prizes every week.” </p>
+                                        <div className='carBtn-grp'>
+                                            <button className='carBtn pulse-btn-car'>Challenge Now</button>
+                                            <button className='carQuizBtn pulse-btn-car'>Practice Quiz</button>
+                                        </div>
                                         {/* <CButton type="cricket"/> */}
                                     </div>
                                     <h3 className="content__index">01</h3>
@@ -218,48 +226,77 @@ export default function ThreeDCarousel() {
                         </div>
                         <div className="spinner__face" data-bg="#19304a">
                             <input className='dynamic-type' type='hidden' value="travel" />
-                            <div className="content" data-type="china" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/china.jpg')"}}>
+                            <div className="content" data-type="china" style={{ backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/china.jpg')" }}>
                                 <div className="content__left">
                                     <h1>HISTORY<br /><span>Mr.Fin</span></h1>
                                 </div>
                                 <div className="content__right">
                                     <div className="content__main">
                                         <p>“Did You know?
-                                        India never invaded any country in her last 100000 years of history. Indian history is both ancient and fascinating. We are a tresure trove of rich memories filled with exciting events. If you're fan of such things, we got you covered. Give our history Quizzes a whirl and win amazing prizes once a week.”</p>
-                                        <button className='carBtn pulse-btn-car'>Challenge Now</button>
+                                            India never invaded any country in her last 100000 years of history. Indian history is both ancient and fascinating. We are a tresure trove of rich memories filled with exciting events. If you're fan of such things, we got you covered. Give our history Quizzes a whirl and win amazing prizes once a week.”</p>
+                                        <div className='carBtn-grp'>
+                                            <button className='carBtn pulse-btn-car'>Challenge Now</button>
+                                            <button className='carQuizBtn pulse-btn-car'>Practice Quiz</button>
+                                        </div>
                                         {/* <Button type='submit' style={{marginTop: '20px'}} variant='contained' onClick={() => handleClick('history')}>Challenge Now</Button> */}
                                     </div>
                                     <h3 className="content__index">02</h3>
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="spinner__face" data-bg="#2b2533">
+                        <div className="spinner__face" data-bg="#2b2533">
+                        <input className='dynamic-type' type='hidden' value="travel" />
                             <div className="content" data-type="usa" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/usa.jpg')"}}>
                                 <div className="content__left">
-                                    <h1>USA<br /><span>NORTH AMERICA</span></h1>
+                                    <h1>Travel<br /><span>Mr. Fin</span></h1>
                                 </div>
                                 <div className="content__right">
                                     <div className="content__main">
-                                        <p>“When it comes to travel, America has always floored me with its staggering range of possibilities. Not many other countries have so much natural beauty – mountains, beaches, rainforest, deserts, canyons, glaciers – coupled with fascinating cities to explore, an unrivaled music scene and all the things that make travel so rewarding (friendly locals, great restaurants and farmers markets, and plenty of quirky surprises).” </p>
-                                        <p>– Regis St Louis</p>
+                                        <p>“The world’s longest commercial flight took around 30 hours which ran from Australia to Sri Lanka from 1943-45, often lasted over 30 hours, with passengers seeing the sunrise twice. Today the longest commercial flight is the Singapore Airlines Singapore to New York route, with an average journey time of 17 hours and 50 minutes. Todays travel time has been cut in half and the entire world has shrunk for travellers. Now we are here to make such travels a even more sweeter by bestowing you with gifts worth 2 Lakhs every two weeks. Get your travel vouchers with us NOW!!!!” </p>
+                                        <div className='carBtn-grp'>
+                                            <button className='carBtn pulse-btn-car'>Challenge Now</button>
+                                            <button className='carQuizBtn pulse-btn-car'>Practice Quiz</button>
+                                        </div>
                                     </div>
                                     <h3 className="content__index">03</h3>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                         <div className="spinner__face" data-bg="#312f2d">
                             <input className='dynamic-type' type='hidden' value="food" />
-                            <div className="content" data-type="peru" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg')"}}>
+                            <div className="content" data-type="peru" style={{ backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg')" }}>
                                 <div className="content__left">
                                     <h1>FOOD<br /><span>Mr.Fin</span></h1>
                                 </div>
                                 <div className="content__right">
                                     <div className="content__main">
                                         <p>“There's more water in cucumber than watermelon. Okay, not by much, but this was still a fun food fact to us! Watermelon is about 92% water, while cucumber is 95%. If you are the kinda of person who knows even such obscure facts, then we have fun filled quiz which will win you prizes that will reward you for just being a foodie.”</p>
-                                        <button className='carBtn pulse-btn-car'>Challenge Now</button>
+                                        <div className='carBtn-grp'>
+                                            <button className='carBtn pulse-btn-car'>Challenge Now</button>
+                                            <button className='carQuizBtn pulse-btn-car'>Practice Quiz</button>
+                                        </div>
                                         {/* <Button type='submit' variant='contained' style={{marginTop: '20px'}} onClick={() => handleClick('food')}>Challenge Now</Button> */}
                                     </div>
-                                    <h3 className="content__index">03</h3>
+                                    <h3 className="content__index">04</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="spinner__face" data-bg="#312f2d">
+                            <input className='dynamic-type' type='hidden' value="food" />
+                            <div className="content" data-type="peru" style={{ backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg')" }}>
+                                <div className="content__left">
+                                    <h1>MYTHOLOGY<br /><span>Mr.Fin</span></h1>
+                                </div>
+                                <div className="content__right">
+                                    <div className="content__main">
+                                        <p>“In India, there are so many epics to follow compared to any other religion in the world. Out of all, Ramayana and Bhagwat Gita are treated to be most virtuous and sacred. The more you learn about Indian mythology, the more you realize its richness in terms of knowledge and preaching. If you are knowledgable in this rich tapestry of mythology, give our quiz a whirl and win prizes every other week!!!! ”</p>
+                                        <div className='carBtn-grp'>
+                                            <button className='carBtn pulse-btn-car'>Challenge Now</button>
+                                            <button className='carQuizBtn pulse-btn-car'>Practice Quiz</button>
+                                        </div>
+                                        {/* <Button type='submit' variant='contained' style={{marginTop: '20px'}} onClick={() => handleClick('food')}>Challenge Now</Button> */}
+                                    </div>
+                                    <h3 className="content__index">04</h3>
                                 </div>
                             </div>
                         </div>
@@ -267,7 +304,7 @@ export default function ThreeDCarousel() {
                 </div>
             </div>
 
-            <div style={{height: 0, width: 0, overflow: "hidden"}}>
+            <div style={{ height: 0, width: 0, overflow: "hidden" }}>
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg" />
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/canada.jpg" />
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/china.jpg" />
