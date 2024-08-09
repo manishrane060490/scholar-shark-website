@@ -47,9 +47,15 @@ export default function About() {
                         delay: 0.5
                     }}
                     exit="hidden">
-                <h1>What is Scholar Sharks ?</h1>
+                <h1>Who are we?</h1>
                 <p>
-                    Scholar Sharks is not just an educational platform; it's an ocean of knowledge and a hub for engaging and insightful learning experiences. Formerly known as LearnEng, we have a legacy of making a significant impact in the field of financial literacy, and our journey continues to evolve.
+                We are a Edutainment Platform i.e. we are not just an educational platform, we want people to be rewarded for their knowledge of exciting
+                and facinating things. Formerly known as LearnEng, we have a legacy of  making a significant impact in the field of financial literacy.
+                Our journey continues to evolve and diversify in different fields like cricket, mythology, history, travel, food etc. We are Sharks... ScholarSharks
+
+                Come with us. Exhibit and Flaunt your knowledge in front of your peers. 
+                Compete with the best and win exciting prizes every week.
+
                 </p>
             </motion.div>
         </div>

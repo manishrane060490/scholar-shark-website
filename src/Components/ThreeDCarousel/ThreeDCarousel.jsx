@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import * as $ from "jquery";
 import './index.css';
+import { Button } from '@mui/material';
 
 export default function ThreeDCarousel() {
 
@@ -164,8 +165,19 @@ export default function ThreeDCarousel() {
         });
     }
 
+    function handleClick(type) {
+        // e.preventDefault();
+        console.log(type);
+        alert('demo');
+    };
+
+    
+
     useEffect(() => {
         test();
+        // document.getElementById("challenge").addEventListener("click", () => {
+        //     alert('add')
+        // }) 
     })
 
     return (
@@ -178,12 +190,14 @@ export default function ThreeDCarousel() {
                         <div className="spinner__face js-active" data-bg="#27323c">
                             <div className="content" data-type="iceland" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/iceland.jpg')"}}>
                                 <div className="content__left">
-                                    <h1>ICELAND<br /><span>EUROPE</span></h1>
+                                    <h1>CRICKET<br /><span>Mr.Fin</span></h1>
                                 </div>
                                 <div className="content__right">
                                     <div className="content__main">
-                                        <p>“As I flew north to begin my third circuit of Iceland in four years, I was slightly anxious. The number of visitors to Iceland has doubled in that period, and I feared this might mean a little less magic to go around. At the end of this trip, 6000km later, I'm thrilled to report that the magic levels remain high. It's found in glorious football victories and Viking chants, kayaking among icebergs, sitting with puffins under the midnight sun and crunching across brand-new lava fields.” </p>
-                                        <p>– Carolyn Bain</p>
+                                        <p>“Did You Know?
+                                        Cricket is the second most popular sport after soccer/football with an estimated fan base of 2.5 billion people. If you are one such fan then challenge yourself among your peers and win assured prizes every week.” </p>
+                                        {/* <button onClick={() => alert('demo')}>Click</button> */}
+                                        {/* <Button type='submit' variant='contained'  style={{marginTop: '20px'}} onClick={() => handleClick('cricket')}>Challenge Now</Button> */}
                                     </div>
                                     <h3 className="content__index">01</h3>
                                 </div>
@@ -192,18 +206,19 @@ export default function ThreeDCarousel() {
                         <div className="spinner__face" data-bg="#19304a">
                             <div className="content" data-type="china" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/china.jpg')"}}>
                                 <div className="content__left">
-                                    <h1>CHINA<br /><span>ASIA</span></h1>
+                                    <h1>HISTORY<br /><span>Mr.Fin</span></h1>
                                 </div>
                                 <div className="content__right">
                                     <div className="content__main">
-                                        <p>“Its modern face is dazzling, but China is no one-trick pony. The world's oldest continuous civilisation isn't all smoked glass and brushed aluminium and while you won't be tripping over artefacts – three decades of round-the-clock development and rash town-planning have taken their toll – rich seams of antiquity await.”</p>
-                                        <p>– Damian Harper</p>
+                                        <p>“Did You know?
+                                        India never invaded any country in her last 100000 years of history. Indian history is both ancient and fascinating. We are a tresure trove of rich memories filled with exciting events. If you're fan of such things, we got you covered. Give our history Quizzes a whirl and win amazing prizes once a week.”</p>
+                                        {/* <Button type='submit' style={{marginTop: '20px'}} variant='contained' onClick={() => handleClick('history')}>Challenge Now</Button> */}
                                     </div>
                                     <h3 className="content__index">02</h3>
                                 </div>
                             </div>
                         </div>
-                        <div className="spinner__face" data-bg="#2b2533">
+                        {/* <div className="spinner__face" data-bg="#2b2533">
                             <div className="content" data-type="usa" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/usa.jpg')"}}>
                                 <div className="content__left">
                                     <h1>USA<br /><span>NORTH AMERICA</span></h1>
@@ -216,18 +231,18 @@ export default function ThreeDCarousel() {
                                     <h3 className="content__index">03</h3>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="spinner__face" data-bg="#312f2d">
                             <div className="content" data-type="peru" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg')"}}>
                                 <div className="content__left">
-                                    <h1>PERU<br /><span>SOUTH AMERICA</span></h1>
+                                    <h1>FOOD<br /><span>Mr.Fin</span></h1>
                                 </div>
                                 <div className="content__right">
                                     <div className="content__main">
-                                        <p>“For me, Peru is the molten core of South America, a distillation of the oldest traditions and the finest building, weaving and art made by the most sophisticated cultures on the continent. In Peru the wildest landscapes – from frozen Andean peaks to the deep Amazon – help us re-forge our connection to the natural world. It is also a cultural stew, where diverse peoples live side by side, negotiating modern life with humor and aplomb. Beyond that, the cuisine alone makes it worth the trip. Every return is rich and surprising.”</p>
-                                        <p>– Carolyn McCarthy</p>
+                                        <p>“There's more water in cucumber than watermelon. Okay, not by much, but this was still a fun food fact to us! Watermelon is about 92% water, while cucumber is 95%. If you are the kinda of person who knows even such obscure facts, then we have fun filled quiz which will win you prizes that will reward you for just being a foodie.”</p>
+                                        {/* <Button type='submit' variant='contained' style={{marginTop: '20px'}} onClick={() => handleClick('food')}>Challenge Now</Button> */}
                                     </div>
-                                    <h3 className="content__index">04</h3>
+                                    <h3 className="content__index">03</h3>
                                 </div>
                             </div>
                         </div>
