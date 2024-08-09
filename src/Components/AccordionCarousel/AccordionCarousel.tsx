@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './index.css';
-import sharkPng from '../../assets/shark.png';
+import silver from '../../assets/silver.jpg';
+
 import { motion } from 'framer-motion';
 
 export default function AccordionCarousel() {
@@ -42,7 +43,7 @@ export default function AccordionCarousel() {
                             <button>Read More</button>
                         </div>
                     </li> */}
-                    <li className='item' style={{ backgroundImage: "url('https://i.redd.it/tc0aqpv92pn21.jpg')" }}>
+                    <li className='item' style={{ backgroundImage: `url(${silver})` }}>
                         <div className='acc-content'>
                             <h2 className='title'>"Silver Tier"</h2>
                             <p className='description'> Dip your toes into our world with our weekly quizzes. Come on sharks  </p>
