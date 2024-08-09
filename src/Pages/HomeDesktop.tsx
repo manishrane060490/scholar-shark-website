@@ -98,11 +98,18 @@ export default function HomeDesktop() {
           ))}
         </div>
       </div>
-      <div className='section'>
+      <div className='section desktop-only'>
+        <h1 className='section-title'>Partner's</h1>
+        <InfiniteCarousal />
+        <br />
+        <br />
+        <Footer />
+      </div>
+      <div className='section mobile-only'>
         <h1 className='section-title'>Partner's</h1>
         <InfiniteCarousal />
       </div>
-      <div className='section'>
+      <div className='section mobile-only'>
         <Footer />
       </div>
     </div>
