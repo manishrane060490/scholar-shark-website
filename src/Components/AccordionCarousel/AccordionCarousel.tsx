@@ -46,7 +46,7 @@ export default function AccordionCarousel() {
                         <div className='acc-content'>
                             <h2 className='title'>"Silver Tier"</h2>
                             <p className='description'> Dip your toes into our world with our weekly quizzes. Come on sharks  </p>
-                            <button>Read More</button>
+                            {/* <button>Read More</button> */}
                         </div>
                     </li>
                     <li className='item' style={{ backgroundImage: "url('https://wharferj.files.wordpress.com/2015/11/bio_north.jpg')" }}>
@@ -54,7 +54,7 @@ export default function AccordionCarousel() {
                             <h2 className='title'>"Gold Tier"</h2>
                             <p className='description'> You are a a big fish. You dream big because you have the power of knowledge backing you up.
                                 Come on Now!!!  </p>
-                            <button>Read More</button>
+                            {/* <button>Read More</button> */}
                         </div>
                     </li>
                     <li className='item' style={{ backgroundImage: "url('https://images7.alphacoders.com/878/878663.jpg')" }}>
@@ -63,7 +63,7 @@ export default function AccordionCarousel() {
                             <p className='description'>
                             You are the Shark. You are the Apex predator. Swim with best of the best and Stand to win prizes worth crores.
                             </p>
-                            <button>Read More</button>
+                            {/* <button>Read More</button> */}
                         </div>
                     </li>
                     {/* <li className='item' style={{ backgroundImage: "url('https://theawesomer.com/photos/2017/07/simon_stalenhag_the_electric_state_6.jpg')" }}>

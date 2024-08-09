@@ -283,7 +283,7 @@ export default function ThreeDCarousel() {
                         </div>
                         <div className="spinner__face" data-bg="#312f2d">
                             <input className='dynamic-type' type='hidden' value="food" />
-                            <div className="content" data-type="peru" style={{ backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg')" }}>
+                            <div className="content" data-type="canada" style={{ backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg')" }}>
                                 <div className="content__left">
                                     <h1>MYTHOLOGY<br /><span>Mr.Fin</span></h1>
                                 </div>
