@@ -16,7 +16,8 @@ export default function AccordionCarousel() {
             e.target.matches('.prev') && slider.prepend(items[items.length - 1]);
         }
 
-        document.addEventListener('click', activate);
+                    // <div className='btn prev md hydrated' id="prev" role="img">
+        document.getElementById("prev")?.addEventListener('click', activate, false );
 
     }
 
@@ -84,7 +85,7 @@ export default function AccordionCarousel() {
                     </li> */}
                 </ul>
                 <nav className='nav'>
-                    <div className='btn prev md hydrated' role="img">
+                    <div className='btn prev md hydrated' id="prev" role="img">
                         <div className="icon-inner">
                             &#60;
                         </div>
