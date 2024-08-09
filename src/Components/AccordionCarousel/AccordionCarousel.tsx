@@ -18,6 +18,7 @@ export default function AccordionCarousel() {
 
                     // <div className='btn prev md hydrated' id="prev" role="img">
         document.getElementById("prev")?.addEventListener('click', activate, false );
+        document.getElementById("next")?.addEventListener('click', activate, false );
 
     }
 
@@ -90,7 +91,7 @@ export default function AccordionCarousel() {
                             &#60;
                         </div>
                     </div>
-                    <div className='btn next md hydrated' role="img">
+                    <div className='btn next md hydrated' id="next" role="img">
                         <div className="icon-inner">
                             &#62;
                         </div>

@@ -21,6 +21,7 @@ import Footer from './Components/Footer/Footer';
 import Rules from './Components/Rules/Rules';
 import DemoCard from './Components/Rules/DemoCard';
 import Carousel from './Components/Rules/Carousel';
+import CButton from './Components/CButton/CButton';
 
 const AnimatedRoutes = () => {
 
@@ -42,7 +43,7 @@ const AnimatedRoutes = () => {
                 <Route path="silverQuiz" element={<SilverQuizPage />} />
                 <Route path="intro" element={<Videopage />} />
                 <Route path="test" element={<Carousal />} />
-                <Route path="test1" element={<Carousel />} />
+                <Route path="test1" element={<CButton />} />
                 <Route path="desk" element={<HomeDesktop />} />
                 {/* <Route path="*" element={<NoPage />} />  */}
                 {/* </Route> */}

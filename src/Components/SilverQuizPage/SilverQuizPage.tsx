@@ -4,7 +4,7 @@ import './index.css';
 import Question from '../Question/Question';
 import Result from '../Result/Result';
 import Lighthouse from '../Lighthouse/Lighthouse';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { PlansContext } from '../../Context';
 import sharkVideo from '../../assets/IdleAlphaWEBM.webm';
 import sharkThumpsUpVideo from '../../assets/ThumbsUpAlphaWEBM.webm';
@@ -42,6 +42,7 @@ function SilverQuizPage() {
     const [randomObject, setRandomObject] = useState(null);
     const [windowWidth, setWindowWidth] = useState<number>(0);
     const [questions, setQuestions] = useState([]);
+    const location = useLocation();
 
     // set time for each question
     const [timer, setTimer] = useState(1000);
@@ -55,8 +56,10 @@ function SilverQuizPage() {
         fetchQuiz();
     }, []);
 
+    console.log(location.state.type)
+
     const fetchQuiz = async () => {
-        await axios.get(`https://zwhxhdbmy25zqawk7h4wohtbda0vwaoy.lambda-url.ap-south-1.on.aws/prequizcategory/eng/15/food`)
+        await axios.get(`https://zwhxhdbmy25zqawk7h4wohtbda0vwaoy.lambda-url.ap-south-1.on.aws/prequizcategory/eng/10/${location.state.type}`)
             .then((res: any) => {
                 setQuestions(res.data.questions);
                 // handleRazorpayScreen(response.data.amount)
@@ -187,11 +190,11 @@ function SilverQuizPage() {
                     </div>
                     <div className='timer-block'>
                         {/* <Timer /> */}
-                        <div className='countdown'>
+                        {/* <div className='countdown'>
                             <div className="countdown__fill" id="ticker"></div>
                             <div className="countdown__digit" id="seconds">{timer}</div>
                             
-                        </div>
+                        </div> */}
                         {showShark === 'staticshark' && windowWidth > 990 &&
                             <img src={staticshark} alt="shark" className='sharkGif' />
                         }

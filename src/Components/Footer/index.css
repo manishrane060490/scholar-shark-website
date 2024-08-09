@@ -170,8 +170,8 @@ ul.social-icons-s1 {
   
   .footer-s1 .row.f-main,
   .footer-s2 .row.f-main {
-    margin-top: 90px;
-    margin-bottom: 85px;
+    margin-top: 20px;
+    /* margin-bottom: 85px; */
   }
   
   .footer-s1 .widget-1 .desc,

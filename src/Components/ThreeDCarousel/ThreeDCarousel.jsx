@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import * as $ from "jquery";
 import './index.css';
-import { Button } from '@mui/material';
+import CButton from '../CButton/CButton';
+import { useNavigate } from 'react-router-dom';
 
 export default function ThreeDCarousel() {
+    const navigate = useNavigate();
 
     function test() {
         let activeIndex = 0
@@ -37,11 +39,18 @@ export default function ThreeDCarousel() {
         }
 
         const duplicateSpinner = () => {
-            const $el = $('.spinner').parent()
+            const $el = $('.spinner').parent();
             const html = $('.spinner').parent().html()
+            console.log($el);
+            // console.log(html);
             $el.append(html)
             $('.spinner').last().addClass('spinner--right')
             $('.spinner--right').removeClass('spinner--left')
+
+            $('.spinner--right').on('click', '.carBtn', function(){
+                const type = $el.find('.dynamic-type').val();
+                navigate('/silverQuiz', {state:{type}})
+            });
         }
 
         const paintFaces = () => {
@@ -52,24 +61,24 @@ export default function ThreeDCarousel() {
             // })
         }
 
-        const getBase64PixelByColor = (hex) => {
-            if (!canvas) {
-                canvas = document.createElement('canvas')
-                canvas.height = 1
-                canvas.width = 1
-            }
-            if (canvas.getContext) {
-                const ctx = canvas.getContext('2d')
-                ctx.fillStyle = hex
-                ctx.fillRect(0, 0, 1, 1)
-                return canvas.toDataURL()
-            }
-            return false
-        }
+        // const getBase64PixelByColor = (hex) => {
+        //     if (!canvas) {
+        //         canvas = document.createElement('canvas')
+        //         canvas.height = 1
+        //         canvas.width = 1
+        //     }
+        //     if (canvas.getContext) {
+        //         const ctx = canvas.getContext('2d')
+        //         ctx.fillStyle = hex
+        //         ctx.fillRect(0, 0, 1, 1)
+        //         return canvas.toDataURL()
+        //     }
+        //     return false
+        // }
 
         const prepareDom = () => {
             setIndexes()
-            paintFaces()
+            // // paintFaces()
             duplicateSpinner()
             appendControls()
         }
@@ -165,19 +174,22 @@ export default function ThreeDCarousel() {
         });
     }
 
-    function handleClick(type) {
-        // e.preventDefault();
-        console.log(type);
-        alert('demo');
-    };
+    // document.getElementById('challenge')?.addEventListener("click", handleClick);
+    // console.log(document.getElementById('challenge'));
 
-    
+    // const handleClick = () => {
+    //     alert('test');
+    // }
 
     useEffect(() => {
         test();
         // document.getElementById("challenge").addEventListener("click", () => {
         //     alert('add')
         // }) 
+        // document.getElementById('challenge')?.addEventListener("click", function manish () {
+        //     alert('red')
+        // });
+        // console.log(document.getElementById('challenge'));
     })
 
     return (
@@ -188,6 +200,7 @@ export default function ThreeDCarousel() {
                 <div className="carousel__stage">
                     <div className="spinner spinner--left">
                         <div className="spinner__face js-active" data-bg="#27323c">
+                            <input className='dynamic-type' type='hidden' value="cricket" />
                             <div className="content" data-type="iceland" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/iceland.jpg')"}}>
                                 <div className="content__left">
                                     <h1>CRICKET<br /><span>Mr.Fin</span></h1>
@@ -196,14 +209,15 @@ export default function ThreeDCarousel() {
                                     <div className="content__main">
                                         <p>“Did You Know?
                                         Cricket is the second most popular sport after soccer/football with an estimated fan base of 2.5 billion people. If you are one such fan then challenge yourself among your peers and win assured prizes every week.” </p>
-                                        {/* <button onClick={() => alert('demo')}>Click</button> */}
-                                        {/* <Button type='submit' variant='contained'  style={{marginTop: '20px'}} onClick={() => handleClick('cricket')}>Challenge Now</Button> */}
+                                        <button className='carBtn pulse-btn-car'>Challenge Now</button>
+                                        {/* <CButton type="cricket"/> */}
                                     </div>
                                     <h3 className="content__index">01</h3>
                                 </div>
                             </div>
                         </div>
                         <div className="spinner__face" data-bg="#19304a">
+                            <input className='dynamic-type' type='hidden' value="travel" />
                             <div className="content" data-type="china" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/china.jpg')"}}>
                                 <div className="content__left">
                                     <h1>HISTORY<br /><span>Mr.Fin</span></h1>
@@ -212,6 +226,7 @@ export default function ThreeDCarousel() {
                                     <div className="content__main">
                                         <p>“Did You know?
                                         India never invaded any country in her last 100000 years of history. Indian history is both ancient and fascinating. We are a tresure trove of rich memories filled with exciting events. If you're fan of such things, we got you covered. Give our history Quizzes a whirl and win amazing prizes once a week.”</p>
+                                        <button className='carBtn pulse-btn-car'>Challenge Now</button>
                                         {/* <Button type='submit' style={{marginTop: '20px'}} variant='contained' onClick={() => handleClick('history')}>Challenge Now</Button> */}
                                     </div>
                                     <h3 className="content__index">02</h3>
@@ -233,6 +248,7 @@ export default function ThreeDCarousel() {
                             </div>
                         </div> */}
                         <div className="spinner__face" data-bg="#312f2d">
+                            <input className='dynamic-type' type='hidden' value="food" />
                             <div className="content" data-type="peru" style={{backgroundImage: "url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg')"}}>
                                 <div className="content__left">
                                     <h1>FOOD<br /><span>Mr.Fin</span></h1>
@@ -240,6 +256,7 @@ export default function ThreeDCarousel() {
                                 <div className="content__right">
                                     <div className="content__main">
                                         <p>“There's more water in cucumber than watermelon. Okay, not by much, but this was still a fun food fact to us! Watermelon is about 92% water, while cucumber is 95%. If you are the kinda of person who knows even such obscure facts, then we have fun filled quiz which will win you prizes that will reward you for just being a foodie.”</p>
+                                        <button className='carBtn pulse-btn-car'>Challenge Now</button>
                                         {/* <Button type='submit' variant='contained' style={{marginTop: '20px'}} onClick={() => handleClick('food')}>Challenge Now</Button> */}
                                     </div>
                                     <h3 className="content__index">03</h3>

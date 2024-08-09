@@ -413,6 +413,10 @@ video {
   top: 0;
 }
 
+.shadow {
+  display: none;
+}
+
 .lang-selector.glow-on-hover:not(.correct):not(.wrong):after {
   background: #383763;
 }
