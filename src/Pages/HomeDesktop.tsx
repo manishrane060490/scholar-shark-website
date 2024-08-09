@@ -88,7 +88,7 @@ export default function HomeDesktop() {
         <ThreeDCarousel />
       </div>
       <div className="section">
-        <h1 className='section-title'>Rules</h1>
+        <h1 className='section-title'>Rules of Engagement</h1>
         <Rules />
       </div>
       <div className='section'>
@@ -100,14 +100,14 @@ export default function HomeDesktop() {
         </div>
       </div>
       <div className='section desktop-only'>
-        <h1 className='section-title'>Partner's</h1>
+        <h1 className='section-title'>Our Partners</h1>
         <InfiniteCarousal />
         <br />
         <br />
         <Footer />
       </div>
       <div className='section mobile-only'>
-        <h1 className='section-title'>Partner's</h1>
+        <h1 className='section-title'>Our Partners</h1>
         <InfiniteCarousal />
       </div>
       <div className='section mobile-only'>

@@ -268,7 +268,31 @@
 }
 
 .pulse-btn-car {
-    animation: pulse 1s infinite;
+    
+}
+
+.carBtn-grp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carQuizBtn{
+    background: #fff;
+    color: #0d99ff;
+    width: auto;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* width: 100px; */
+    margin-top: 30px;
+    animation: pulseWhite 1s infinite;
     box-shadow: 0 20px 40px #0006;
     box-shadow: 0 0 0 2em #0000;
     transform: scale(1.05);
@@ -290,7 +314,17 @@
     text-decoration: none;
     /* width: 100px; */
     margin-top: 30px;
+    animation: pulse 1s infinite;
+    box-shadow: 0 20px 40px #0006;
+    box-shadow: 0 0 0 2em #0000;
+    transform: scale(1.05);
 }
+
+@keyframes pulseWhite {
+    0% {
+      box-shadow: 0 0 0 0 #fff;
+    }
+  }
 
 @keyframes pulse {
   0% {

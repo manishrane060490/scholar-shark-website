@@ -53,7 +53,7 @@ export default function About() {
                 We are a Edutainment Platform i.e. we are mix of Entertainment and Education... 
                 <br/>Formerly known as LearnEng, we have a legacy of  making a significant impact in the field of financial literacy.
                 Our journey continues to evolve and diversify in different fields like cricket, mythology, history, travel, food etc. 
-                <br/><br/><b>We are Sharks... ScholarSharks!!!</b>
+                <br/><br/><b style={{fontSize: '20px'}}>We are Sharks... ScholarSharks!!!</b>
                 <br/>
                 <br/>
                 Come with us. Exhibit and Flaunt your knowledge in front of your peers. 
