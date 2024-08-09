@@ -7,6 +7,7 @@ import About from '../Components/About/About';
 import Rules from '../Components/Rules/Rules';
 import FAQ from '../Components/Faq/Faq';
 import logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 
 export default function HomeDesktop() {
@@ -72,8 +73,8 @@ export default function HomeDesktop() {
           </div>
           <div className='right-side'>
             <div className='right-side-item'>
-              <a href="">Login</a>
-              <a href="">Dashboard</a>
+              <Link to="/login">Login</Link>
+              <Link to="/dashboard">Dashboard</Link>
               {/* <img src={person1} alt='person' className='dropdown-img' /> */}
             </div>
           </div>
