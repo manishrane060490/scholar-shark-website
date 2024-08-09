@@ -21,8 +21,8 @@ export default function InfiniteCarousal() {
                 </div>
                 <br />
                 <br/>
-                <br />
-                <br/>
+                <br className='mobile-only'/>
+                <br className='mobile-only'/>
                 <div className="infinitecarousel" data-reverse="true">
                     <div className="carousel__list">
                         <i className="carousel__item fa-brands fa-apple" style={{ "--position": 1 } as React.CSSProperties}></i>
@@ -39,9 +39,9 @@ export default function InfiniteCarousal() {
                 </div>
                 <br />
                 <br/>
-                <br />
-                <br/>
-                <div className="infinitecarousel" data-reverse="false">
+                <br className='mobile-only'/>
+                <br className='mobile-only'/>
+                <div className="infinitecarousel mobile-only" data-reverse="false">
                     <div className="carousel__list">
                         <i className="carousel__item fa-brands fa-apple" style={{ "--position": 1 } as React.CSSProperties}></i>
                         <i className="carousel__item fa-brands fa-windows" style={{ "--position": 2 } as React.CSSProperties}></i>
@@ -57,9 +57,9 @@ export default function InfiniteCarousal() {
                 </div>
                 <br />
                 <br/>
-                <br />
-                <br/>
-                <div className="infinitecarousel" data-reverse="true">
+                <br className='mobile-only'/>
+                <br className='mobile-only'/>
+                <div className="infinitecarousel mobile-only" data-reverse="true">
                     <div className="carousel__list">
                         <i className="carousel__item fa-brands fa-apple" style={{ "--position": 1 } as React.CSSProperties}></i>
                         <i className="carousel__item fa-brands fa-windows" style={{ "--position": 2 } as React.CSSProperties}></i>
