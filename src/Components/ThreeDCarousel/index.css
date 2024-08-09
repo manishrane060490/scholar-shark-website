@@ -331,3 +331,13 @@
     box-shadow: 0 0 0 0 #3289ef;
   }
 }
+
+@media (max-width: 991px) {
+    .content__right .content__main {
+        font-size: 13px;
+    }
+
+    .carBtn-grp {
+        flex-direction: column;
+    }
+}
