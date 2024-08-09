@@ -266,3 +266,34 @@
 .spinner--right [data-type="peru"] .content__left {
     background-image: none;
 }
+
+.pulse-btn-car {
+    animation: pulse 1s infinite;
+    box-shadow: 0 20px 40px #0006;
+    box-shadow: 0 0 0 2em #0000;
+    transform: scale(1.05);
+}
+
+.carBtn {
+    background: #0d99ff;
+    width: auto;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* width: 100px; */
+    margin-top: 30px;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #3289ef;
+  }
+}

@@ -1,6 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import sharkImg from '../../assets/IdleAlphaGIF.gif';
 import { motion, useAnimation, useInView } from 'framer-motion';
+import './index.css';
 
 
 export default function About() {
@@ -19,7 +20,7 @@ export default function About() {
         <div className='about' style={{
             display: 'flex', justifyContent: "center", alignItems: "center"
         }} ref={ref}>
-            <motion.div className='section-left' variants={{
+            <motion.div className='about-left' variants={{
                         hidden: { opacity: 0, x: "-100%" },
                         visible: { opacity: 1, x: 0 }
                     }}
@@ -36,7 +37,7 @@ export default function About() {
                     style={{width: "100%"}}
                 />
             </motion.div>
-            <motion.div className='about' style={{ padding: '100px 40px', color: '#fff' }} variants={{
+            <motion.div className='about-right' variants={{
                         hidden: { opacity: 0, x: "100%" },
                         visible: { opacity: 1, x: 0 }
                     }}
@@ -49,10 +50,12 @@ export default function About() {
                     exit="hidden">
                 <h1>Who are we?</h1>
                 <p>
-                We are a Edutainment Platform i.e. we are not just an educational platform, we want people to be rewarded for their knowledge of exciting
-                and facinating things. Formerly known as LearnEng, we have a legacy of  making a significant impact in the field of financial literacy.
-                Our journey continues to evolve and diversify in different fields like cricket, mythology, history, travel, food etc. We are Sharks... ScholarSharks
-
+                We are a Edutainment Platform i.e. we are mix of Entertainment and Education... 
+                <br/>Formerly known as LearnEng, we have a legacy of  making a significant impact in the field of financial literacy.
+                Our journey continues to evolve and diversify in different fields like cricket, mythology, history, travel, food etc. 
+                <br/><br/><b>We are Sharks... ScholarSharks!!!</b>
+                <br/>
+                <br/>
                 Come with us. Exhibit and Flaunt your knowledge in front of your peers. 
                 Compete with the best and win exciting prizes every week.
 

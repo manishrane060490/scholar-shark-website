@@ -1041,6 +1041,7 @@ body {
 }
 .section:nth-child(5) {
     /* background: url(https://cdn.pixabay.com/photo/2014/05/03/00/46/notebook-336634_960_720.jpg); */
+    /* scroll-snap-align: unset; */
 }
 
 .PhoneInput {
@@ -1098,5 +1099,44 @@ body {
     display: flex;
     justify-content: center;
     margin: 15px 0;
+    text-decoration: underline;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-decoration: underline;
+    font-family: "Roboto";
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    /* height: 200px; */
+}
+
+.right-side-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.right-side-item a {
+    color: #1c2343;
+    font-family: "Roboto";
+    padding: 0 10px;
+    transition: all .2s;
+}
+
+.right-side-item a:hover {
+    transform: scale(1.5);
     text-decoration: underline;
 }

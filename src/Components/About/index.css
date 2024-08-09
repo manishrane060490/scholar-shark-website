@@ -1,0 +1,15 @@
+.about-left {
+    width: 50%;
+}
+
+.about-right {
+    width: 50%;
+    padding: 0px 15px;
+    color: '#fff'
+}
+
+@media (max-width: 991px) {
+    .about-left, .about-right {
+        width: 100%;
+    }
+}

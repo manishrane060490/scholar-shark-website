@@ -36,7 +36,7 @@ export default function Carousel({children}: any) {
   const count = 5;
 
   return (
-    <div className='threeDCarousel'>
+    <div className='rulesCarousel'>
     <div className='carousel'>
       {active > 0 && <button className='carNav left' onClick={() => setActive(i => i - 1)}><img src={prev} alt="prev"/></button>}
       {cardInfo.map((card, i) => (
